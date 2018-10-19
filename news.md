@@ -4,4 +4,4 @@ title: News
 ---
 
 ### Recent Updates
-- 27 Sep 2018: The SEARU website is now live!
+- 27 Sep 2018: The SERU website is now live!
