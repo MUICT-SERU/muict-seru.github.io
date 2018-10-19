@@ -1,0 +1,164 @@
+---
+layout: default
+---
+
+<div class="header-container jumbotron">
+    <div class="container">
+        <h2>SEARU: Software Analytics, Evolution, Reverse-engineering, and Understanding</h2>
+        <h3>Faculty of Information and Communication Technology, Mahidol University, Thailand</h3>
+        <h5>The mission of our SEARU research group is to improve the quality of software development process
+          and the software products by studying the evolution of software, reverse engineering existing
+          software projects, and trying to understand the developers and the related software artefacts.
+          We are experimenting with several new techniques such as deep learning, code search, and visualisations.</h5>
+        <!--<p><a class="btn btn-primary btn-lg" href="{{ "/docs/home/" | prepend: site.baseurl }}" role="button">See methodology and findings</a></p>-->
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="header-light regular-pad">Latest News</h2>
+    <div class="row">
+      <ul>
+        <li>27 Sep 2018: The SEARU website is now live!</li>
+      </ul>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 text-left">
+            <h2 class="header-light regular-pad">About Us</h2>
+            <p>
+              In our research group, we are interested in the topics involving software engineering.
+              Specifically, our expertises lie in the area of software process improvement,
+              predictive models for software engineering tasks, and static/dynamic software analysis.
+              <br /><br />
+              The research topics include, but not limited to, the followings:
+              <ul>
+                <li>Software process quality and risk monitoring, e.g., ISO29001, agile, CMMI</li>
+                <li>Prediction of risks/delays/components in software projects</li>
+                <li>Code clone detection, code search, and code review</li>
+                <li>Mining software repositories</li>
+              </ul>
+            </p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img width="400px" src="img/research_areas.jpeg" alt="" class="img-responsive">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="header-light regular-pad">People</h2>
+            <h3>Staff</h3>
+            <p>
+              <i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;<a href="http://mucc.mahidol.ac.th/~ittth/">Asst. Prof. Dr. Thanwadee Sunetnanta</a>&nbsp;|&nbsp;
+              <i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;<a href="https://morakotch.wordpress.com">Dr. Morakot Choetkiertikul</a>&nbsp;|&nbsp;
+              <i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;<a href="http://cragkhit.github.io">Dr. Chaiyong Ragkhitwetsagul</a>
+            </p>
+            <h3>Students</h3>
+            <p>
+              Coming soon!
+            </p>
+            <h3>Collaborators/Partners</h3>
+            <p>
+              <a href="http://www.dsl.uow.edu.au"><img class="partner-logo" width="150px" title="Decision Systems Lab @ University of Wollongong" src="img/dsl_new_logo.png" /></a>
+              <a href="http://crest.cs.ucl.ac.uk/about/"><img class="partner-logo" width="200px" title="CREST @ University College London" src="img/crest.png" /></a>
+            </p>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="header-light regular-pad">Current Projects</h2>
+            <ul>
+              <li>Predicting issue’s resolving time using networked classification</li>
+              <li>Code clone search as a Service (CCSaS)</li>
+              <li><a href="projects.html">See more</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="header-light regular-pad">Awards/Grants</h2>
+            <ul>
+              <li>25-Jul-2018: <i class="fa fa-cloud" aria-hidden="true"></i>&nbsp;$20,000 <a href="https://aws.amazon.com/research-credits/">Amazon AWS Cloud Credits for Research</a> for the Code Clone Search as a Service project.</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="header-light regular-pad">Contact Us</h2>
+            <p>
+              <a href="https://www.ict.mahidol.ac.th/en/">Faculty of Information and Communication Technology, Mahidol University</a><br />
+              999 Phuttamonthon 4 Road, Salaya , Nakhon Pathom, 73170 THAILAND<br />
+              Tel: (02) 441-0909, Fax: (02) 441-0808<br />
+            </p>
+        </div>
+    </div>
+
+    <hr />
+
+    <!--<div class="row">
+        <div class="col-sm-6">
+            <h1 class="text-center"><i class="fa fa-calendar-times-o" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Outdated code</h3>
+            <p>
+              Outdated code occurs when a piece of code
+              has been copied from its origin to another location and later the original has
+              been updated (Xia et al., 2014). Usually code clone detection is used to locate
+              clone instances and update them to match with the originals.
+              However, online code clones are more difficult to detect than in regular
+              software projects due to its large search space and a mix of natural and
+              programming languages combined in the same post.
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <h1 class="text-center"><i class="fa fa-balance-scale" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Licensing violation</h3>
+            <p>
+              Code cloning can also have side effects of software
+              license compatability. Carelessly cloning
+              code from one project to another project with a different license may
+              cause a software licensing violation (German et al., 2009). This also
+              happens within the context of online Q&amp;A websites such as Stack
+              Overflow.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <h2 class="header-light regular-pad">Examples of Toxic Code Snippets</h2>
+      <h3>1. The Hadoop's <code class="highlighter-rouge">compare</code> method</h3>
+      <p>
+        The first example is outdated and license-violating online code clones in an
+        answer to a <a href="https://stackoverflow.com/questions/22262310/hadoop-map-output-key-doesnt-implement-writablecomparable-implementing-rawcom/22315734#22315734">Stack Overflow question</a> regarding how to implement
+        <code class="highlighter-rouge">RawComparator</code> in <a href="http://hadoop.apache.org/">Hadoop</a>.
+        The figure below shows, on the left, a code snippet embedded as a part
+        of the accepted answer. The snippet shows how <a href="http://hadoop.apache.org/">Hadoop</a> implements the
+        <code class="highlighter-rouge">compare</code> method in its <code class="highlighter-rouge">WritableComparator</code>
+        class. The code snippet on the right shows another version of the same method,
+        but at this time extracted from the latest version (as of October 3, 2017) of
+        <a href="http://hadoop.apache.org/">Hadoop</a>.
+        <br /><br />
+        We can see that they both are highly similar except a line
+        containing <code class="highlighter-rouge">buffer.reset(null,0,0);</code> which was added on November
+        21, 2014. The added line is intended for cleaning up the reference in the
+        <code class="highlighter-rouge">buffer</code> variable and avoid excess heap usage
+        (issue no. <a href="https://issues.apache.org/jira/browse/HADOOP-11323">HADOOP-11323</a>).
+      </p>
+    </div>-->
+
+</div>

@@ -1,2 +1,2 @@
-# searu.github.io
-Website of the Software Analytics, Evolution, Reverse-engineering, and Understanding (SEARU) group at the Faculty of Information and Communication Technology, Mahidol University.
+# web
+A website for the Software Evolution, Analytics, Reverse-engineering, and Understanding (SEARU) at the Faculty of ICT, Mahidol University, Thailand.
