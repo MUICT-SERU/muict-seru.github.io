@@ -1,2 +1,2 @@
 # Welcome!
-A website for the Software Evolution, Analytics, Reverse-engineering, and Understanding (SEARU) at the Faculty of ICT, Mahidol University, Thailand.
+A website for the Software Engineering Research Unit (SERU) at the Faculty of ICT, Mahidol University, Thailand.
