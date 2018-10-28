@@ -10,6 +10,4 @@ S. Wattanakriengkrai, Rungroj Maipradit, Hideaki Hata, Morakot Choetkiertikul, T
 
 [Preprint](files/technical_debt_classification.pdf)
 
-[A](files/A.pdf)
-
 ### Technical reports
