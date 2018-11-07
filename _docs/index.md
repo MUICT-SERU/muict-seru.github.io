@@ -11,7 +11,7 @@ redirect_from: /docs/index.html
 [Asst. Prof. Dr. Raula Gaikovina Kula](https://raux.github.io) from [SE lab at Nara Institute of Science and Technology, Japan](http://se-naist.jp)
 visited the SERU team and the Faculty of ICT, Mahidol University (MUICT) in Salaya campus.
 
-<img width="800px" src="../../img/news/2018-4.jpg" alt="" class="img-responsive">
+<img width="800px" src="../../img/news/2018-4.JPG" alt="" class="img-responsive">
 
 Dr. Kula joined the kick-off meeting for the future SE collaborations between MUICT and NAIST and also gave a talk about his previous work on **"On Updating Library Dependencies in Open Source Sofware Projects"** in our PhD seminar session.
 
