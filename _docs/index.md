@@ -13,7 +13,7 @@ visited the SERU team and the Faculty of ICT, Mahidol University (MUICT) in Sala
 
 <img width="800px" src="../../img/news/2018-4.JPG" alt="" class="img-responsive">
 
-Dr. Kula joined the kick-off meeting for the future SE collaborations between MUICT and NAIST and also gave a talk about his previous work on **"On Updating Library Dependencies in Open Source Sofware Projects"** in our PhD seminar session.
+Dr. Kula joined the kick-off meeting for the future SE collaborations between MUICT and NAIST and also gave a talk about his previous work on **"On Updating Library Dependencies in Open Source Sofware Projects"** in our faculty's PhD seminar session.
 
 <img width="800px" src="../../img/news/2018-3.jpg" alt="" class="img-responsive">
 
