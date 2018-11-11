@@ -6,6 +6,12 @@ redirect_from: /docs/index.html
 
 ## News (2018)
 
+### 8 Nov 2018
+
+Dr. Pattanasak Mongkolwat, Dean of the Faculty of Information and Communication Technology, Mahidol University signed the Memorandum of Agreement on the SEED-Net: Software Engineering Higher Education Network, at the Faculty of Informatics, Burapha University.
+
+<img width="800px" src="../../img/news/2018-5.jpg" alt="" class="img-responsive">
+
 ### 5 Nov 2018
 
 [Asst. Prof. Dr. Raula Gaikovina Kula](https://raux.github.io) from [SE lab at Nara Institute of Science and Technology, Japan](http://se-naist.jp)
