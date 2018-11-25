@@ -50,13 +50,7 @@ title: People
 
 ---
 
-### Students
-
-<div class="row">
-    <div class="col-md-12">
-    Project: developing a smart JIRA plugin that can give a recommendation for component assignment at issue creation time.
-    </div>
-</div>
+### Current Students
 
 <div class="row">
     <div class="col-lg-4">
@@ -66,7 +60,7 @@ title: People
             <img src="img/pacawat.png" />
           </div>
           <div class="panel-body">
-              <span class="text-primary">Pacawat	Kangwanwisit</span>
+              <span class="text-primary">Pacawat Kangwanwisit</span>
           </div>
         </div>
       </div>
@@ -99,4 +93,14 @@ title: People
       </div>
     </div>
 
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <p>
+      <b>Year:</b> 2018<br />
+      <b>Advisor:</b> Dr. Morakot Choetkiertikul<br />
+      <b>Project:</b> developing a smart JIRA plugin that can give a recommendation for component assignment at issue creation time.
+      </p>
+    </div>
 </div>
