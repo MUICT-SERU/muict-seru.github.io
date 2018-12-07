@@ -9,7 +9,7 @@ redirect_from: /docs/index.html
 ### 5 Dec 2018
 Supatsara Wattanakriengkrai, our undergrad SE student under the supervision of Asst. Prof. Dr. Thanwadee and Dr. Morakot received the best paper award for her work "[Identifying design and requirement self-admitted technical debt using N-gram IDF](http://127.0.0.1:4000/files/technical_debt_classification.pdf)" at [IWESEP2018](https://iwesep2018.github.io/). Congratulations!
 
-<img width="800px" src="../../img/news/2018-6.JPG" alt="" class="img-responsive">
+<img width="800px" src="../../img/news/2018-6.jpg" alt="" class="img-responsive">
 
 ### 8 Nov 2018
 
