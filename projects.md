@@ -20,7 +20,7 @@ Here are the research projects we are currently working on:
 </tr>
 <tr>
   <td>Code Clone Search as a Service (CCSaS)</td>
-  <td>Code clones are duplicated pieces of code within software. This project aims to leverage the scalability of Elasticsearch to scale up my code clone search engine, <a href="https://siamesetool.github.io/siamese/">Siamese</a>, to the cloud as a code clone search service, where one can upload a project or give a link to a GitHub project and CCSaS will automatically detect clones in the given project.
+  <td>Code clones are duplicated pieces of code within software. This project aims to leverage the scalability of Elasticsearch to scale up our existing code clone search engine, <a href="https://siamesetool.github.io/siamese/">Siamese</a>, to the cloud as a code clone search service, where one can upload a project or give a link to a GitHub project and CCSaS will automatically detect clones in the given project.
   The CCSaS service will be useful for real-time online code clone detection and can be integrated into many software development tools and processes such as IDE, or code review. I receive $20,000 Amazon AWS credits for this research to there are machines available for you to try it out!</td>
 </tr>
 </table>
