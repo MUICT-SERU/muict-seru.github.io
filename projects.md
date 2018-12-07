@@ -19,9 +19,9 @@ Here are the research projects we are currently working on:
   <td>Task dependencies are in the nature of software development process. My previous work (<a href="https://ieeexplore.ieee.org/document/7372024">ASE2016</a>) proposes a delay prediction model on issues by taking into account the issue’s dependencies. We applied network classification techniques on a manually constructed network (direct graph) of issues to predict delays. However, these network structures are dynamic through time. For example, when a new blocking issue is created, the issue network structure is changed accordingly. In this project, we aim to explore techniques to model (e.g., embedding, learning) these characteristics of software task dependency to improve the performance in predicting issue resolving time. </td>
 </tr>
 <tr>
-  <td>Code Clone Search as a Service (CCSaS)</td>
-  <td>Code clones are duplicated pieces of code within software. This project aims to leverage the scalability of Elasticsearch to scale up our existing code clone search engine, <a href="https://siamesetool.github.io/siamese/">Siamese</a>, to the cloud as a code clone search service, where one can upload a project or give a link to a GitHub project and CCSaS will automatically detect clones in the given project.
-  The CCSaS service will be useful for real-time online code clone detection and can be integrated into many software development tools and processes such as IDE, or code review. I receive $20,000 Amazon AWS credits for this research to there are machines available for you to try it out!</td>
+  <td>SiameseX: Code Clone Search as a Service</td>
+  <td>Code clones are duplicated pieces of code within software. This project aims to leverage the scalability of Elasticsearch to scale up our existing code clone search engine, <a href="https://siamesetool.github.io/siamese/">Siamese</a>, to the cloud as a code clone search service, where one can upload a project or give a link to a GitHub project and SiameseX will automatically detect clones in the given project.
+  The SiameseX service will be useful for real-time online code clone detection and can be integrated into many software development tools and processes such as IDE, or code review. I receive $20,000 Amazon AWS credits for this research to there are machines available for you to try it out!</td>
 </tr>
 </table>
 
