@@ -20,7 +20,7 @@ Here are the research projects we are currently working on:
 </tr>
 <tr>
   <td>SiameseX: Code Clone Search as a Service</td>
-  <td>Code clones are duplicated pieces of code within software. This project aims to leverage the scalability of Elasticsearch to scale up our existing code clone search engine, <a href="https://siamesetool.github.io/siamese/">Siamese</a>, to the cloud as a code clone search service, where one can upload a project or give a link to a GitHub project and SiameseX will automatically detect clones in the given project.
+  <td>Code clones are duplicated pieces of code within software. This project aims to leverage the scalability of Elasticsearch and the flexibility of cloud-based services to scale up our existing code clone search engine, <a href="https://siamesetool.github.io/siamese/">Siamese</a>, to the cloud as a code clone search service, where one can upload a project or give a link to a GitHub project and SiameseX will automatically detect clones in the given project.
   The SiameseX service will be useful for real-time online code clone detection and can be integrated into many software development tools and processes such as IDE, or code review. I receive $20,000 Amazon AWS credits for this research to there are machines available for you to try it out!</td>
 </tr>
 </table>
@@ -40,7 +40,7 @@ Listed below are the potential research topics we plan to work on. Please feel f
 </tr>
 <tr>
   <td>Code clone detection using coding style</td>
-  <td>Base on the naturalness of software, it might be possible that a programmer's coding style can be an indicator of code copying and pasting. This project aims to investigate the potential application of applying coding style detection to code clone detection problem. One has to work finding a technique to identify coding style of a given software project, and then detect the newly submitted patch to see if the code conforms to the project's coding style.</td>
+  <td>Base on the naturalness of software, it might be possible that a programmer's coding style can be an indicator of code copying and pasting. This project aims to investigate the potential application of applying coding style detection to code clone detection problem. One has to work on finding a technique to identify coding style of a given software project, and then detect the newly submitted patch to see if the code conforms to the project's coding style.</td>
 </tr>
 <tr>
   <td>Backlog grooming support model</td>
@@ -56,14 +56,14 @@ Listed below are the potential research topics we plan to work on. Please feel f
 </tr>
 <tr>
   <td>ISO29110 vs Agile development</td>
-  <td>ISO29110 is a software development process standard for a small entity (i.e. a small development team). This project aims to explore the relationations between the standard and Agile methodology in order to develop a guidance for Agile teams who want to adopt ISO29110.</td>
+  <td>ISO29110 is a software development process standard for a very small entity (i.e., a small development team). This project aims to explore the relationations between the standard and Agile methodology in order to develop a guidance for Agile teams who want to adopt ISO29110.</td>
 </tr>
 <tr>
   <td>Understanding how Agile teams estimate story points</td>
-  <td>Story points is a popular effort estimation unit used by Agile teams. Teams use story points to reflect effort, complexity, and difficulty of a software development task. Estimating story points is mostly based on experts. It is team-based estimation (e.g. 2-story point may reflect different size of tasks between 2 Agile teams ). We would like to understand the common nature in story point estimation. The ultimate goal is that we aim to develop an prescriptive (explainable) story point estimation model. </td>
+  <td>Story points is a popular effort estimation unit used by Agile teams. Teams use story points to reflect effort, complexity, and difficulty of a software development task. Estimating story points is mostly based on experts. It is team-based estimation (e.g., 2-story point may reflect different size of tasks between 2 Agile teams ). We would like to understand the common nature in story point estimation. The ultimate goal is that we aim to develop an prescriptive (explainable) story point estimation model. </td>
 </tr>
 <tr>
   <td>Virtual reality-based software visualisation</td>
-  <td>I am interested in exploring an application of the latest VR technology to visualise software projects and help programmers understand their software better.</td>
+  <td>We are interested in exploring an application of the VR technology to visualise software projects and to help programmers understand their software better.</td>
 </tr>
 </table>
