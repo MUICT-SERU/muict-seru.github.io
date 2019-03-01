@@ -6,6 +6,9 @@ redirect_from: /docs/index.html
 
 ## News (2018)
 
+### 9 Feb 2019
+Congratulate to Dr. Morakot Choetkiertikul and Dr. Chaiyong Ragkhitwetsagul, the delegations from Software Engineering Research Unit (SERU), Faculty of Information and Communication Technology (ICT), for their first step in establishing research and teaching collaborations for Industry 4.0 between the University of Wollongong (UOW) and Mahidol University by successfully securing the UIC grant lead by the UOW team.
+
 ### 21 Dec 2018
 
 Pacawat recieves 160,000 YEN from Japan Student Services Organization (JASSO) and 25,000 Baht from MU Internship Shcolarship to support his internship at NAIST.
