@@ -40,7 +40,7 @@ title: People
               <img src="img/morakot.png" />
             </div>
             <div class="panel-body">
-              <span class="text-primary"><a href="https://morakotch.wordpress.com">Morakot Choetkiertikul</a></span>
+              <span class="text-primary"><a href="https://morakot-ch.com">Morakot Choetkiertikul</a></span>
             </div>
         </div>
       </div>
