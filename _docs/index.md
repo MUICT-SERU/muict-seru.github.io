@@ -6,6 +6,13 @@ redirect_from: /docs/index.html
 
 ## News (2018)
 
+### 14 Mar 2019
+Dr. Chaiyong Ragkhitwetsagul, Dr. Morakot Choetkiertikul and Asst. Prof. Dr. Thanwadee Sunetnanta have been awarded the [Newton Fund (Industry Academia Partnership Programme - 18/19 from the Royal Academy of Engineering, UK)](http://www.newtonfund.ac.uk) on the project "Automated Software Engineering for Thailand's Software Industry".
+
+The SERU team from Thailand side (Mahidol) will partner with [Dr. Jens Krinke (UCL)](http://www0.cs.ucl.ac.uk/staff/j.krinke/), [Dr. Federica Sarro (UCL)](http://www0.cs.ucl.ac.uk/staff/F.Sarro/), and [Prodo.ai company](https://prodo.ai) from the UK side to transfer the knowledge and expertise in automated software engineering (ASE) from the UK to Thailand.
+
+The research team (SERU + UCL) will work with four rising stars in Thai software companies ([ProGaming](https://www.progaming.co.th), [Zwiz.AI](https://www.zwiz.ai), [Course Square](https://www.coursesquare.co), [Trinity Roots](https://www.trinityroots.co.th)) on identifying the gaps in their software development projects/processes, organising series of workshops and trainings, and observing the improvements after adopting state-of-the-art ASE tools/techniques into their companies. We hope that this 2-year project will enhance the quality of the software and the development process of Thailand's software industry.
+
 ### 9 Feb 2019
 Congratulations to Dr. Morakot Choetkiertikul and Dr. Chaiyong Ragkhitwetsagul, the delegates from Software Engineering Research Unit (SERU), Faculty of Information and Communication Technology (ICT), for their first step in establishing research and teaching collaborations for Industry 4.0 between the [University of Wollongong (UOW)](https://www.uow.edu.au/index.html) and Mahidol University by successfully securing the UIC grant lead by the UOW team.
 
