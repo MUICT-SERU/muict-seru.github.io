@@ -21,7 +21,7 @@ Here are the research projects we are currently working on:
 <tr>
   <td>SiameseX: Code Clone Search as a Service</td>
   <td>Code clones are duplicated pieces of code within software. This project aims to leverage the scalability of Elasticsearch and the flexibility of cloud-based services to scale up our existing code clone search engine, <a href="https://siamesetool.github.io/siamese/">Siamese</a>, to the cloud as a code clone search service, where one can upload a project or give a link to a GitHub project and SiameseX will automatically detect clones in the given project.
-  The SiameseX service will be useful for real-time online code clone detection and can be integrated into many software development tools and processes such as IDE, or code review. I receive $20,000 Amazon AWS credits for this research to there are machines available for you to try it out!</td>
+  The SiameseX service will be useful for real-time online code clone detection and can be integrated into many software development tools and processes such as IDE, or code review. We received $20,000 Amazon AWS credits for this research so there are cloud machines available for you to try it out!</td>
 </tr>
 </table>
 
