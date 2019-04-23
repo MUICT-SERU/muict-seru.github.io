@@ -6,6 +6,11 @@ redirect_from: /docs/index.html
 
 ## News (2018)
 
+### 23 Apr 2019
+Congratulations to our 3 to-be internship students, Thanadon Bunkerd; Noppadol Assavakamhaenghan; and Tattiya Sakulniwat (photos below), who are going to work in the [SE lab at NAIST](http://se-naist.jp). They received the Scholarship for Undergraduate Student Mobility Program from Mahidol University (30,000 THB) to support their stay in Japan this summer.
+
+<img width="500px" src="../../img/news/2019-1.jpeg" alt="" class="img-responsive">
+
 ### 14 Mar 2019
 Dr. Chaiyong Ragkhitwetsagul, Dr. Morakot Choetkiertikul and Asst. Prof. Dr. Thanwadee Sunetnanta have been awarded the [Newton Fund (Industry Academia Partnership Programme - 18/19 from the Royal Academy of Engineering, UK)](http://www.newtonfund.ac.uk) on the project "Automated Software Engineering for Thailand's Software Industry".
 
