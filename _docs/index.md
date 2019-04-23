@@ -9,10 +9,12 @@ redirect_from: /docs/index.html
 ### 23 Apr 2019
 Congratulations to our 3 to-be internship students, Thanadon Bunkerd; Noppadol Assavakamhaenghan; and Tattiya Sakulniwat (photos below), who are going to work in the [SE lab at NAIST](http://se-naist.jp). They received the Scholarship for Undergraduate Student Mobility Program from Mahidol University (30,000 THB) to support their stay in Japan this summer.
 
-<img width="500px" src="../../img/news/2019-1.jpeg" alt="" class="img-responsive">
+<img width="500px" src="../../img/news/2019-2.jpeg" alt="" class="img-responsive">
 
 ### 14 Mar 2019
 Dr. Chaiyong Ragkhitwetsagul, Dr. Morakot Choetkiertikul and Asst. Prof. Dr. Thanwadee Sunetnanta have been awarded the [Newton Fund (Industry Academia Partnership Programme - 18/19 from the Royal Academy of Engineering, UK)](http://www.newtonfund.ac.uk) on the project "Automated Software Engineering for Thailand's Software Industry".
+
+<img width="500px" src="../../img/news/2019-1.jpg" alt="" class="img-responsive">
 
 The SERU team from Thailand side (Mahidol) will partner with [Dr. Jens Krinke (UCL)](http://www0.cs.ucl.ac.uk/staff/j.krinke/), [Dr. Federica Sarro (UCL)](http://www0.cs.ucl.ac.uk/staff/F.Sarro/), and [Prodo.ai company](https://prodo.ai) from the UK side to transfer the knowledge and expertise in automated software engineering (ASE) from the UK to Thailand.
 
