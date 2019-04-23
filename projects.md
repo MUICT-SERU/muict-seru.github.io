@@ -48,7 +48,7 @@ Listed below are the potential research topics we plan to work on. Please feel f
 </tr>
 <tr>
   <td>Automated testing for 3D games</td>
-  <td>Testing framework for games is still underexplored. We aim to facilitate the tedious task of game testing by developing automated testing techniques specifically for 3D games. There is a possibility to adopt search-based testing techniques (e.g., multi-objective genetic algorithm) successfully applied to traditional software on games.</td>
+  <td>Testing framework for games is still under-explored. We aim to facilitate the tedious task of game testing by developing automated testing techniques specifically for 3D games. There is a possibility to adopt search-based testing techniques (e.g., multi-objective genetic algorithm) successfully applied to traditional software on games.</td>
 </tr>
 <tr>
   <td>Automated software license identification using deep learning techniques</td>
@@ -56,7 +56,7 @@ Listed below are the potential research topics we plan to work on. Please feel f
 </tr>
 <tr>
   <td>ISO29110 vs Agile development</td>
-  <td>ISO29110 is a software development process standard for a very small entity (i.e., a small development team). This project aims to explore the relationations between the standard and Agile methodology in order to develop a guidance for Agile teams who want to adopt ISO29110.</td>
+  <td>ISO29110 is a software development process standard for a very small entity (i.e., a small development team). This project aims to explore the relationships between the standard and Agile methodology in order to develop a guidance for Agile teams who want to adopt ISO29110.</td>
 </tr>
 <tr>
   <td>Understanding how Agile teams estimate story points</td>
