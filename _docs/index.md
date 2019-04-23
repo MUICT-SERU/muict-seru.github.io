@@ -4,7 +4,7 @@ permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
 
-## News (2018)
+## News (2019)
 
 ### 23 Apr 2019
 Congratulations to our 3 to-be internship students, Thanadon Bunkerd; Noppadol Assavakamhaenghan; and Tattiya Sakulniwat (photos below), who are going to work in the [SE lab at NAIST](http://se-naist.jp). They received the Scholarship for Undergraduate Student Mobility Program from Mahidol University (30,000 THB) to support their stay in Japan this summer.
@@ -22,6 +22,10 @@ The research team (SERU + UCL) will work with four rising stars in Thai software
 
 ### 9 Feb 2019
 Congratulations to Dr. Morakot Choetkiertikul and Dr. Chaiyong Ragkhitwetsagul, the delegates from Software Engineering Research Unit (SERU), Faculty of Information and Communication Technology (ICT), for their first step in establishing research and teaching collaborations for Industry 4.0 between the [University of Wollongong (UOW)](https://www.uow.edu.au/index.html) and Mahidol University by successfully securing the UIC grant lead by the UOW team.
+
+----
+
+## News (2018)
 
 ### 21 Dec 2018
 
