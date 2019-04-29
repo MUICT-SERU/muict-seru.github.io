@@ -23,6 +23,7 @@ The research team (SERU + UCL) will work with four rising stars in Thai software
 ### 9 Feb 2019
 Congratulations to Dr. Morakot Choetkiertikul and Dr. Chaiyong Ragkhitwetsagul, the delegates from Software Engineering Research Unit (SERU), Faculty of Information and Communication Technology (ICT), for their first step in establishing research and teaching collaborations for Industry 4.0 between the [University of Wollongong (UOW)](https://www.uow.edu.au/index.html) and Mahidol University by successfully securing the UIC grant lead by the UOW team.
 
+<img width="300px" src="../../img/news/2019-1-2.jpg" alt="" class="img-responsive">
 <img width="500px" src="../../img/news/2019-1.jpg" alt="" class="img-responsive">
 
 ----

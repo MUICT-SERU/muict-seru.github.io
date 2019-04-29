@@ -99,7 +99,63 @@ title: People
     <div class="col-md-12">
       <p>
       <b>Advisor:</b> Dr. Morakot Choetkiertikul<br />
-      <b>Project:</b> developing a smart JIRA plugin that can give a recommendation for component assignment at issue creation time.
+      <b>Project:</b> Software Component Recommendation System
+      </p>
+    </div>
+</div>
+
+---
+
+### Prospective Students
+#### 2019
+<div class="row">
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+          <div class="author_pic author">
+            <img src="img/vara.jpg" />
+          </div>
+          <div class="panel-body">
+              <span class="text-primary">Vara Arammongkolvichai</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <!-- <div class="panel-heading">Panel heading</div> -->
+            <div class="author_pic author">
+              <img src="img/weekit.png" />
+            </div>
+            <div class="panel-body">
+                <span class="text-primary">Weekit Ausavaserenont</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <div class="author_pic author">
+              <img src="img/wannaporn.jpg" />
+            </div>
+            <div class="panel-body">
+              <span class="text-primary">Wannaporn Vichaisri</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <p>
+      <b>Advisor:</b> Dr. Chaiyong Ragkhitwetsagul<br />
+      <b>Project:</b> [Tentative] Machine Learning for Improving Code Clone Detection Accuracy
       </p>
     </div>
 </div>
