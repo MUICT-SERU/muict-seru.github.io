@@ -55,6 +55,54 @@ title: People
 <div class="row">
     <div class="col-md-12">
       <p>
+      <b>Advisor:</b> Asst. Prof. Dr. Thanwadee Sunetnanta (co-advised by Dr. Morakot Choetkiertikul)<br />
+      <b>Project:</b> Requirement and Design Self Admitted Technical Debt Detection
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+          <div class="author_pic author">
+            <img src="img/sahawat.jpg" />
+          </div>
+          <div class="panel-body">
+              <span class="text-primary">Sahawat Sintoplertchaikul</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <!-- <div class="panel-heading">Panel heading</div> -->
+            <div class="author_pic author">
+              <img src="img/napat.jpg" />
+            </div>
+            <div class="panel-body">
+                <span class="text-primary">Napat Srisermphoak</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <div class="author_pic author">
+              <img src="img/supatsara.jpg" />
+            </div>
+            <div class="panel-body">
+              <span class="text-primary">Supatsara Wattanakriengkrai</span>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <p>
       <b>Advisor:</b> Dr. Morakot Choetkiertikul<br />
       <b>Project:</b> Software Component Recommendation System
       </p>
