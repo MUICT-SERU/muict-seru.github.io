@@ -166,7 +166,7 @@ title: People
             <img src="img/vara.jpg" />
           </div>
           <div class="panel-body">
-              <span class="text-primary">Vara Arammongkolvichai</span>
+              <span class="text-primary"><a href="https://www.linkedin.com/in/vara-arammongkolvichai-046234176/">Vara Arammongkolvichai</a></span>
           </div>
         </div>
       </div>
@@ -180,7 +180,7 @@ title: People
               <img src="img/weekit.png" />
             </div>
             <div class="panel-body">
-                <span class="text-primary">Weekit Ausavaserenont</span>
+                <span class="text-primary"><a href="https://www.linkedin.com/in/weekit-ausavasereenont-8b4903176">Weekit Ausavaserenont</a></span>
             </div>
         </div>
       </div>
@@ -242,6 +242,54 @@ title: People
             </div>
             <div class="panel-body">
               <span class="text-primary">Tattiya Sakulniwat</span>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <p>
+      <b>Advisor:</b> Dr. Morakot Choetkiertikul<br />
+      <b>Project:</b> Explainable AI in effort estimation for software development
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+          <div class="author_pic author">
+            <img src="img/thanachanok.jpg" />
+          </div>
+          <div class="panel-body">
+              <span class="text-primary"><a href="http://linkedin.com/in/thanachanok-siripitakul-01651a186">Thanachanok Siripittakul</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <!-- <div class="panel-heading">Panel heading</div> -->
+            <div class="author_pic author">
+              <img src="img/peerachai.jpg" />
+            </div>
+            <div class="panel-body">
+                <span class="text-primary"><a href="https://www.linkedin.com/in/peerachai-banyongrakkul-9a1253176">Peerachai Banyongrakkul</a></span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <div class="author_pic author">
+              <img src="img/thayut.jpg" />
+            </div>
+            <div class="panel-body">
+              <span class="text-primary"><a href="https://www.linkedin.com/in/thayut-indramaha-107480176">Thayut Indramaha</a></span>
             </div>
         </div>
       </div>
