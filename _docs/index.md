@@ -6,6 +6,11 @@ redirect_from: /docs/index.html
 
 ## News (2019)
 
+### 11 May 2019
+The SERU team has completed the "[ISO/IEC 29110](https://en.wikipedia.org/wiki/ISO_29110) and [ISO/IEC 15504 (33000)](https://en.wikipedia.org/wiki/ISO/IEC_15504) Expert for Consult, Auditor and Lecture Training Course (2018)", passed the qualifying exam, and received the certificate. We are now eligible for being a consultant of the ISO 29110 certification!
+
+<img width="1000px" src="../../img/news/2019-4.jpg" alt="" class="img-responsive">
+
 ### 23 Apr 2019
 Congratulations to our 3 to-be internship students, Thanadon Bunkerd; Noppadol Assavakamhaenghan; and Tattiya Sakulniwat (photos below), who are going to work in the [SE lab at NAIST](http://se-naist.jp). They received the Scholarship for Undergraduate Student Mobility Program from Mahidol University (30,000 THB) to support their stay in Japan this summer.
 
