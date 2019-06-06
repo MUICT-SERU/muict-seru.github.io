@@ -14,6 +14,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li {% if page.url == "/docs/home/" %} class="active" {% endif %}><a href="{{ "/docs/home/" | prepend: site.baseurl }}">News</a></li>
+                <li {% if page.url == "/seminars.html" %} class="active" {% endif %}><a href="{{ "/seminars.html" | prepend: site.baseurl }}">Seminars</a></li>
                 <li {% if page.url == "/projects.html" %} class="active" {% endif %}><a href="{{ "/projects.html" | prepend: site.baseurl }}">Projects</a></li>
                 <li {% if page.url == "/publications.html" %} class="active" {% endif %}><a href="{{ "/publications.html" | prepend: site.baseurl }}">Publications</a></li>
                 <li {% if page.url == "/people.html" %} class="active" {% endif %}><a href="{{ "/people.html" | prepend: site.baseurl }}">People</a></li>
