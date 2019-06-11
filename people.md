@@ -10,7 +10,7 @@ title: People
       <div class="bs-component">
         <div class="panel panel-default author">
           <div class="author_pic author">
-            <img src="img/thanwadee.png" />
+            <img src="img/thanwadee.JPG" style="border-radius: 50%;" />
           </div>
           <div class="panel-body">
               <span class="text-primary"><a href="http://mucc.mahidol.ac.th/~ittth/">Thanwadee Sunetnanta</a></span>
@@ -24,7 +24,7 @@ title: People
         <div class="panel panel-default author">
             <!-- <div class="panel-heading">Panel heading</div> -->
             <div class="author_pic author">
-              <img src="img/chaiyong2.png" />
+              <img src="img/chaiyong.JPG" style="border-radius: 50%;" />
             </div>
             <div class="panel-body">
                 <span class="text-primary"><a href="http://cragkhit.github.io">Chaiyong Ragkhitwetsagul</a></span>
@@ -37,7 +37,7 @@ title: People
       <div class="bs-component">
         <div class="panel panel-default author">
             <div class="author_pic author">
-              <img src="img/morakot.png" />
+              <img src="img/morakot.JPG" style="border-radius: 50%;" />
             </div>
             <div class="panel-body">
               <span class="text-primary"><a href="https://morakot-ch.com">Morakot Choetkiertikul</a></span>
