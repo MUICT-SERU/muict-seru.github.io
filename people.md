@@ -37,7 +37,7 @@ title: People
       <div class="bs-component">
         <div class="panel panel-default author">
             <div class="author_pic author">
-              <img src="img/morakot.JPG" style="border-radius: 50%;" />
+              <img src="img/morakot.jpg" style="border-radius: 50%;" />
             </div>
             <div class="panel-body">
               <span class="text-primary"><a href="https://morakot-ch.com">Morakot Choetkiertikul</a></span>
