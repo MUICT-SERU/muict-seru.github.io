@@ -9,6 +9,24 @@ title: Seminars
 
 # June 2019
 
+### No. 2 - Intepretable Artificial Intelligence
+#### 17 June 2019 14:00 - 15:00, Room IT 405, ICT Building, Mahidol University (Salaya)
+
+<img width="150px" src="../../img/seminars/teeradaj.png" alt="" class="img-responsive" style="float: left; border-radius: 50%; margin: 20px;">
+
+#### [Dr. Teeradaj Racharak](https://sites.google.com/view/teeradaj)
+**Title: Interpretable Artificial Intelligence**
+
+**Abstract:**
+Interpretable artificial intelligence (IAI) refers to techniques which can be trusted and easily understood by humans. Unlike the concept of ‘black box’, IAI can be used to implement a social right to explanation i.e. to explain why an AI arrives to a specific decision. A technical challenge of explaining AI decisions is known as the interpretability problem. One possible approach for handling it is to carefully design and develop AI w.r.t. formal syntax and semantics. In this talk, we will introduce the basics of computational logic (the notions of syntax, semantics, and proof theory) and its relationship to knowledge representation formalisms. We will also investigate the standard inferences and relate their computations to the transparency of AI decisions.
+
+**Bio:**
+[Teeradaj Racharak](https://sites.google.com/view/teeradaj) is an assistant professor in the field of artificial intelligence at [Japan Advanced Institute of Science and Technology (JAIST)](https://www.jaist.ac.jp/english/). Prior to that, he did his Ph.D. in description logic under the supervision of professor [Satoshi Tojo](http://www.jaist.ac.jp/~tojo/) and his master in logic programming under the supervision of professor [Phan Minh Dung](http://cs.ait.ac.th/~dung/Site/Home.html). Apart from his studies in computational logic, he is an open-minded software engineer and interested in many things related to artificial
+intelligence and software development methodologies. His research interest is centered on formal development toward human intelligence i.e. how a machine can ‘learn’ and ‘reason’ like a human? In particular, he has been studying to address the following research areas: (1) machine learning, (2)
+computational logic, and (3) their applications to natural language understanding.
+
+---
+
 ### No. 1 - The future of software defect prediction and software quality
 #### 11 June 2019 13:30 - 14:30, Room IT 405, ICT Building, Mahidol University (Salaya)
 
