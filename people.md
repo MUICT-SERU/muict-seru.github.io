@@ -46,6 +46,19 @@ title: People
       </div>
     </div>
 
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <div class="author_pic author">
+              <img src="img/apirak.jpg" style="border-radius: 50%;" />
+            </div>
+            <div class="panel-body">
+              <span class="text-primary"><a href="http://mucc.mahidol.ac.th/~itapirak/">Apirak Hoonlor</a></span>
+            </div>
+        </div>
+      </div>
+    </div>
+
 </div>
 
 ---
