@@ -6,6 +6,21 @@ redirect_from: /docs/index.html
 
 ## News (2019)
 
+### 29 August 2019
+Dr. Chaiyong presented his work “Toxic code snippets on Stack Overflow”, which is a joint work with Dr. Jens Krinke from UCL (UK), Dr. Matheus Paixão from Ceará State University (Brazil), Guiseppe Bianco and Dr. Rocco Oliveto University of Molise (Italy), at [The 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2019](https://esec-fse19.ut.ee) in Tallinn, Estonia. The work has been published in Transactions on Software Engineering (TSE) and accepted at the conference for a journal-first presentation. The preprint of the paper can be found [here](https://cragkhit.github.io/publications/chaiyong_toxic_code_tse_2019.pdf).
+
+<img width="1000px" src="../../img/news/2019-7.jpg" alt="" class="img-responsive">
+
+### 21-22 August 2019
+Dr. Chaiyong and Dr. Morakot visited NAIST to be external examiners for two SE master’s students. They also discussed further collaborations on both the internship and future research collaborations with the NAIST team.
+
+<img width="960px" src="../../img/news/2019-6.png" alt="" class="img-responsive">
+
+### July-August 2019
+Dr. Morakot Choetkiertikul was on a research visit at University of Wollongong (UoW), specifically at the DSL Decision Systems Lab / Center for Software - Engineering where he graduated (with the best thesis award!), working on his latest research project idea. He also paid a visit at Google Australia with a possibility for further collaborations.
+
+<img width="960px" src="../../img/news/2019-5.jpg" alt="" class="img-responsive">
+
 ### 11 May 2019
 The SERU team has completed the "[ISO/IEC 29110](https://en.wikipedia.org/wiki/ISO_29110) and [ISO/IEC 15504 (33000)](https://en.wikipedia.org/wiki/ISO/IEC_15504) Expert for Consult, Auditor and Lecture Training Course (2018)", passed the qualifying exam, and received the certificate. We are now eligible for being a consultant of the ISO 29110 certification!
 
