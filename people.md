@@ -91,7 +91,7 @@ title: People
         <div class="panel panel-default author">
             <!-- <div class="panel-heading">Panel heading</div> -->
             <div class="author_pic author">
-              <img src="img/unknown.jpg" />
+              <img src="img/benjaporn.jpg" style="border-radius: 50%;" />
             </div>
             <div class="panel-body">
                 <span class="text-primary">Benjaporn Inmoonnoy</span>
@@ -104,7 +104,7 @@ title: People
       <div class="bs-component">
         <div class="panel panel-default author">
             <div class="author_pic author">
-              <img src="img/unknown.jpg" />
+              <img src="img/niramol.jpg" style="border-radius: 50%;" />
             </div>
             <div class="panel-body">
               <span class="text-primary">Niramol Mongkonlikitkajohn</span>
