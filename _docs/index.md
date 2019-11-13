@@ -5,6 +5,13 @@ redirect_from: /docs/index.html
 ---
 
 ## News (2019)
+### 1 November 2019
+The work from 4 student interns (Noppadol, Tattiya, and Thanadon at NAIST, and Vara at University of Bremen) are accepted for publication at the 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019)! The topics include
+
+* Software Team Member Configurations:A Study of Team Effectiveness in Moodle
+* Visualizing the Usage of Pythonic Idioms Over Time: A Case Study of the with open Idiom
+* Improving Clone Detection Precision using Machine Learning Techniques
+* How Do Contributors Impact Code Naturalness? An Exploratory Study of 50 Python Projects.
 
 ### 29 August 2019
 Dr. Chaiyong presented his work “Toxic code snippets on Stack Overflow”, which is a joint work with Dr. Jens Krinke from UCL (UK), Dr. Matheus Paixão from Ceará State University (Brazil), Guiseppe Bianco and Dr. Rocco Oliveto University of Molise (Italy), at [The 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2019](https://esec-fse19.ut.ee) in Tallinn, Estonia. The work has been published in Transactions on Software Engineering (TSE) and accepted at the conference for a journal-first presentation. The preprint of the paper can be found [here](https://cragkhit.github.io/publications/chaiyong_toxic_code_tse_2019.pdf).
