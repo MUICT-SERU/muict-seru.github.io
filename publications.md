@@ -6,11 +6,11 @@ title: Publications
 ### Journal publications
 
 ### Conference publications
-Noppadol Assavamkamhaenghan, Morakot Choetkiertikul, Suppawong Tuarob, Raula Gaikovina Kula,Hideaki Hata, Chaiyong Ragkhitwetsagul, Thanwadee Sunetnanta, and Kenichi Matsumoto. *Software Team Member Configurations:A Study of Team Effectiveness in Moodle*, in [the 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019), Tokyo, Japan](https://iwesep2019.github.io)).
+Noppadol Assavamkamhaenghan, Morakot Choetkiertikul, Suppawong Tuarob, Raula Gaikovina Kula,Hideaki Hata, Chaiyong Ragkhitwetsagul, Thanwadee Sunetnanta, and Kenichi Matsumoto. *Software Team Member Configurations: A Study of Team Effectiveness in Moodle*, in [the 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019), Tokyo, Japan](https://iwesep2019.github.io)).
 
 [Preprint](#)
 
-Tattiya Sakulniwat, Raula Gaikovina Kula, Chaiyong Ragkhitwetsagul, Morakot Choetkiertikul, Thanwadee Sunetnanta, Dong Wang, Takashi Ishio and Kenichi Matsumoto. *Visualizing the Usage of Pythonic Idioms OverTime: A Case Study of the with open Idiom*, in the 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019), Tokyo, Japan).
+Tattiya Sakulniwat, Raula Gaikovina Kula, Chaiyong Ragkhitwetsagul, Morakot Choetkiertikul, Thanwadee Sunetnanta, Dong Wang, Takashi Ishio and Kenichi Matsumoto. *Visualizing the Usage of Pythonic Idioms Over Time: A Case Study of the with open Idiom*, in the 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019), Tokyo, Japan).
 
 [Preprint](#)
 
