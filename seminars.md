@@ -7,6 +7,53 @@ title: Seminars
 
 ---
 
+# January 2020
+
+### No. 4 - Artificial Intelligence and Software Engineering (AI4SE and SE4AI)
+#### 3 January 2020 10:00 - 11:30, Room IT 405, ICT Building, Mahidol University (Salaya)
+
+<img width="150px" src="../../img/seminars/hoa.png" alt="" class="img-responsive" style="float: left; border-radius: 50%; margin: 20px;">
+
+#### [Asst. Prof. Dr. Hoa Khanh Dam ](https://documents.uow.edu.au/~hoa/)
+**Title: Artificial Intelligence and Software Engineering (AI4SE and SE4AI)**
+
+**Abstract:**
+As software products become pervasive in all areas of our society, building high-quality software in a productive manner becomes crucial to the software industry. The rise of Artificial Intelligence (AI) is potentially a game changer in improving software quality, accelerating productivity and increasing project success rates. This talk will discuss how AI can provide the capabilities to assist software engineering teams in many aspects, from automating routine tasks to providing project analytics and actionable recommendations, and even making decisions (AI for Software Engineering). This talk will also explore some of the new challenges for software engineering in developing large scale AI-based systems (Software Engineering for AI).
+
+**Bio:**
+[Hoa Khanh Dam](https://www.uow.edu.au/~hoa/) is Associate Professor in the [School of Computing and Information Technology, University of Wollongong (UOW)](https://www.uow.edu.au/engineering-information-sciences/schools-entities/scit/) in Australia.  He is Associate Director for the Decision System Lab at UOW, heading its Software Analytics research program. His research interests lie primarily in the intersection of Software Engineering and Artificial Intelligence (AI). He develops AI solutions for project managers, software engineers, QA and security teams to improve software quality/cybersecurity and accelerate productivity. His research also focuses on methodologies and techniques for engineering autonomous AI multi-agent systems. More details of his work can be found at [https://www.uow.edu.au/~hoa/](https://www.uow.edu.au/~hoa/).
+
+---
+
+# December 2019
+### No. 3 - New Trends in Software Engineering
+#### 6 December 2019 15:00 - 16:30, Room IT 405, ICT Building, Mahidol University (Salaya)
+<img width="120px" src="../../img/seminars/noppadol.png" alt="" class="img-responsive" style="float: left; margin: 20px;">
+
+<img width="120px" src="../../img/seminars/tattiya.png" alt="" class="img-responsive" style="float: left; margin: 20px;">
+
+<img width="120px" src="../../img/seminars/vara.png" alt="" class="img-responsive" style="float: left; margin: 20px;">
+
+<img width="120px" src="../../img/seminars/thanadon.png" alt="" class="img-responsive" style="float: left; margin: 20px;">
+
+This is a special seminar for our 4th year students who are going to present their work at the 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019). <br />
+
+Their work are the results from their summer internship at the SE lab at Nara Institute of Science and Technology (NAIST) and University of Bremen that tackle important and emerging trends in software engineering.
+
+#### Noppadol Assavakamhaenghan
+Software Team Member Configurations: A Study of Team Effectiveness in Moodle
+
+#### Tattiya Sakulniwat
+Visualizing the Usage of Pythonic Idioms Over Time: A Case Study of the with open Idiom
+
+#### Vara Arammongkolvichai
+Improving Clone Detection Precision using Machine Learning Techniques
+
+#### Thanadon Bunkerd
+How Do Contributors Impact Code Naturalness? An Exploratory Study of 50 Python Projects
+
+---
+
 # June 2019
 
 ### No. 2 - Intepretable Artificial Intelligence
