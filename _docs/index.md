@@ -4,6 +4,12 @@ permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
 
+## News (2020)
+### 3 January 2020
+We are happy to welcome [Assoc. Prof. Hoa Khanh Dam](https://documents.uow.edu.au/~hoa/) from the Decision System Lab at UOW, Australia, to our Faculty of ICT to discuss research work and future education and research collaborations with SERU. He was also our first guest in 2020 for the Café SERU#4. He gave a talk on the topic of "AI4SE (Artificial Intelligence for Software Engineering)."
+
+<img width="1000px" src="../../img/news/2020-1.jpg" alt="" class="img-responsive">
+
 ## News (2019)
 ### 1 November 2019
 The work from 4 student interns (Noppadol, Tattiya, and Thanadon at NAIST, and Vara at University of Bremen) are accepted for publication at the 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019)! The topics include
