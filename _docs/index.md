@@ -5,6 +5,11 @@ redirect_from: /docs/index.html
 ---
 
 ## News (2020)
+### 4 July 2020
+We’re super glad to announce that our student internship work “JITBot: An Explainable Just-In-Time Defect Prediction Bot“ with [Dr. Chakkrit Tantithamthavorn](http://chakkrit.com/) and Jirayus Jiarpakdee at Monash University is accepted at the tool demo track of Automated Software Engineering (ASE) 2020 conference! The work presents a just-in-time (JIT) GitHub bot that analyzes commits in a pull request and give a defect prediction with explanations 😎
+
+Congratulations to Chaiyakarn Khanan, Worawit Luewichana, Krissakorn Pruktharathikoon! Preprint to be available soon.
+
 ### 3 January 2020
 We are happy to welcome [Assoc. Prof. Hoa Khanh Dam](https://documents.uow.edu.au/~hoa/) from the Decision System Lab at UOW, Australia, to our Faculty of ICT to discuss research work and future education and research collaborations with SERU. He was also our first guest in 2020 for the Café SERU#4. He gave a talk on the topic of "AI4SE (Artificial Intelligence for Software Engineering)."
 
