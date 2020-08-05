@@ -7,6 +7,40 @@ title: Seminars
 
 ---
 
+# August 2020
+
+### No. 5 - Software Documentation and Software Economics for Knowledge Sharing
+#### 19 August 2020 13:00 - 14:00, Online via Zoom (meeing ID will be announced soon) and Facebook Live (SERU page)
+
+<img width="150px" src="../../img/seminars/hideaki.jpg" alt="" class="img-responsive" style="float: left; border-radius: 50%; margin: 20px;">
+
+#### [Asst. Prof. Dr. Hideaki Hata](https://hideakihata.github.io/)
+**Title: Artificial Intelligence and Software Engineering (AI4SE and SE4AI)**
+
+**Abstract:**
+Traceability between knowledge/information and its implementation is
+essential in software maintenance. Pieces of source code are connected
+with external resources, such as Stack Overflow threads, discussions
+of issues, academic papers for algorithms. These external resources
+are sometimes mentioned in source code comments. From our empirical
+studies on software documentation, we have observed some issues
+including link decay, obsolete knowledge, etc. Since knowledge and
+information is not limited to single software development projects,
+these issues are spreading over software ecosystems. To address these
+challenges, we are considering economic mechanisms, similar to bug
+bounty programs. This talk will explore our previous findings and our
+current and future challenges.
+
+**Bio:**
+Hideaki Hata is an assistant professor at the [Nara Institute of
+Science and Technology](https://naist-se.github.io/). His research interests include software
+ecosystems, human capital in software engineering, and software
+economics. He received a Ph.D. in information science from Osaka
+University. More details of his work can be found at
+[https://hideakihata.github.io/](https://hideakihata.github.io/).
+
+---
+
 # January 2020
 
 ### No. 4 - Artificial Intelligence and Software Engineering (AI4SE and SE4AI)
