@@ -15,7 +15,7 @@ title: Seminars
 <img width="150px" src="../../img/seminars/hideaki.jpg" alt="" class="img-responsive" style="float: left; border-radius: 50%; margin: 20px;">
 
 #### [Asst. Prof. Dr. Hideaki Hata](https://hideakihata.github.io/)
-**Title: Artificial Intelligence and Software Engineering (AI4SE and SE4AI)**
+**Title: Software Documentation and Software Economics for Knowledge Sharing**
 
 **Abstract:**
 Traceability between knowledge/information and its implementation is
