@@ -5,10 +5,20 @@ redirect_from: /docs/index.html
 ---
 
 ## News (2020)
+
+### 11 July 2020
+Two in a roll! Congratulations to Purit Phan-udom, Naruedon Wattanakul, Tattiya Sakulniwat for getting their senior project work titled “Teddy: Automatic Recommendation of Pythonic Idiom Usage for Pull-Based Software Projects” published as a tool demonstration paper at the 36th International Conference on Software Maintenance and Evolution (ICSME). 
+
+The work published is an automated tool, called Teddy, that promotes the usage of Pythonic idioms. The tool offers a prevention mode with Just-In-Time analysis to recommend the use of Pythonic idiom during code review and a detection mode with historical analysis to run a thorough scan of idiomatic and non-idiomatic code. More info can be found at the study website [https://muict-seru.github.io/icsme20-teddy-tooldemo/](https://muict-seru.github.io/icsme20-teddy-tooldemo/).
+
+<img width="1000px" src="../../img/news/2020-4.png" alt="" class="img-responsive">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vOCQReSvBxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### 4 July 2020
 We’re super glad to announce that our student internship work “JITBot: An Explainable Just-In-Time Defect Prediction Bot“ with [Dr. Chakkrit Tantithamthavorn](http://chakkrit.com/) and Jirayus Jiarpakdee at Monash University is accepted at the tool demo track of Automated Software Engineering (ASE) 2020 conference! The work presents a just-in-time (JIT) GitHub bot that analyzes commits in a pull request and give a defect prediction with explanations 😎. 
 
-Congratulations to Chaiyakarn Khanan, Worawit Luewichana, Krissakorn Pruktharathikoon! The video demo is shown below. Preprint to be available soon.
+Congratulations to Chaiyakarn Khanan, Worawit Luewichana, Krissakorn Pruktharathikoon! The video demo is shown below. Preprint to be available soon. More info can be found at the study website: [https://jitbot-tool.github.io/](https://jitbot-tool.github.io/).
 
 <!--img width="1000px" src="../../img/news/2020-2.jpg" alt="" class="img-responsive"-->
 <img width="1000px" src="../../img/news/2020-3.png" alt="" class="img-responsive">
