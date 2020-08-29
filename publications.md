@@ -4,7 +4,13 @@ title: Publications
 ---
 
 ### Conference/workshop publications
-\[[Preprint](files/iwesep19_Noppadol.pdf)\]&nbsp;N. Assavakamhaenghan, M. Choetkiertikul, S. Tuarob, R. G. Kula, H. Hata, C. Ragkhitwetsagul, T. Sunetnanta, and K. Matsumoto. *Software Team Member Configurations: A Study of Team Effectiveness in Moodle*, in [The 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019), Tokyo, Japan](https://iwesep2019.github.io).
+
+C. Khanan, W. Luewichana, K. Pruktharathikoon, J. Jiarpakdee, C. Tantithamthavorn, M. Choetkiertikul, C. Ragkhitwetsagul, T. Sunetnanta. JITBot: An Explainable Just-In-Time Defect Prediction Bot, in [the 35th IEEE/ACM International Conference on Automated Software Engineering (ASE ’20) - Tool Demo Track](https://conf.researchr.org/home/ase-2020), September 21–25, 2020, Virtual Event, Australia, Website: [https://jitbot-tool.github.io](https://jitbot-tool.github.io)
+
+\[[Preprint](files/icsme2020_teddy.pdf)\]&nbsp;P. Phan-udom, N. Wattanakul, T. Sakulniwat, C. Ragkhitwetsagul, T. Sunetnanta, M. Choetkiertikul, R.G. Kula Teddy: Automatic Recommendation of PythonicIdiom Usage For Pull-Based Software Project, in [The 36th IEEE International Conference on Software Maintenance and Evolution (ICSME 2020) - Tool Demo Track](https://icsme2020.github.io/), September 21 - October 3, 2020, Adelaide, Australia.
+
+\[[Preprint](files/iwesep19_Noppadol.pdf)\]&nbsp;N. A
+ssavakamhaenghan, M. Choetkiertikul, S. Tuarob, R. G. Kula, H. Hata, C. Ragkhitwetsagul, T. Sunetnanta, and K. Matsumoto. *Software Team Member Configurations: A Study of Team Effectiveness in Moodle*, in [The 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019), Tokyo, Japan](https://iwesep2019.github.io).
 
 \[[Preprint](files/iwesep19_Tattiya.pdf)\]&nbsp;T. Sakulniwat, R. G. Kula, C. Ragkhitwetsagul, M. Choetkiertikul, T. Sunetnanta, D. Wang, T. Ishio and K. Matsumoto. *Visualizing the Usage of Pythonic Idioms Over Time: A Case Study of the with open Idiom*, in [The 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019), Tokyo, Japan](https://iwesep2019.github.io).
 
