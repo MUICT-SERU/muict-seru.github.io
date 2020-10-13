@@ -64,6 +64,8 @@ title: People
 ---
 
 ### Current Students
+#### 2020 - Coming soon! 
+
 #### 2019
 
 <div class="row">
