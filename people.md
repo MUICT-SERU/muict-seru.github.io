@@ -63,9 +63,215 @@ title: People
 
 ---
 
-### Current Students
-#### 2020 - Coming soon! 
+### Current Students (2020)
+#### PhD
+<div class="row">
+    <div class="col-md-12">
+      <p>
+      <b>Advisor:</b> Asst. Prof. Dr. Thanwadee Sunetnanta and Dr. Morakot Choetkiertikul<br />
+      <b>Project:</b> Technical debt in testing
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+          <div class="author_pic author">
+            <img src="img/gonatee.png" style="border-radius: 50%;" />
+          </div>
+          <div class="panel-body">
+              <span class="text-primary"><a href="https://www.linkedin.com/in/gonatee-klanktong-2a225756/">Gonatee Klanktong</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 
+#### Undergrad
+<div class="row">
+    <div class="col-md-12">
+      <p>
+      <b>Advisor:</b> Asst. Prof. Dr. Thanwadee Sunetnanta and Dr. Morakot Choetkiertikul<br />
+      <b>Project:</b> Empirical study of GitCoin bug bounty
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+          <div class="author_pic author">
+            <img src="img/arada.jpg" style="border-radius: 50%;" />
+          </div>
+          <div class="panel-body">
+              <span class="text-primary"><a href="https://www.linkedin.com/in/arada-puengmongkolchaikit/">Arada Puengmongkolchaikit</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <!-- <div class="panel-heading">Panel heading</div> -->
+            <div class="author_pic author">
+              <img src="img/pundaree.jpg" style="border-radius: 50%;" />
+            </div>
+            <div class="panel-body">
+                <span class="text-primary"><a href="https://www.linkedin.com/in/pandaree-chandra-69b7491a0/">Pundaree Chandra</a></span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <div class="author_pic author">
+              <img src="img/varuit.jpg" style="border-radius: 50%;" />
+            </div>
+            <div class="panel-body">
+              <span class="text-primary">Varuit Wuttisathit</span>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+      <p>
+      <b>Advisor:</b> Dr. Morakot Choetkiertikul<br />
+      <b>Project:</b> Identifying technical debt in open source projects
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+          <div class="author_pic author">
+            <img src="img/saranpon.jpg" style="border-radius: 50%;" />
+          </div>
+          <div class="panel-body">
+              <span class="text-primary"><a href="https://www.linkedin.com/in/saranphon">Saranpon Phaithoon</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <!-- <div class="panel-heading">Panel heading</div> -->
+            <div class="author_pic author">
+              <img src="img/patiphol.jpg" style="border-radius: 50%;" />
+            </div>
+            <div class="panel-body">
+                <span class="text-primary"><a href="https://www.linkedin.com/in/patipholpus/">Patiphol Pussawong</a></span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <div class="author_pic author">
+              <img src="img/supakarn.jpg" style="border-radius: 50%;" />
+            </div>
+            <div class="panel-body">
+              <span class="text-primary"><a href="https://www.linkedin.com/in/aomwongnil/">Supakarn Wongnil</a></span>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+      <p>
+      <b>Advisor:</b> Dr. Chaiyong Ragkhitwetsagul<br />
+      <b>Project:</b> Automatic checker for outdated StackOverflow answers in software projects
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+          <div class="author_pic author">
+            <img src="img/phattharapong.jpg" style="border-radius: 50%;" />
+          </div>
+          <div class="panel-body">
+              <span class="text-primary"><a href="https://www.linkedin.com/in/phattharapongpoolthong/">Phattharapong Poolthong</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <!-- <div class="panel-heading">Panel heading</div> -->
+            <div class="author_pic author">
+              <img src="img/panaya.jpg" style="border-radius: 50%;" />
+            </div>
+            <div class="panel-body">
+                <span class="text-primary"><a href="http://linkedin.com/in/panaya-sirilertworakul">Panaya Sirilertworakul</a></span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <div class="author_pic author">
+              <img src="img/kanika.jpg" style="border-radius: 50%;" />
+            </div>
+            <div class="panel-body">
+              <span class="text-primary"><a href="https://www.linkedin.com/in/kanika-wonwien/">Kanika Wonwien</a></span>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+      <p>
+      <b>Advisor:</b> Dr. Chaiyong Ragkhitwetsagul<br />
+      <b>Project:</b> Analysis of effects from software dependency vulnerabilities
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+          <div class="author_pic author">
+            <img src="img/vipawan.jpg" style="border-radius: 50%;" />
+          </div>
+          <div class="panel-body">
+              <span class="text-primary"><a href="https://www.linkedin.com/in/vipawan-jarukitpipat/">Vipawan Jarukitpipat</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <!-- <div class="panel-heading">Panel heading</div> -->
+            <div class="author_pic author">
+              <img src="img/wachirayana.jpg" style="border-radius: 50%;" />
+            </div>
+            <div class="panel-body">
+                <span class="text-primary"><a href="https://www.linkedin.com/in/wachirayana-w/">Wachirayana Wanprasert</a></span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <!-- <div class="panel-heading">Panel heading</div> -->
+            <div class="author_pic author">
+              <img src="img/klinton.jpg" style="border-radius: 50%;" />
+            </div>
+            <div class="panel-body">
+                <span class="text-primary"><a href="https://www.linkedin.com/in/klinton-c/">Klinton Chhun</a></span>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+---
+
+### Graduated Students
 #### 2019
 
 <div class="row">
@@ -120,7 +326,7 @@ title: People
     <div class="col-md-12">
       <p>
       <b>Advisor:</b> Dr. Chaiyong Ragkhitwetsagul<br />
-      <b>Project:</b> Code Clone Detection as a Service (CCDaaS)
+      <b>Project:</b> Merry: Web-based Code Clone Detection System using Machine Learning
       </p>
     </div>
     <div class="col-lg-4">
@@ -168,7 +374,8 @@ title: People
     <div class="col-md-12">
       <p>
       <b>Advisor:</b> Dr. Chaiyong Ragkhitwetsagul<br />
-      <b>Project:</b> TEDDY: Automated tool to search and visualize coding idioms in software repositories
+      <b>Project:</b> TEDDY: Automated tool for detection and suggestion of Pythonic idiom usage<br/> 
+      Best tool demo award at ICSME'20! See <a href="https://muict-seru.github.io/icsme20-teddy-tooldemo/">here</a> for more info.
       </p>
     </div>
     <div class="col-lg-4">
@@ -308,7 +515,6 @@ title: People
     </div>
 </div>
 
-### Previous Students
 #### 2018
 <div class="row">
     <div class="col-md-12">
