@@ -246,7 +246,7 @@ title: People
         <div class="panel panel-default author">
             <!-- <div class="panel-heading">Panel heading</div> -->
             <div class="author_pic author">
-              <img src="img/wachirayana.jpg" style="border-radius: 50%;" />
+              <img src="img/wachirayana.JPG" style="border-radius: 50%;" />
             </div>
             <div class="panel-body">
                 <span class="text-primary"><a href="https://www.linkedin.com/in/wachirayana-w/">Wachirayana Wanprasert</a></span>
