@@ -3,7 +3,7 @@ layout: plain
 title: People
 ---
 
-### Staff
+### Academic Staff
 <div class="row">
 
     <div class="col-lg-4">
