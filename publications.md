@@ -3,11 +3,17 @@ layout: plain
 title: Publications
 ---
 
+### Journal publications
+
+M. Choetkiertikul, H. K. Dam, T. Tran, T. Pham, C. Ragkhitwetsagul, A. Ghose.
+*Automatically recommending components for issue reports using deep learning*. 
+Empirical Software Engineering (EMSE), 2021 &lt;to appear&gt;
+
 ### Conference/workshop publications
 
-C. Khanan, W. Luewichana, K. Pruktharathikoon, J. Jiarpakdee, C. Tantithamthavorn, M. Choetkiertikul, C. Ragkhitwetsagul, T. Sunetnanta. JITBot: An Explainable Just-In-Time Defect Prediction Bot, in [the 35th IEEE/ACM International Conference on Automated Software Engineering (ASE ’20) - Tool Demo Track](https://conf.researchr.org/home/ase-2020), September 21–25, 2020, Virtual Event, Australia, Website: [https://jitbot-tool.github.io](https://jitbot-tool.github.io)
+C. Khanan, W. Luewichana, K. Pruktharathikoon, J. Jiarpakdee, C. Tantithamthavorn, M. Choetkiertikul, C. Ragkhitwetsagul, T. Sunetnanta. *JITBot: An Explainable Just-In-Time Defect Prediction Bot*, in [the 35th IEEE/ACM International Conference on Automated Software Engineering (ASE ’20) - Tool Demo Track](https://conf.researchr.org/home/ase-2020), September 21–25, 2020, Virtual Event, Australia, Website: [https://jitbot-tool.github.io](https://jitbot-tool.github.io)
 
-\[[Preprint](files/icsme2020_teddy.pdf)\]&nbsp;P. Phan-udom, N. Wattanakul, T. Sakulniwat, C. Ragkhitwetsagul, T. Sunetnanta, M. Choetkiertikul, R.G. Kula Teddy: Automatic Recommendation of PythonicIdiom Usage For Pull-Based Software Project, in [The 36th IEEE International Conference on Software Maintenance and Evolution (ICSME 2020) - Tool Demo Track](https://icsme2020.github.io/), September 21 - October 3, 2020, Adelaide, Australia.
+\[[Preprint](files/icsme2020_teddy.pdf)\]<i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;**Best Tool Demo Award!**&nbsp;<i class="fa fa-certificate" aria-hidden="true"></i>P. Phan-udom, N. Wattanakul, T. Sakulniwat, C. Ragkhitwetsagul, T. Sunetnanta, M. Choetkiertikul, R.G. Kula Teddy: Automatic Recommendation of PythonicIdiom Usage For Pull-Based Software Project, in [The 36th IEEE International Conference on Software Maintenance and Evolution (ICSME 2020) - Tool Demo Track](https://icsme2020.github.io/), September 21 - October 3, 2020, Adelaide, Australia.
 
 \[[Preprint](files/iwesep19_Noppadol.pdf)\]&nbsp;N. A
 ssavakamhaenghan, M. Choetkiertikul, S. Tuarob, R. G. Kula, H. Hata, C. Ragkhitwetsagul, T. Sunetnanta, and K. Matsumoto. *Software Team Member Configurations: A Study of Team Effectiveness in Moodle*, in [The 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019), Tokyo, Japan](https://iwesep2019.github.io).
@@ -21,10 +27,6 @@ ssavakamhaenghan, M. Choetkiertikul, S. Tuarob, R. G. Kula, H. Hata, C. Ragkhitw
 \[[Preprint](files/apsec19_Supatsara.pdf)\]&nbsp;S. Wattanakriengkrai, N. Srisermphoak, S. Sintoplertchaikul, M. Choetkiertikul, C. Ragkhitwetsagul, T. Sunetnanta, H. Hata and K. Matsumoto. *Automatic Classifying Self-Admitted Technical Debt Using N-gram IDF*, in [the 26th Asia-Pacific Software Engineering Conference (APSEC 19), Putrajaya, Malaysia](https://seminar.utmspace.edu.my/apsec2019/).
 
 \[[Preprint](files/technical_debt_classification.pdf), [DOI](https://ieeexplore.ieee.org/document/8661216)\]&nbsp;<i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;**Best Paper Award!**&nbsp;<i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;S. Wattanakriengkrai, Rungroj Maipradit, Hideaki Hata, Morakot Choetkiertikul, Thanwadee Sunetnanta and Kenichi Matsumoto. *Identifying Design and Requirement Self-Admitted Technical Debt using N-gram IDF*, in [The 9th International Workshop on Empirical Software Engineering in Practice (IWESEP 2018), Nara, Japan](https://iwesep2018.github.io).
-
-### Journal publications
-
-N/A
 
 ### Technical reports
 
