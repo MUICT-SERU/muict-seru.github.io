@@ -6,6 +6,11 @@ redirect_from: /docs/index.html
 
 ## News (2020)
 
+### 3 October 2020
+Congratulations to Purit Phan-udom, Naruedon Wattanakul, Tattiya Sakulniwat again for receiving the "Best Tool Demo Award" from ICSME 2020 for their work “Teddy: Automatic Recommendation of Pythonic Idiom Usage for Pull-Based Software Projects”! 
+
+<img width="500px" src="../../img/news/icsme2020_teddy_certificate.jpg" alt="" class="img-responsive">
+
 ### 11 July 2020
 Two in a roll! Congratulations to Purit Phan-udom, Naruedon Wattanakul, Tattiya Sakulniwat for getting their senior project work titled “Teddy: Automatic Recommendation of Pythonic Idiom Usage for Pull-Based Software Projects” published as a tool demonstration paper at the 36th International Conference on Software Maintenance and Evolution (ICSME). 
 
