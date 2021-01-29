@@ -16,7 +16,7 @@ Here are the research projects we are currently working on:
 </tr>
 <tr>
   <td>Predicting issue’s resolving time using networked classification</td>
-  <td>Task dependencies are in the nature of software development process. My previous work (<a href="https://ieeexplore.ieee.org/document/7372024">ASE2016</a>) proposes a delay prediction model on issues by taking into account the issue’s dependencies. We applied network classification techniques on a manually constructed network (direct graph) of issues to predict delays. However, these network structures are dynamic through time. For example, when a new blocking issue is created, the issue network structure is changed accordingly. In this project, we aim to explore techniques to model (e.g., embedding, learning) these characteristics of software task dependency to improve the performance in predicting issue resolving time. </td>
+  <td>Task dependencies are in the nature of software development process. Our previous work (<a href="https://ieeexplore.ieee.org/document/7372024">ASE2016</a>) proposes a delay prediction model on issues by taking into account the issue’s dependencies. We applied network classification techniques on a manually constructed network (direct graph) of issues to predict delays. However, these network structures are dynamic through time. For example, when a new blocking issue is created, the issue network structure is changed accordingly. In this project, we aim to explore techniques to model (e.g., embedding, learning) these characteristics of software task dependency to improve the performance in predicting issue resolving time. </td>
 </tr>
 <tr>
   <td>SiameseX: Code Clone Search as a Service</td>
