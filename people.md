@@ -90,7 +90,7 @@ title: People
 <div class="row">
     <div class="col-md-12">
       <p>
-      <b>Advisor:</b> Asst. Prof. Dr. Thanwadee Sunetnanta and Dr. Morakot Choetkiertikul<br />
+      <b>Advisor:</b> Asst. Prof. Dr. Thanwadee Sunetnanta and Dr. Morakot Choetkiertikul (co-supervise with <a href="https://hideakihata.github.io/">Asst. Prof. Dr. Hideaki Hata</a> at NAIST)<br />
       <b>Project:</b> Empirical study of GitCoin bug bounty
       </p>
     </div>
@@ -135,8 +135,8 @@ title: People
 <div class="row">
     <div class="col-md-12">
       <p>
-      <b>Advisor:</b> Dr. Morakot Choetkiertikul<br />
-      <b>Project:</b> Identifying technical debt in open source projects
+      <b>Advisor:</b> Dr. Morakot Choetkiertikul (co-supervise with <a href="https://hideakihata.github.io/">Asst. Prof. Dr. Hideaki Hata</a> at NAIST)<br />
+      <b>Project:</b> Identifying technical debt in open source projects 
       </p>
     </div>
     <div class="col-lg-4">
@@ -225,8 +225,8 @@ title: People
 <div class="row">
     <div class="col-md-12">
       <p>
-      <b>Advisor:</b> Dr. Chaiyong Ragkhitwetsagul<br />
-      <b>Project:</b> Analysis of effects from software dependency vulnerabilities
+      <b>Advisor:</b> Dr. Chaiyong Ragkhitwetsagul (co-supervise with <a href="https://raux.github.io/">Asst. Prof. Dr. Raula Gaikovina Kula</a> at NAIST)<br />
+      <b>Project:</b> Analysis of effects from software dependency vulnerabilities 
       </p>
     </div>
     <div class="col-lg-4">

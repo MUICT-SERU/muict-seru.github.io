@@ -23,6 +23,13 @@ Here are the research projects we are currently working on:
   <td>Code clones are duplicated pieces of code within software. This project aims to leverage the scalability of Elasticsearch and the flexibility of cloud-based services to scale up our existing code clone search engine, <a href="https://siamesetool.github.io/siamese/">Siamese</a>, to the cloud as a code clone search service, where one can upload a project or give a link to a GitHub project and SiameseX will automatically detect clones in the given project.
   The SiameseX service will be useful for real-time online code clone detection and can be integrated into many software development tools and processes such as IDE, or code review. We received $20,000 Amazon AWS credits for this research so there are cloud machines available for you to try it out!</td>
 </tr>
+<tr>
+  <td>Automated Software Engineering for Thailand's Software Industry (ASETSI) - IAPP18-19\74 (Newton Fund)<br />[Extended to Nov 2022]</td>
+  <td>
+  This project aims to study the challenges Thai software development SMEs currently face and train them to adopt ASE to tackle such challenges, the quality and quantity of software products developed in Thailand will be tremendously increased.
+  This project provides benefits to both the UK and the Thai partners. First, it provides knowledge transfer of ASE expertise from the UK to improve the capabilities of Thailand software companies. Second, the project enables the UK researchers to study the productivity gain through applying ASE techniques into SMEs. The project will include a series of training/hands-on workshop sessions held in Thailand on topics surrounding ASE with the trainers/facilitators from both the UK and Thai partners. This project is an important milestone to establish further UK-Thailand software engineering research collaboration.
+  </td>
+</tr>
 </table>
 
 ---
