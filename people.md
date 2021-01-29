@@ -111,10 +111,10 @@ title: People
         <div class="panel panel-default author">
             <!-- <div class="panel-heading">Panel heading</div> -->
             <div class="author_pic author">
-              <img src="img/pundaree.jpg" style="border-radius: 50%;" />
+              <img src="img/pandaree.jpg" style="border-radius: 50%;" />
             </div>
             <div class="panel-body">
-                <span class="text-primary"><a href="https://www.linkedin.com/in/pandaree-chandra-69b7491a0/">Pundaree Chandra</a></span>
+                <span class="text-primary"><a href="https://www.linkedin.com/in/pandaree-chandra-69b7491a0/">Pandaree Chandra</a></span>
             </div>
         </div>
       </div>
