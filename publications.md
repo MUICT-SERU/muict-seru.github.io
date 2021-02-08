@@ -5,9 +5,9 @@ title: Publications
 
 ### Journal publications
 
-M. Choetkiertikul, H. K. Dam, T. Tran, T. Pham, C. Ragkhitwetsagul, A. Ghose.
+\[[DOI](https://doi.org/10.1007/s10664-020-09898-5M)\]&nbsp;Choetkiertikul, H. K. Dam, T. Tran, T. Pham, C. Ragkhitwetsagul, A. Ghose.
 *Automatically recommending components for issue reports using deep learning*. 
-Empirical Software Engineering (EMSE), 2021 &lt;to appear&gt;
+Empirical Software Engineering (EMSE), (2021) 26:14.
 
 ### Conference/workshop publications
 

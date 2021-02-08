@@ -90,7 +90,7 @@ title: People
 <div class="row">
     <div class="col-md-12">
       <p>
-      <b>Advisor:</b> Asst. Prof. Dr. Thanwadee Sunetnanta and Dr. Morakot Choetkiertikul (co-supervise with <a href="https://hideakihata.github.io/">Asst. Prof. Dr. Hideaki Hata</a> at NAIST)<br />
+      <b>Advisor:</b> Dr. Morakot Choetkiertikul (co-supervise with <a href="https://hideakihata.github.io/">Asst. Prof. Dr. Hideaki Hata</a> at NAIST)<br />
       <b>Project:</b> Empirical study of GitCoin bug bounty
       </p>
     </div>
