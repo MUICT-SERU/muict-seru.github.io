@@ -63,7 +63,7 @@ title: People
 
 ---
 
-### Current Students (2020)
+### Current Students (2021)
 #### PhD
 <div class="row">
     <div class="col-md-12">
@@ -87,6 +87,46 @@ title: People
 </div>
 
 #### Undergrad
+
+<div class="row">
+    <div class="col-md-12">
+      <p>
+      <b>NAIST Internship Students 2020-2021</b><br />
+      <b>Advisor:</b> Asst. Prof. Dr. Thanwadee Sunetnanta, Dr. Morakot Choetkiertikul, Dr. Chaiyong Ragkhitwetsagul (co-supervise with professors at NAIST)<br />
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+          <div class="author_pic author">
+            <img src="img/tasha.jpg" style="border-radius: 50%;" />
+          </div>
+          <div class="panel-body">
+              <span class="text-primary"><a href="https://www.linkedin.com/in/tasha-settewong/">Tasha Settewong</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default author">
+            <!-- <div class="panel-heading">Panel heading</div> -->
+            <div class="author_pic author">
+              <img src="img/natanon.jpg" style="border-radius: 50%;" />
+            </div>
+            <div class="panel-body">
+                <span class="text-primary"><a href="https://www.linkedin.com/in/natanon-ritta/">Natanon Ritta</a></span>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+---
+
+### Graduated Students
+### 2019-2020
+
 <div class="row">
     <div class="col-md-12">
       <p>
@@ -269,10 +309,7 @@ title: People
     </div>
 </div>
 
----
-
-### Graduated Students
-#### 2019
+### 2018-2019
 
 <div class="row">
     <div class="col-md-12">
@@ -515,7 +552,7 @@ title: People
     </div>
 </div>
 
-#### 2018
+### 2017-2018
 <div class="row">
     <div class="col-md-12">
       <p>
