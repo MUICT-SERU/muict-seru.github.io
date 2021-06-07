@@ -6,6 +6,9 @@ redirect_from: /docs/index.html
 
 ## News (2020)
 
+### 2 February 2021
+The paper "Automatically recommending components for issue reports using deep learning" work, lead by Morakot and the team from University of Wollongong, has been published at Empirical Software Engineering. Check out the paper here: [https://link.springer.com/article/10.1007/s10664-020-09898-5](https://link.springer.com/article/10.1007/s10664-020-09898-5).
+
 ### 3 October 2020
 Congratulations to Purit Phan-udom, Naruedon Wattanakul, Tattiya Sakulniwat again for receiving the "Best Tool Demo Award" from ICSME 2020 for their work “Teddy: Automatic Recommendation of Pythonic Idiom Usage for Pull-Based Software Projects”! 
 
@@ -45,17 +48,17 @@ The work from 4 student interns (Noppadol, Tattiya, and Thanadon at NAIST, and V
 * How Do Contributors Impact Code Naturalness? An Exploratory Study of 50 Python Projects.
 
 ### 29 August 2019
-Dr. Chaiyong presented his work “Toxic code snippets on Stack Overflow”, which is a joint work with Dr. Jens Krinke from UCL (UK), Dr. Matheus Paixão from Ceará State University (Brazil), Guiseppe Bianco and Dr. Rocco Oliveto University of Molise (Italy), at [The 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2019](https://esec-fse19.ut.ee) in Tallinn, Estonia. The work has been published in Transactions on Software Engineering (TSE) and accepted at the conference for a journal-first presentation. The preprint of the paper can be found [here](https://cragkhit.github.io/publications/chaiyong_toxic_code_tse_2019.pdf).
+Chaiyong presented his work “Toxic code snippets on Stack Overflow”, which is a joint work with Dr. Jens Krinke from UCL (UK), Dr. Matheus Paixão from Ceará State University (Brazil), Guiseppe Bianco and Dr. Rocco Oliveto University of Molise (Italy), at [The 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2019](https://esec-fse19.ut.ee) in Tallinn, Estonia. The work has been published in Transactions on Software Engineering (TSE) and accepted at the conference for a journal-first presentation. The preprint of the paper can be found [here](https://cragkhit.github.io/publications/chaiyong_toxic_code_tse_2019.pdf).
 
 <img width="1000px" src="../../img/news/2019-7.jpg" alt="" class="img-responsive">
 
 ### 21-22 August 2019
-Dr. Chaiyong and Dr. Morakot visited NAIST to be external examiners for two SE master’s students. They also discussed further collaborations on both the internship and future research collaborations with the NAIST team.
+Chaiyong and Morakot visited NAIST to be external examiners for two SE master’s students. They also discussed further collaborations on both the internship and future research collaborations with the NAIST team.
 
 <img width="960px" src="../../img/news/2019-6.png" alt="" class="img-responsive">
 
 ### July-August 2019
-Dr. Morakot Choetkiertikul was on a research visit at University of Wollongong (UoW), specifically at the DSL Decision Systems Lab / Center for Software - Engineering where he graduated (with the best thesis award!), working on his latest research project idea. He also paid a visit at Google Australia with a possibility for further collaborations.
+Morakot Choetkiertikul was on a research visit at University of Wollongong (UoW), specifically at the DSL Decision Systems Lab / Center for Software - Engineering where he graduated (with the best thesis award!), working on his latest research project idea. He also paid a visit at Google Australia with a possibility for further collaborations.
 
 <img width="960px" src="../../img/news/2019-5.jpg" alt="" class="img-responsive">
 
