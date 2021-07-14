@@ -24,7 +24,7 @@ title: People
         <div class="panel panel-default author">
             <!-- <div class="panel-heading">Panel heading</div> -->
             <div class="author_pic author">
-              <img src="img/chaiyong.JPG" style="border-radius: 50%;" />
+              <img src="img/chaiyong.png" style="border-radius: 50%;" />
             </div>
             <div class="panel-body">
                 <span class="text-primary"><a href="http://cragkhit.github.io">Chaiyong Ragkhitwetsagul</a></span>
@@ -132,6 +132,8 @@ title: People
       <p>
       <b>Advisor:</b> Dr. Morakot Choetkiertikul (co-supervise with <a href="https://hideakihata.github.io/">Asst. Prof. Dr. Hideaki Hata</a> at NAIST)<br />
       <b>Project:</b> Empirical study of GitCoin bug bounty
+      <br />
+      <b>GitHub Repo</b>: <i class="fa fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/MUICT-SERU/SP2020-Ploy-Gitcoin">SP2020-Ploy-Gitcoin</a>
       </p>
     </div>
     <div class="col-lg-4">
@@ -176,7 +178,9 @@ title: People
     <div class="col-md-12">
       <p>
       <b>Advisor:</b> Dr. Morakot Choetkiertikul (co-supervise with <a href="https://hideakihata.github.io/">Asst. Prof. Dr. Hideaki Hata</a> at NAIST)<br />
-      <b>Project:</b> Identifying technical debt in open source projects 
+      <b>Project:</b> Identifying technical debt in open source projects
+      <br />
+      <b>GitHub Repo</b>: <i class="fa fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/MUICT-SERU/SP2020-Mai-TD">SP2020-Mai-TD</a>
       </p>
     </div>
     <div class="col-lg-4">
@@ -222,6 +226,8 @@ title: People
       <p>
       <b>Advisor:</b> Dr. Chaiyong Ragkhitwetsagul<br />
       <b>Project:</b> Automatic checker for outdated StackOverflow answers in software projects
+      <br />
+      <b>GitHub Repo</b>: <i class="fa fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/MUICT-SERU/SP2020-JARVAN">SP2020-JARVAN</a>
       </p>
     </div>
     <div class="col-lg-4">
@@ -266,7 +272,9 @@ title: People
     <div class="col-md-12">
       <p>
       <b>Advisor:</b> Dr. Chaiyong Ragkhitwetsagul (co-supervise with <a href="https://raux.github.io/">Asst. Prof. Dr. Raula Gaikovina Kula</a> at NAIST)<br />
-      <b>Project:</b> Analysis of effects from software dependency vulnerabilities 
+      <b>Project:</b> Analysis of effects from software dependency vulnerabilities
+      <br />
+      <b>GitHub Repo</b>: <i class="fa fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/MUICT-SERU/Achilles">Achilles</a>
       </p>
     </div>
     <div class="col-lg-4">
@@ -315,7 +323,8 @@ title: People
     <div class="col-md-12">
       <p>
       <b>Advisor:</b> Asst. Prof. Dr. Thanwadee Sunetnanta<br />
-      <b>Project:</b> Software Naturalness Analysis
+      <b>Project:</b> Software Naturalness Analysis<br />
+      <b>GitHub Repo</b>: <i class="fa fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/MUICT-SERU/SP2019-Naturalness">SP2019-Naturalness</a>
       </p>
     </div>
     <div class="col-lg-4">
@@ -363,7 +372,8 @@ title: People
     <div class="col-md-12">
       <p>
       <b>Advisor:</b> Dr. Chaiyong Ragkhitwetsagul<br />
-      <b>Project:</b> Merry: Web-based Code Clone Detection System using Machine Learning
+      <b>Project:</b> Merry: Web-based Code Clone Detection System using Machine Learning<br />
+      <b>GitHub Repo</b>: <i class="fa fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/MUICT-SERU/SP2019-07-Merry">SP2019-07-Merry</a>
       </p>
     </div>
     <div class="col-lg-4">
@@ -412,7 +422,8 @@ title: People
       <p>
       <b>Advisor:</b> Dr. Chaiyong Ragkhitwetsagul<br />
       <b>Project:</b> TEDDY: Automated tool for detection and suggestion of Pythonic idiom usage<br/> 
-      Best tool demo award at ICSME'20! See <a href="https://muict-seru.github.io/icsme20-teddy-tooldemo/">here</a> for more info.
+      <i class="fa fa-star" aria-hidden="true"></i>&nbsp;Best tool demo award at ICSME'20!<i class="fa fa-star" aria-hidden="true"></i> See <a href="https://muict-seru.github.io/icsme20-teddy-tooldemo/">here</a> for more info.<br />
+      <b>GitHub Repo</b>: <i class="fa fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/MUICT-SERU/SP2019-08-TEDDY">SP2019-08-TEDDY</a>
       </p>
     </div>
     <div class="col-lg-4">
@@ -460,7 +471,8 @@ title: People
     <div class="col-md-12">
       <p>
       <b>Advisor:</b> Dr. Morakot Choetkiertikul<br />
-      <b>Project:</b> Sprint2Vec: A deep learning-based model for learning vector representation of iterative software development
+      <b>Project:</b> Sprint2Vec: A deep learning-based model for learning vector representation of iterative software development<br /> 
+      <b>GitHub Repo</b>: <i class="fa fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/MUICT-SERU/SP2019-23-Sprint2Vec">SP2019-23-Sprint2Vec</a>
       </p>
     </div>
     <div class="col-lg-4">
