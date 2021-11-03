@@ -7,6 +7,29 @@ title: Seminars
 
 ---
 
+# December 2021
+
+### No. 6 - Not Teaching Software Engineering Standard to Future Software Engineers - Malpractice?
+#### 3 December 2021 19:00 - 20:30, Online via Zoom
+
+<img width="150px" src="../../img/seminars/laporte.jpg" alt="" class="img-responsive" style="float: left; border-radius: 50%; margin: 20px;">
+
+#### [Prof. Claude Y. Laporte](http://profs.etsmtl.ca/claporte/english/vse/index.html)
+**Not Teaching Software Engineering Standard to Future Software Engineers - Malpractice?**
+
+**Abstract:**
+Software engineering standards are essential sources of codified knowledge for all software engineers. Could the professors who are not teaching software engineering standards to software engineering students be accused of malpractice?
+
+**Bio:**
+Claude Y Laporte, PhD is an Adjunct Professor of Software Engineering at École de technologie supérieure (Montréal, Canada).
+
+**DOI for the Paper**
+[https://doi.ieeecomputersociety.org/10.1109/MC.2021.3064438](https://doi.ieeecomputersociety.org/10.1109/MC.2021.3064438)
+<br /><br />
+
+---
+
+
 # August 2020
 
 ### No. 5 - Software Documentation and Software Economics for Knowledge Sharing
