@@ -1,28 +1,16 @@
----
-layout: plain
-title: Projects
----
+I"ñ<h3 id="ongoing-research-projects">Ongoing Research Projects</h3>
 
-### Ongoing Research Projects
-
-Here are the research projects that we received fundings and are currently working on:
+<p>Here are the research projects that we received fundings and are currently working on:</p>
 
 <table>
-<col width="200px">
-<col width="600px">
+<col width="200px" />
+<col width="600px" />
 <tr>
   <th>Project</th>
   <th>Description</th>
 </tr>
 <tr>
-  <td>Software Engineering for Data Science
-  <i>Apirak, Morakot, Chaiyong, Thanwadee, Siripen<br />Mahidol Mini Research Cluster</i>
-  </td>
-  <td>This research project aim to identify a framework in applying
-software engineering to better develop and maintain the data science applications.</td>
-</tr>
-<tr>
-  <td>Development of Deep Learning-Based Models for Learning Vector Representation of Iterative Software Development<br /><i>Morakot Choetkiertikul <br />Early Research Career - Ministry of Higher Education, Science, Research and Innovation</i></td>
+  <td>Development of Deep Learning-Based Models for Learning Vector Representation of Iterative Software Development<br /><i>Morakot Choetkiertikul <br />(Early Research Career - Ministry of Higher Education, Science, Research and Innovation)</i></td>
   <td>This research project proposes an approach to develop a predictive
 model that can make predictions regarding the team's productivity and work quality delivered at
 the end of iterations. Specifically, this research focuses on the model that can predict not only the
@@ -40,21 +28,20 @@ demonstrated ground-breaking performance in many applications such as machine tr
 video analysis, and speed recognition.</td>
 </tr>
 <tr>
-  <td>Code similarity applications for improving software quality<br /><i>Chaiyong Ragkhitwetsagul <br />Early Research Career - Ministry of Higher Education, Science, Research and Innovation</i></td>
+  <td>Code similarity applications for improving software quality<br /><i>Chaiyong Ragkhitwetsagul <br />(Early Research Career - Ministry of Higher Education, Science, Research and Innovation)</i></td>
   <td>This research project aims to propose a novel approach to improve software by using code similarity techniques and create an automated tool for detecting similar code and giving relevant recommendations. The projects will leverage code similarity in order to tackle several issues that lead to low- quality software. For example, by measuring code similarity, one can locate duplicated pieces of code, i.e., code clones, within a software project or across software projects, and properly refactor them. This results in lower amount of redundant code in the software, hence easier to maintain. It can also avoid software licensing violations caused by code reuse and can also recommend software developers on how to write code that are well-accepted by the community. We plan to study and adopt suitable machine learning techniques for code similarity computations and will evaluate its effectiveness. Lastly, we plan to also deploy the tool to be used by developers and evaluate its usefulness and its impact in practice.
   </td>
 </tr>
 <tr>
-  <td><a href="https://muict-seru.github.io/ASETSI/">Automated Software Engineering for Thailand's Software Industry (ASETSI)</a>
-  <br />
+  <td>[https://muict-seru.github.io/ASETSI/](Automated Software Engineering for Thailand's Software Industry (ASETSI))<br />
   <i>Chaiyong, Morakot, Thanwadee<br />
-  IAPP18-19\74 (Newton Fund) Royal Academy of Engineering, UK<br />[Extended to Nov 2022]</i></td>
+  IAPP18-19\74 (Newton Fund) Royal Academy of Engineering, UK<br />[Extended to Nov 2022]&lt;/td&gt;</i>
   <td>
   This project aims to study the challenges Thai software development SMEs currently face and train them to adopt ASE to tackle such challenges, the quality and quantity of software products developed in Thailand will be tremendously increased.
   This project provides benefits to both the UK and the Thai partners. First, it provides knowledge transfer of ASE expertise from the UK to improve the capabilities of Thailand software companies. Second, the project enables the UK researchers to study the productivity gain through applying ASE techniques into SMEs. The project will include a series of training/hands-on workshop sessions held in Thailand on topics surrounding ASE with the trainers/facilitators from both the UK and Thai partners. This project is an important milestone to establish further UK-Thailand software engineering research collaboration.
   </td>
-</tr>
-</table>
+&lt;/tr&gt;
+&lt;/table&gt;
 
 ---
 
@@ -63,8 +50,8 @@ video analysis, and speed recognition.</td>
 Listed below are the potential research topics we plan to work on. Please feel free to contact us if you're interested!
 
 <table>
-<col width="200px">
-<col width="600px">
+<col width="200px" />
+<col width="600px" />
 <tr>
   <th>Project</th>
   <th>Description</th>
@@ -98,3 +85,5 @@ Listed below are the potential research topics we plan to work on. Please feel f
   <td>We are interested in exploring an application of the VR technology to visualise software projects and to help programmers understand their software better.</td>
 </tr>
 </table>
+</td></tr></table>
+:ET

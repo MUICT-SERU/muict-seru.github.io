@@ -1,15 +1,10 @@
----
-layout: plain
-title: Projects
----
+I"=<h3 id="ongoing-research-projects">Ongoing Research Projects</h3>
 
-### Ongoing Research Projects
-
-Here are the research projects that we received fundings and are currently working on:
+<p>Here are the research projects that we received fundings and are currently working on:</p>
 
 <table>
-<col width="200px">
-<col width="600px">
+<col width="200px" />
+<col width="600px" />
 <tr>
   <th>Project</th>
   <th>Description</th>
@@ -56,15 +51,15 @@ video analysis, and speed recognition.</td>
 </tr>
 </table>
 
----
+<hr />
 
-### Potential Research Projects
+<h3 id="potential-research-projects">Potential Research Projects</h3>
 
-Listed below are the potential research topics we plan to work on. Please feel free to contact us if you're interested!
+<p>Listed below are the potential research topics we plan to work on. Please feel free to contact us if you’re interested!</p>
 
 <table>
-<col width="200px">
-<col width="600px">
+<col width="200px" />
+<col width="600px" />
 <tr>
   <th>Project</th>
   <th>Description</th>
@@ -98,3 +93,4 @@ Listed below are the potential research topics we plan to work on. Please feel f
   <td>We are interested in exploring an application of the VR technology to visualise software projects and to help programmers understand their software better.</td>
 </tr>
 </table>
+:ET
