@@ -6,6 +6,10 @@ redirect_from: /docs/index.html
 
 ## News (2020)
 
+### 18 November 2021
+The FixMe tool has been presented in the Tool Demonstrations track of ASE 2021!
+<img width="500px" src="../../img/fixme.png" alt="" class="img-responsive">
+
 ### 2 February 2021
 The paper "Automatically recommending components for issue reports using deep learning" work, lead by Morakot and the team from University of Wollongong, has been published at Empirical Software Engineering. Check out the paper here: [https://link.springer.com/article/10.1007/s10664-020-09898-5](https://link.springer.com/article/10.1007/s10664-020-09898-5).
 

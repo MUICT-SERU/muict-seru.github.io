@@ -1,0 +1,150 @@
+I"�4<h2 id="news-2020">News (2020)</h2>
+
+<h3 id="18-november-2021">18 November 2021</h3>
+<p>The FixMe tool has been presented in the Tool Demonstrations track of ASE 2021!
+<img width="500px" src="../../img/fixme.png" alt="" class="img-responsive" /></p>
+
+<h3 id="2-february-2021">2 February 2021</h3>
+<p>The paper “Automatically recommending components for issue reports using deep learning” work, lead by Morakot and the team from University of Wollongong, has been published at Empirical Software Engineering. Check out the paper here: <a href="https://link.springer.com/article/10.1007/s10664-020-09898-5">https://link.springer.com/article/10.1007/s10664-020-09898-5</a>.</p>
+
+<h3 id="3-october-2020">3 October 2020</h3>
+<p>Congratulations to Purit Phan-udom, Naruedon Wattanakul, Tattiya Sakulniwat again for receiving the “Best Tool Demo Award” from ICSME 2020 for their work “Teddy: Automatic Recommendation of Pythonic Idiom Usage for Pull-Based Software Projects”!</p>
+
+<p><img width="500px" src="../../img/news/icsme2020_teddy_certificate.jpg" alt="" class="img-responsive" /></p>
+
+<h3 id="11-july-2020">11 July 2020</h3>
+<p>Two in a roll! Congratulations to Purit Phan-udom, Naruedon Wattanakul, Tattiya Sakulniwat for getting their senior project work titled “Teddy: Automatic Recommendation of Pythonic Idiom Usage for Pull-Based Software Projects” published as a tool demonstration paper at the 36th International Conference on Software Maintenance and Evolution (ICSME).</p>
+
+<p>The work published is an automated tool, called Teddy, that promotes the usage of Pythonic idioms. The tool offers a prevention mode with Just-In-Time analysis to recommend the use of Pythonic idiom during code review and a detection mode with historical analysis to run a thorough scan of idiomatic and non-idiomatic code. More info can be found at the study website <a href="https://muict-seru.github.io/icsme20-teddy-tooldemo/">https://muict-seru.github.io/icsme20-teddy-tooldemo/</a>.</p>
+
+<p><img width="1000px" src="../../img/news/2020-4.png" alt="" class="img-responsive" /></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vOCQReSvBxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h3 id="4-july-2020">4 July 2020</h3>
+<p>We’re super glad to announce that our student internship work “JITBot: An Explainable Just-In-Time Defect Prediction Bot“ with <a href="http://chakkrit.com/">Dr. Chakkrit Tantithamthavorn</a> and Jirayus Jiarpakdee at Monash University is accepted at the tool demo track of Automated Software Engineering (ASE) 2020 conference! The work presents a just-in-time (JIT) GitHub bot that analyzes commits in a pull request and give a defect prediction with explanations 😎.</p>
+
+<p>Congratulations to Chaiyakarn Khanan, Worawit Luewichana, Krissakorn Pruktharathikoon! The video demo is shown below. Preprint to be available soon. More info can be found at the study website: <a href="https://jitbot-tool.github.io/">https://jitbot-tool.github.io/</a>.</p>
+
+<!--img width="1000px" src="../../img/news/2020-2.jpg" alt="" class="img-responsive"-->
+<p><img width="1000px" src="../../img/news/2020-3.png" alt="" class="img-responsive" /></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HJBzULrS6hE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h3 id="3-january-2020">3 January 2020</h3>
+<p>We are happy to welcome <a href="https://documents.uow.edu.au/~hoa/">Assoc. Prof. Hoa Khanh Dam</a> from the Decision System Lab at UOW, Australia, to our Faculty of ICT to discuss research work and future education and research collaborations with SERU. He was also our first guest in 2020 for the Café SERU#4. He gave a talk on the topic of “AI4SE (Artificial Intelligence for Software Engineering).”</p>
+
+<p><img width="1000px" src="../../img/news/2020-1.jpg" alt="" class="img-responsive" /></p>
+
+<h2 id="news-2019">News (2019)</h2>
+<h3 id="1-november-2019">1 November 2019</h3>
+<p>The work from 4 student interns (Noppadol, Tattiya, and Thanadon at NAIST, and Vara at University of Bremen) are accepted for publication at the 10th International Workshop on Empirical Software Engineering in Practice (IWESEP 2019)! The topics include</p>
+
+<ul>
+  <li>Software Team Member Configurations:A Study of Team Effectiveness in Moodle</li>
+  <li>Visualizing the Usage of Pythonic Idioms Over Time: A Case Study of the with open Idiom</li>
+  <li>Improving Clone Detection Precision using Machine Learning Techniques</li>
+  <li>How Do Contributors Impact Code Naturalness? An Exploratory Study of 50 Python Projects.</li>
+</ul>
+
+<h3 id="29-august-2019">29 August 2019</h3>
+<p>Chaiyong presented his work “Toxic code snippets on Stack Overflow”, which is a joint work with Dr. Jens Krinke from UCL (UK), Dr. Matheus Paixão from Ceará State University (Brazil), Guiseppe Bianco and Dr. Rocco Oliveto University of Molise (Italy), at <a href="https://esec-fse19.ut.ee">The 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2019</a> in Tallinn, Estonia. The work has been published in Transactions on Software Engineering (TSE) and accepted at the conference for a journal-first presentation. The preprint of the paper can be found <a href="https://cragkhit.github.io/publications/chaiyong_toxic_code_tse_2019.pdf">here</a>.</p>
+
+<p><img width="1000px" src="../../img/news/2019-7.jpg" alt="" class="img-responsive" /></p>
+
+<h3 id="21-22-august-2019">21-22 August 2019</h3>
+<p>Chaiyong and Morakot visited NAIST to be external examiners for two SE master’s students. They also discussed further collaborations on both the internship and future research collaborations with the NAIST team.</p>
+
+<p><img width="960px" src="../../img/news/2019-6.png" alt="" class="img-responsive" /></p>
+
+<h3 id="july-august-2019">July-August 2019</h3>
+<p>Morakot Choetkiertikul was on a research visit at University of Wollongong (UoW), specifically at the DSL Decision Systems Lab / Center for Software - Engineering where he graduated (with the best thesis award!), working on his latest research project idea. He also paid a visit at Google Australia with a possibility for further collaborations.</p>
+
+<p><img width="960px" src="../../img/news/2019-5.jpg" alt="" class="img-responsive" /></p>
+
+<h3 id="11-may-2019">11 May 2019</h3>
+<p>The SERU team has completed the “<a href="https://en.wikipedia.org/wiki/ISO_29110">ISO/IEC 29110</a> and <a href="https://en.wikipedia.org/wiki/ISO/IEC_15504">ISO/IEC 15504 (33000)</a> Expert for Consult, Auditor and Lecture Training Course (2018)”, passed the qualifying exam, and received the certificate. We are now eligible for being a consultant of the ISO 29110 certification!</p>
+
+<p><img width="1000px" src="../../img/news/2019-4.jpg" alt="" class="img-responsive" /></p>
+
+<h3 id="23-apr-2019">23 Apr 2019</h3>
+<p>Congratulations to our 3 to-be internship students, Thanadon Bunkerd; Noppadol Assavakamhaenghan; and Tattiya Sakulniwat (photos below), who are going to work in the <a href="http://se-naist.jp">SE lab at NAIST</a>. They received the Scholarship for Undergraduate Student Mobility Program from Mahidol University (30,000 THB) to support their stay in Japan this summer.</p>
+
+<p><img width="500px" src="../../img/news/2019-3.jpeg" alt="" class="img-responsive" /></p>
+
+<h3 id="14-mar-2019">14 Mar 2019</h3>
+<p>Dr. Chaiyong Ragkhitwetsagul, Dr. Morakot Choetkiertikul and Asst. Prof. Dr. Thanwadee Sunetnanta have been awarded the <a href="http://www.newtonfund.ac.uk">Newton Fund (Industry Academia Partnership Programme - 18/19 from the Royal Academy of Engineering, UK)</a> on the project “Automated Software Engineering for Thailand’s Software Industry”.</p>
+
+<p><img width="500px" src="../../img/news/2019-2.jpg" alt="" class="img-responsive" /></p>
+
+<p>The SERU team from Thailand side (Mahidol) will partner with <a href="http://www0.cs.ucl.ac.uk/staff/j.krinke/">Dr. Jens Krinke (UCL)</a>, <a href="http://www0.cs.ucl.ac.uk/staff/F.Sarro/">Dr. Federica Sarro (UCL)</a>, and <a href="https://prodo.ai">Prodo.ai company</a> from the UK side to transfer the knowledge and expertise in automated software engineering (ASE) from the UK to Thailand.</p>
+
+<p>The research team (SERU + UCL) will work with four rising stars in Thai software companies (<a href="https://www.progaming.co.th">ProGaming</a>, <a href="https://www.zwiz.ai">Zwiz.AI</a>, <a href="https://www.coursesquare.co">Course Square</a>, <a href="https://www.trinityroots.co.th">Trinity Roots</a>) on identifying the gaps in their software development projects/processes, organising series of workshops and trainings, and observing the improvements after adopting state-of-the-art ASE tools/techniques into their companies. We hope that this 2-year project will enhance the quality of the software and the development process of Thailand’s software industry.</p>
+
+<h3 id="9-feb-2019">9 Feb 2019</h3>
+<p>Congratulations to Dr. Morakot Choetkiertikul and Dr. Chaiyong Ragkhitwetsagul, the delegates from Software Engineering Research Unit (SERU), Faculty of Information and Communication Technology (ICT), for their first step in establishing research and teaching collaborations for Industry 4.0 between the <a href="https://www.uow.edu.au/index.html">University of Wollongong (UOW)</a> and Mahidol University by successfully securing the UIC grant lead by the UOW team.</p>
+
+<p><img width="300px" src="../../img/news/2019-1-2.jpg" alt="" class="img-responsive" />
+<img width="500px" src="../../img/news/2019-1.jpg" alt="" class="img-responsive" /></p>
+
+<hr />
+
+<h2 id="news-2018">News (2018)</h2>
+
+<h3 id="21-dec-2018">21 Dec 2018</h3>
+
+<p>Pacawat recieves 160,000 YEN from Japan Student Services Organization (JASSO) and 25,000 Baht from MU Internship Shcolarship to support his internship at NAIST.</p>
+
+<h3 id="5-dec-2018">5 Dec 2018</h3>
+<p>Supatsara Wattanakriengkrai, our undergrad SE student under the supervision of Asst. Prof. Dr. Thanwadee and Dr. Morakot received the best paper award for her work “<a href="http://127.0.0.1:4000/files/technical_debt_classification.pdf">Identifying design and requirement self-admitted technical debt using N-gram IDF</a>” at <a href="https://iwesep2018.github.io/">IWESEP2018</a>. Congratulations!</p>
+
+<p><img width="800px" src="../../img/news/2018-6.jpg" alt="" class="img-responsive" /></p>
+
+<h3 id="8-nov-2018">8 Nov 2018</h3>
+
+<p>Dr. Pattanasak Mongkolwat, Dean of the Faculty of Information and Communication Technology, Mahidol University signed the Memorandum of Agreement on the SEED-Net: Software Engineering Higher Education Network, at the Faculty of Informatics, Burapha University.</p>
+
+<p><img width="800px" src="../../img/news/2018-5.jpg" alt="" class="img-responsive" /></p>
+
+<h3 id="5-nov-2018">5 Nov 2018</h3>
+
+<p><a href="https://raux.github.io">Asst. Prof. Dr. Raula Gaikovina Kula</a> from <a href="http://se-naist.jp">SE lab at Nara Institute of Science and Technology, Japan</a>
+visited the SERU team and the Faculty of ICT, Mahidol University (MUICT) in Salaya campus.</p>
+
+<p><img width="800px" src="../../img/news/2018-4.JPG" alt="" class="img-responsive" /></p>
+
+<p>Dr. Kula joined the kick-off meeting for the future SE collaborations between MUICT and NAIST and also gave a talk about his previous work on <strong>“On Updating Library Dependencies in Open Source Sofware Projects”</strong> in our faculty’s PhD seminar session.</p>
+
+<p><img width="800px" src="../../img/news/2018-3.jpg" alt="" class="img-responsive" /></p>
+
+<hr />
+
+<h3 id="3-nov-2018">3 Nov 2018</h3>
+<p>The SERU team joined the NAIST and Thai Universities for Research and Education
+Collaboration Symposium 2018 at KU HOME, Kasetsart University along with students
+and professors from <a href="http://se-naist.jp">Nara Institute of Science and Technology (NAIST)</a>,
+<a href="https://www.cp.eng.chula.ac.th">Chulalongkorn University</a>, and <a href="https://www.cpe.ku.ac.th">Kasetsart University</a>.</p>
+
+<p><img width="800px" src="../../img/news/2018-1.jpg" alt="" class="img-responsive" /></p>
+
+<p>The workshop aims to share the Activities and outcomes of the intern students from Thai universities
+and for strengthening further research collaborations.</p>
+
+<p>There were three students from the Faculty of ICT, Mahidol University who presented their work at the
+workshop including: <strong>Nappaphol Siriphun</strong> (<em>Distinguish Drones by using Sound</em>),
+<strong>Supatsara Wattanakriengkrai</strong> (<em>Identify Design and Requirement Self-Admitted Technical Debt using N-gram IDF – accepted at IWESEP 2018! See the paper <a href="../../publications.html">here</a></em>),
+and <strong>Napat Srisermphoak</strong> (<em>Useful or Not? Code Review Comment Classification</em>).</p>
+
+<hr />
+
+<h3 id="27-oct-2018">27 Oct 2018</h3>
+<p>Paper on Identifying design and requirement
+self-admitted technical debt using N-gram IDF
+(collaborate with NAIST) has been accepted to
+<a href="https://iwesep2018.github.io">the 9th International Workshop on Empirical Software Engineering in Practice (IWESEP 2018)</a>. See the preprint at the <a href="../../publications.html">publications</a> page.</p>
+
+<hr />
+
+<h3 id="27-sep-2018">27 Sep 2018</h3>
+<p>The SERU website is now live!</p>
+:ET

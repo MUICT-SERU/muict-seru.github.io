@@ -5,7 +5,7 @@ title: Projects
 
 ### Ongoing Research Projects
 
-Here are the research projects we are currently working on:
+Here are the research projects that we received fundings and are currently working on:
 
 <table>
 <col width="200px">
@@ -15,16 +15,40 @@ Here are the research projects we are currently working on:
   <th>Description</th>
 </tr>
 <tr>
-  <td>Predicting issue’s resolving time using networked classification</td>
-  <td>Task dependencies are in the nature of software development process. Our previous work (<a href="https://ieeexplore.ieee.org/document/7372024">ASE2016</a>) proposes a delay prediction model on issues by taking into account the issue’s dependencies. We applied network classification techniques on a manually constructed network (direct graph) of issues to predict delays. However, these network structures are dynamic through time. For example, when a new blocking issue is created, the issue network structure is changed accordingly. In this project, we aim to explore techniques to model (e.g., embedding, learning) these characteristics of software task dependency to improve the performance in predicting issue resolving time. </td>
+  <td>Software Engineering for Data Science
+  <i>Apirak, Morakot, Chaiyong, Thanwadee, Siripen<br />Mahidol Mini Research Cluster</i>
+  </td>
+  <td>This research project aim to identify a framework in applying
+software engineering to better develop and maintain the data science applications.</td>
 </tr>
 <tr>
-  <td>SiameseX: Code Clone Search as a Service</td>
-  <td>Code clones are duplicated pieces of code within software. This project aims to leverage the scalability of Elasticsearch and the flexibility of cloud-based services to scale up our existing code clone search engine, <a href="https://siamesetool.github.io/siamese/">Siamese</a>, to the cloud as a code clone search service, where one can upload a project or give a link to a GitHub project and SiameseX will automatically detect clones in the given project.
-  The SiameseX service will be useful for real-time online code clone detection and can be integrated into many software development tools and processes such as IDE, or code review. We received $20,000 Amazon AWS credits for this research so there are cloud machines available for you to try it out!</td>
+  <td>Development of Deep Learning-Based Models for Learning Vector Representation of Iterative Software Development<br /><i>Morakot Choetkiertikul <br />Early Research Career - Ministry of Higher Education, Science, Research and Innovation</i></td>
+  <td>This research project proposes an approach to develop a predictive
+model that can make predictions regarding the team's productivity and work quality delivered at
+the end of iterations. Specifically, this research focuses on the model that can predict not only the
+amount of work in terms of a number of issues resolving from an iteration but also the risk of
+quality impact in terms of reopened issues. Those issues that are reopened after resolved within
+an iteration have been shown to potentially cause a negative impact on a project as it requires
+extra costs (e.g., budget, time, and effort) for reworking. In addition, our approach aims to
+use not only task-related information but also team-related information, such as developer
+activities, to characterize iterations. This is because an iteration usually consists of several types of information such as task description, developer assignment, source code, and iteration plan, such
+as task sequences. In this research, we aim to investigate whether employing advanced deep
+learning techniques (e.g., Long-Short Term Memory) to automatically learn a vector
+representation of a software iteration that can yield high accuracy in prediction tasks. Specifically,
+several deep learning architectures can eliminate manual feature engineering processes and have
+demonstrated ground-breaking performance in many applications such as machine translation,
+video analysis, and speed recognition.</td>
 </tr>
 <tr>
-  <td>Automated Software Engineering for Thailand's Software Industry (ASETSI) - IAPP18-19\74 (Newton Fund)<br />[Extended to Nov 2022]</td>
+  <td>Code similarity applications for improving software quality<br /><i>Chaiyong Ragkhitwetsagul <br />Early Research Career - Ministry of Higher Education, Science, Research and Innovation</i></td>
+  <td>This research project aims to propose a novel approach to improve software by using code similarity techniques and create an automated tool for detecting similar code and giving relevant recommendations. The projects will leverage code similarity in order to tackle several issues that lead to low- quality software. For example, by measuring code similarity, one can locate duplicated pieces of code, i.e., code clones, within a software project or across software projects, and properly refactor them. This results in lower amount of redundant code in the software, hence easier to maintain. It can also avoid software licensing violations caused by code reuse and can also recommend software developers on how to write code that are well-accepted by the community. We plan to study and adopt suitable machine learning techniques for code similarity computations and will evaluate its effectiveness. Lastly, we plan to also deploy the tool to be used by developers and evaluate its usefulness and its impact in practice.
+  </td>
+</tr>
+<tr>
+  <td><a href="https://muict-seru.github.io/ASETSI/">Automated Software Engineering for Thailand's Software Industry (ASETSI)</a>
+  <br />
+  <i>Chaiyong, Morakot, Thanwadee<br />
+  IAPP18-19\74 (Newton Fund) Royal Academy of Engineering, UK<br />[Extended to Nov 2022]</i></td>
   <td>
   This project aims to study the challenges Thai software development SMEs currently face and train them to adopt ASE to tackle such challenges, the quality and quantity of software products developed in Thailand will be tremendously increased.
   This project provides benefits to both the UK and the Thai partners. First, it provides knowledge transfer of ASE expertise from the UK to improve the capabilities of Thailand software companies. Second, the project enables the UK researchers to study the productivity gain through applying ASE techniques into SMEs. The project will include a series of training/hands-on workshop sessions held in Thailand on topics surrounding ASE with the trainers/facilitators from both the UK and Thai partners. This project is an important milestone to establish further UK-Thailand software engineering research collaboration.
