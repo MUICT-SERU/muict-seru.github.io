@@ -91,48 +91,6 @@ title: People
 <div class="row">
     <div class="col-md-12">
       <p>
-      <b>Advisors:</b> Dr. Chaiyong Ragkhitwetsagul (advisor), Asst. Prof. Dr. Vasaka Visoottiviseth (co-advisor) and Lineman Wongnai (co-advisor)<br />
-      <b>Project:&nbsp;</b>Microusity: Security Testing Tool for Backend for Frontend (BFF) Microservice Architecture</p>
-    </div>
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <div class="panel panel-default author">
-          <div class="author_pic author">
-            <img src="img/chansida.jpg" style="border-radius: 50%;" />
-          </div>
-          <div class="panel-body">
-              <span class="text-primary"><a href="https://www.linkedin.com/in/chansida-makaranond-45a53a152/">Chansida Makaranond</a></span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <div class="panel panel-default author">
-            <!-- <div class="panel-heading">Panel heading</div> -->
-            <div class="author_pic author">
-              <img src="img/pattarakrit.jpg" style="border-radius: 50%;" />
-            </div>
-            <div class="panel-body">
-                <span class="text-primary"><a href="https://www.linkedin.com/in/pattarakrit-rat">Pattarakrit Rattanukul</a></span>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="bs-component">
-        <div class="panel panel-default author">
-            <div class="author_pic author">
-              <img src="img/unknown.jpg" style="border-radius: 50%;" />
-            </div>
-            <div class="panel-body">
-              <span class="text-primary">Pumipat Watanakulcharus</span>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-12">
-      <p>
       <b>NAIST Internship Students 2020-2021</b><br />
       <b>Advisor:</b> Asst. Prof. Dr. Thanwadee Sunetnanta, Dr. Morakot Choetkiertikul, Dr. Chaiyong Ragkhitwetsagul (co-supervise with professors at NAIST)<br />
       </p>
