@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {% include head.html %}
 
@@ -15,7 +15,6 @@
 
     {% include footer.html %}
     {% include js_files.html %}
-    {% include analytics.html %}
 </body>
 
 </html>

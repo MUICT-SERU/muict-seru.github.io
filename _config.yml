@@ -1,21 +1,23 @@
 # Site settings
 title: SE @ MUICT
-affiliation: Mahidol University, Thailand
 email: chaiyong.rag@mahidol.ac.th, morakot.cho@mahidol.ac.th
 description: >
   The website of the Software Engineering Research Unit (SERU) at the Faculty of ICT, Mahidol University.
+lang: en-US
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://muict-seru.github.io # the base hostname & protocol for your site
 git_address: https://github.com/MUICT-SERU
+git_edit_address: https://github.com/MUICT-SERU/blob/gh-pages
 
-# theme options from https://bootswatch.com/
+# theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
-bootwatch: journal
+bootwatch: journal # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
+# Plugins (previously gems:)
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
@@ -28,7 +30,8 @@ exclude:
   - .idea/
   - .gitignore
   - README.md
-timezone: Europe/London
+  - vendor
+timezone: Europe/Berlin
 defaults:
 - scope:
     path: _posts
