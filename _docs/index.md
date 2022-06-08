@@ -4,14 +4,38 @@ permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
 
-## News (2020)
+## News (2022)
 
-### 18 November 2021
-The FixMe tool has been presented in the Tool Demonstrations track of ASE 2021!
-<img width="500px" src="../../img/fixme.png" alt="" class="img-responsive">
+
+
+## News (2021)
+
+### 17 December 2021
+
+The result of the first phase of the Automated Software Engineering for Thailand Software Industry project titled "Identifying Software Engineering Challenges in Software SMEs: A Case Study in Thailand" has been published in the Industry Track of the 29th International Conference on Software Analysis, Evolution, and Reengineering (SANER’22)!
+
+### 29-30 July 2021
+
+#### ASETSI Workshop 1
+
+Please be invited to join an academic seminar on <b>"Continuous integration, 
+continuous inspection, and automated code review"</b> on 29-30 July 2021 2-5 pm (2 days) via Zoom meeting. The seminar is lead by <b>Dr. Jens Krinke, Associate Professor, Director of the Centre for Research on Evolution Search & Testing (CREST)</b> in the Software Systems Engineering Group, UCL, UK, which covers the concept of automated software engineering (ASE) including continuous integration, continuous 
+inspection, and automated code review, and their adoption in software projects. 
+The ASE tools and techniques aim to improve the quality of the software and 
+software development process with minimum human intervention.
+This workshop is suitable for software companies, researchers, instructors, 
+and students who are interested in software engineering methodologies.
+ 
+This online seminar is a part of the <a href="https://muict-seru.github.io/ASETSI/">Automated Software Engineering for Thailand Software Industry (ASETSI) project funded by the Industry Academia Partnership Programme (IAPP 18/19) from Royal Academy of Engineering (Newton Fund).</a>
+
+It is a collaoboration between the Software Engineering Research Unit (SERU), Faculty of Information and Communication Technology, Mahidol University and <a href="https://www.ucl.ac.uk/crest/">CREST, University College London, UK</a>.
+
+<img width="400px" src="../../img/seminars/ASETSI_Workshop1_poster.jpeg" alt="" class="img-responsive">
 
 ### 2 February 2021
 The paper "Automatically recommending components for issue reports using deep learning" work, lead by Morakot and the team from University of Wollongong, has been published at Empirical Software Engineering. Check out the paper here: [https://link.springer.com/article/10.1007/s10664-020-09898-5](https://link.springer.com/article/10.1007/s10664-020-09898-5).
+
+## News (2020)
 
 ### 3 October 2020
 Congratulations to Purit Phan-udom, Naruedon Wattanakul, Tattiya Sakulniwat again for receiving the "Best Tool Demo Award" from ICSME 2020 for their work “Teddy: Automatic Recommendation of Pythonic Idiom Usage for Pull-Based Software Projects”! 

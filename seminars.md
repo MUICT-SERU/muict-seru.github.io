@@ -7,6 +7,22 @@ title: Seminars
 
 ---
 
+# April 2022
+
+### No. 7 - Characterizing the Quality of Third-party libraries through Runnability and Risk Assessment in the Open Source Ecosystem
+
+#### 5 April 2022 12:00 - 13:00, Online via Webex
+
+<img width="150px" src="../../img/seminars/bodin.jpeg" alt="" class="img-responsive" style="float: left; border-radius: 50%; margin: 20px;">
+
+#### [Dr. Bodin Chinthanet](https://bchinthanet.com/)
+
+**Abstract:**
+Third-party library usage becomes the important part of software development within the open source community. These library packages provide software developers with useful features without the need to reinvent the wheel. with each package often depending on several others. Since there are millions of packages available online, the understanding of the package quality is needed for choosing the suitable package in the software development project. This research project characterizes the package quality through (1) the package selection and (2) the package security risk. The first part of this project finds how to choose the good package from user and contributor perspectives through the developer survey and the analysis of package runnability. The results show that both users and contributors share similar views on how to assess the package quality. Runnability of the package could be used for choosing the good package. The second part of this project investigates the risk of vulnerability in the package through the vulnerability fix adoption analysis and the code-centric vulnerability detection. The results show that lags of the fix adoption are affected by factors (i.e., severity and freshness). Additionally, most of the vulnerable codes are not reachable in the application.
+
+**Bio:**
+Bodin Chinthanet is a specially appointed assistant professor at Nara Institute of Science and Technology, Japan. He received a Ph.D. from Nara Institute of Science and Technology in 2021. His research interests include empirical software engineering and mining software repositories. In detail, his research is focusing on the security vulnerabilities in software ecosystems, how developers react to vulnerabilities in their software projects. His ultimate goal is to mitigate the risk of security vulnerabilities in software ecosystems.
+
 # December 2021
 
 ### No. 6 - Not Teaching Software Engineering Standard to Future Software Engineers - Malpractice?
