@@ -6,7 +6,18 @@ redirect_from: /docs/index.html
 
 ## News (2022)
 
+### 16 June 2022
 
+#### ASETSI Workshop 2
+
+We are organizing the second seminar to transfer the ASE knowledge to Thailand's software industry on the topic of "Now You See Me: Understand Your Software with Code Analysis Using SonarQube". The seminar will be conducted by the 3 researchers at SERU: Asst. Prof. Dr. Thanwadee Sunetnanta, 
+Dr. Morakot Choetkiertikul, and Dr. Chaiyong Ragkhitwetsagul. We will present the concept of software measurement and metrics, followed by code smells and code refactoring. Lastly, we will cover the basic testing concept and automated testing. The participant will have a hands-on exercise by using SonarQube to analyze an open source software project to understand how the presented concepts can be used in practice.
+ 
+This online seminar is a part of the <a href="https://muict-seru.github.io/ASETSI/">Automated Software Engineering for Thailand Software Industry (ASETSI) project funded by the Industry Academia Partnership Programme (IAPP 18/19) from Royal Academy of Engineering (Newton Fund).</a>
+
+It is a collaoboration between the Software Engineering Research Unit (SERU), Faculty of Information and Communication Technology, Mahidol University and <a href="https://www.ucl.ac.uk/crest/">CREST, University College London, UK</a>.
+
+<img width="400px" src="../../img/seminars/ASETSI_Workshop2_poster.jpeg" alt="" class="img-responsive">
 
 ## News (2021)
 
