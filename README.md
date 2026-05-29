@@ -1,4 +1,4 @@
-# Jekyll Doc Theme
+# Jekyll Doc Theme 
 
 Go to [the website](https://aksakalli.github.io/jekyll-doc-theme/) for detailed information and demo.
 
