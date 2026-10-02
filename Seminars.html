@@ -402,7 +402,11 @@
       // when the browser blocks copying, select the address so the visitor can copy it by hand
       function failed(){ var r=document.createRange(); r.selectNodeContents(sBox.querySelector('.addr')); var sel=window.getSelection(); sel.removeAllRanges(); sel.addRange(r); show('Press Ctrl+C or \u2318C','Address selected, copy it with the keyboard',5000); }
       function fallback(){ var ok=false, t=document.createElement('textarea'); t.value=addr; t.setAttribute('readonly',''); t.style.position='absolute'; t.style.left='-9999px'; document.body.appendChild(t); t.select(); try{ ok=document.execCommand('copy'); }catch(err){} document.body.removeChild(t); if(ok) done(); else failed(); }
-      if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(addr).then(done,fallback); } else { fallback(); }
+      // never leave the click without an answer, if copying has not finished within a second, select the address instead
+      var settled=false;
+      function once(fn){ return function(){ if(!settled){ settled=true; fn(); } }; }
+      setTimeout(once(fallback),1000);
+      if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(addr).then(once(done),once(fallback)); } else { once(fallback)(); }
     });
   }
 </script>

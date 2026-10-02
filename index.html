@@ -197,6 +197,16 @@
   .join-card h2{color:#fff;font-weight:700;font-size:clamp(28px,3.6vw,38px);margin:0 0 12px;}
   .join-card p{color:#CFDAE8;margin:0 0 28px;}
   .join-card .cta-row{justify-content:flex-start;}
+  .mail-box{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:20px;background:var(--teal-soft);color:var(--text);border-radius:18px;padding:18px 22px;}
+  .mail-box[hidden]{display:none;}
+  .join-card .mail-box p{flex:1 1 260px;margin:0;color:var(--text);}
+  .mail-box .addr{font-weight:700;color:var(--navy);user-select:all;white-space:nowrap;}
+  .mail-actions{display:flex;flex-wrap:wrap;gap:8px;}
+  button.btn{font-family:var(--body);cursor:pointer;line-height:1.3;}
+  .btn-small{padding:9px 18px;font-size:14.5px;}
+  .btn-line{border:2px solid var(--teal);color:var(--teal-ink);background:#fff;}
+  .btn-line:hover{background:var(--teal);color:#fff;}
+  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
 
   /* footer */
   footer{padding:54px 0 60px;text-align:center;color:var(--muted);font-size:15px;}
@@ -486,8 +496,16 @@
           <h2>Join us</h2>
           <p>We are recruiting good undergraduate, master's, and PhD students to work with us on challenging topics within the area of software engineering.</p>
           <div class="cta-row">
-            <a class="btn btn-teal" href="mailto:morakot.cho@mahidol.ac.th?subject=Joining%20SERU">Get in touch</a>
+            <a class="btn btn-teal" id="join-btn" href="mailto:morakot.cho@mahidol.ac.th?subject=Joining%20SERU" aria-controls="join-box" aria-expanded="false">Get in touch</a>
             <a class="btn btn-white" href="https://www.facebook.com/muict.seru">Follow us on Facebook</a>
+          </div>
+          <div class="mail-box" id="join-box" hidden>
+            <p>Send your message to <span class="addr">morakot.cho@mahidol.ac.th</span>.</p>
+            <div class="mail-actions">
+              <button type="button" class="btn btn-line btn-small" id="join-copy">Copy address</button>
+              <a class="btn btn-teal btn-small" href="mailto:morakot.cho@mahidol.ac.th?subject=Joining%20SERU">Open in email app</a>
+            </div>
+            <span class="sr-only" id="join-status" aria-live="polite"></span>
           </div>
         </div>
       </div>
@@ -510,6 +528,25 @@
 <script>
   // the publication counts come from data/summary.js, which the publications notebook writes
   if(window.SERU_SUMMARY){ document.querySelectorAll('[data-stat]').forEach(function(el){ var v=window.SERU_SUMMARY[el.getAttribute('data-stat')]; if(v!==undefined) el.textContent=v; }); }
+  // Get in touch opens a box with the address, because an email link does nothing on a computer with no email app set up
+  (function(){
+    var jBtn=document.getElementById('join-btn'), jBox=document.getElementById('join-box'), cBtn=document.getElementById('join-copy'), cStat=document.getElementById('join-status');
+    if(!jBtn || !jBox) return;
+    jBtn.addEventListener('click',function(e){ e.preventDefault(); var open=jBox.hidden; jBox.hidden=!open; jBtn.setAttribute('aria-expanded',open); if(open) cBtn.focus(); });
+    cBtn.addEventListener('click',function(){
+      var addr='morakot.cho@mahidol.ac.th';
+      function show(label, note, ms){ cBtn.textContent=label; cStat.textContent=note; setTimeout(function(){ cBtn.textContent='Copy address'; cStat.textContent=''; },ms); }
+      function done(){ show('Copied','Address copied',2000); }
+      // when the browser blocks copying, select the address so the visitor can copy it by hand
+      function failed(){ var r=document.createRange(); r.selectNodeContents(jBox.querySelector('.addr')); var sel=window.getSelection(); sel.removeAllRanges(); sel.addRange(r); show('Press Ctrl+C or \u2318C','Address selected, copy it with the keyboard',5000); }
+      function fallback(){ var ok=false, t=document.createElement('textarea'); t.value=addr; t.setAttribute('readonly',''); t.style.position='absolute'; t.style.left='-9999px'; document.body.appendChild(t); t.select(); try{ ok=document.execCommand('copy'); }catch(err){} document.body.removeChild(t); if(ok) done(); else failed(); }
+      // never leave the click without an answer, if copying has not finished within a second, select the address instead
+      var settled=false;
+      function once(fn){ return function(){ if(!settled){ settled=true; fn(); } }; }
+      setTimeout(once(fallback),1000);
+      if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(addr).then(once(done),once(fallback)); } else { once(fallback)(); }
+    });
+  })();
   var btn=document.querySelector('.menu-btn'), menu=document.getElementById('menu');
   btn.addEventListener('click',function(){ var open=menu.classList.toggle('open'); btn.setAttribute('aria-expanded',open); });
   menu.addEventListener('click',function(e){ if(e.target.tagName==='A'){ menu.classList.remove('open'); btn.setAttribute('aria-expanded',false); } });
