@@ -1,0 +1,1 @@
+window.SERU_SUMMARY = {"total": 72, "journals": 18, "journals_sjr_q1": 9, "conference_papers": 45, "conference_papers_core_a_star_or_a": 16, "conference_papers_core_a_star": 7, "papers_in_google_scholar_top20": 29, "papers_at_a_top_venue": 30, "workshop_papers": 7, "book_chapters": 2, "years": "2018 to 2026"};
