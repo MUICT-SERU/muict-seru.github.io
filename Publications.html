@@ -78,7 +78,6 @@
   .chip span{color:var(--muted);margin-left:4px;}
   .chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff;}
   .chip[aria-pressed="true"] span{color:#CFDAE8;}
-  .filters .sep{width:1px;height:26px;background:var(--line);margin:0 6px;}
   .count{text-align:center;color:var(--muted);font-size:14.5px;margin:0 0 34px;}
 
   /* list by year */
@@ -131,7 +130,6 @@
     .stat b{font-size:34px;}
     .stat .l{font-size:14.5px;}
     .filters{justify-content:flex-start;}
-    .filters .sep{display:none;}
     .count{text-align:left;}
     .pubs{padding:4px 18px;}
     .pubs li{grid-template-columns:1fr;gap:8px;}
@@ -183,8 +181,6 @@
         <button type="button" class="chip" data-cat="Conference" aria-pressed="false">Conference papers<span></span></button>
         <button type="button" class="chip" data-cat="Workshop" aria-pressed="false">Workshop papers<span></span></button>
         <button type="button" class="chip" data-cat="Book chapter" aria-pressed="false">Book chapters<span></span></button>
-        <span class="sep" aria-hidden="true"></span>
-        <button type="button" class="chip" id="top-only" aria-pressed="false">Top venues only</button>
       </div>
       <p class="count" id="count" aria-live="polite"></p>
       <div id="list"></div>
@@ -215,15 +211,15 @@
   (function(){
     var data=window.SERU_PUBLICATIONS, list=document.getElementById('list'), count=document.getElementById('count');
     if(!data){ list.innerHTML='<p class="empty">The publication list could not be loaded.</p>'; return; }
-    var papers=data.papers, state={cat:'',top:false};
+    var papers=data.papers, state={cat:''};
     document.querySelectorAll('[data-stat]').forEach(function(el){ var v=data.summary[el.getAttribute('data-stat')]; if(v!==undefined) el.textContent=v; });
     var members={}; papers.forEach(function(p){ p.members.forEach(function(m){ members[m]=true; }); });
-    var chips=[].slice.call(document.querySelectorAll('.chip[data-cat]')), topBtn=document.getElementById('top-only');
+    var chips=[].slice.call(document.querySelectorAll('.chip[data-cat]'));
 
     function esc(s){ return String(s).replace(/[&<>"']/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
     function kind(label){ return label.indexOf('SJR')===0?'sjr':label.indexOf('CORE')===0?'core':'gs'; }
     function plural(n){ return n+(n===1?' paper':' papers'); }
-    function matches(p,cat){ return (!cat||p.category===cat)&&(!state.top||p.badges.length>0); }
+    function matches(p,cat){ return !cat||p.category===cat; }
     function item(p){
       var title=p.link?'<a href="'+esc(p.link)+'">'+esc(p.title)+'</a>':esc(p.title);
       var authors=p.authors.map(function(a){ return members[a]?'<strong>'+esc(a)+'</strong>':esc(a); }).join(', ');
@@ -250,10 +246,8 @@
         c.querySelector('span').textContent=papers.filter(function(p){ return matches(p,cat); }).length;
         c.setAttribute('aria-pressed',cat===state.cat);
       });
-      topBtn.setAttribute('aria-pressed',state.top);
     }
     chips.forEach(function(c){ c.addEventListener('click',function(){ state.cat=c.getAttribute('data-cat'); render(); }); });
-    topBtn.addEventListener('click',function(){ state.top=!state.top; render(); });
     render();
   })();
 </script>
