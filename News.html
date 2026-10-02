@@ -2,12 +2,685 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>SERU · This page has moved</title>
-<link rel="canonical" href="https://muict-seru.github.io/">
-<meta http-equiv="refresh" content="0; url=./#news">
-<script>location.replace("./#news");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News · SERU, Mahidol University</title>
+<meta name="description" content="News from SERU, the Software Engineering Research Unit at the Faculty of ICT, Mahidol University.">
+<meta name="theme-color" content="#1B315D">
+<meta property="og:title" content="News · SERU, Mahidol University">
+<meta property="og:description" content="News from SERU, the Software Engineering Research Unit at the Faculty of ICT, Mahidol University.">
+<meta property="og:image" content="https://muict-seru.github.io/images/seru-logo.png">
+<meta property="og:url" content="https://muict-seru.github.io/News.html">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F9F9;
+    --navy:#1B315D;      /* SERU navy, from the logo */
+    --teal:#15ADA5;      /* SERU teal, from the logo */
+    --teal-ink:#0B7F79;
+    --teal-soft:#E1F4F3;
+    --navy-soft:#E7ECF4;
+    --yellow:#FEE000;    /* SERU yellow, from the logo */
+    --grey:#D6D6D6;      /* SERU grey, from the logo */
+    --text:#2B3850;
+    --muted:#5A687D;
+    --line:#DDEAEA;
+    --maxw:1120px;
+    --head:'Poppins',system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
+    --body:'Nunito Sans',system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
+    --shadow:0 10px 30px rgba(27,49,93,.08);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{transition:none !important;}}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;}
+  h1,h2,h3{font-family:var(--head);color:var(--navy);}
+  :focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:10px;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+
+  /* floating pill nav */
+  header.nav{position:sticky;top:14px;z-index:50;padding:0 20px;}
+  .nav-inner{position:relative;max-width:var(--maxw);margin:0 auto;height:62px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-radius:999px;box-shadow:0 8px 30px rgba(27,49,93,.12);padding:0 10px 0 20px;}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand img{width:32px;height:auto;display:block;}
+  .brand .name{font-family:var(--head);font-weight:700;font-size:19px;letter-spacing:3px;color:var(--navy);}
+  nav.links{display:flex;align-items:center;gap:4px;}
+  nav.links a{font-weight:700;font-size:15px;color:var(--navy);padding:9px 14px;border-radius:999px;transition:background .15s,color .15s;}
+  nav.links a:hover,nav.links a.active{background:var(--teal-soft);color:var(--teal-ink);}
+  nav.links a.pill{background:var(--teal);color:#fff;padding:10px 20px;margin-left:6px;}
+  nav.links a.pill:hover{background:var(--teal-ink);color:#fff;}
+  .menu-btn{display:none;background:none;border:0;cursor:pointer;padding:10px 12px;}
+  .menu-btn span{display:block;width:22px;height:2px;background:var(--navy);margin:4px 0;border-radius:2px;}
+
+  /* page head */
+  .page-head{padding:64px 0 60px;}
+  .head{text-align:center;margin:0 auto 40px;max-width:64ch;}
+  .orn{display:inline-flex;align-items:center;margin-bottom:14px;}
+  .orn::before{content:"";width:56px;height:8px;border-radius:8px;background:var(--teal);}
+  .orn::after{content:"";width:18px;height:18px;border-radius:50%;background:var(--yellow);margin-left:-4px;box-shadow:0 0 0 4px var(--bg);}
+  .head h1{font-weight:700;font-size:clamp(32px,4.4vw,46px);letter-spacing:-.015em;line-height:1.12;margin:0;}
+  .head p{color:var(--muted);margin:14px 0 0;}
+
+  /* summary counts */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;list-style:none;margin:0;padding:0;}
+  .stat{background:#fff;border-radius:22px;padding:22px 24px 24px;box-shadow:0 4px 16px rgba(27,49,93,.06);}
+  .stat::before{content:"";display:block;width:30px;height:6px;border-radius:6px;background:var(--teal);margin-bottom:16px;}
+  .stat b{display:block;font-family:var(--head);font-weight:600;font-size:40px;line-height:1.05;color:var(--navy);font-variant-numeric:proportional-nums;}
+  .stat .l{display:block;font-weight:700;color:var(--text);font-size:15.5px;line-height:1.35;margin-top:8px;}
+  .stat .s{display:block;color:var(--muted);font-size:14px;margin-top:2px;}
+  .stat-note{max-width:80ch;margin:18px auto 0;text-align:center;color:var(--muted);font-size:14px;line-height:1.55;}
+
+
+  /* news list */
+  .page-head{padding-bottom:20px;}
+  .page-head .head{margin-bottom:22px;}
+  .years{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;}
+  .years a{font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:1px solid var(--line);padding:7px 16px;border-radius:999px;transition:border-color .15s,color .15s;}
+  .years a:hover{border-color:var(--teal);color:var(--teal-ink);}
+  section.news-sec{padding:0 0 80px;}
+  .year-h{max-width:980px;margin:34px auto 16px;font-weight:600;font-size:26px;line-height:1.2;display:flex;align-items:center;gap:12px;scroll-margin-top:96px;}
+  .year-h span{font-family:var(--body);font-size:13.5px;font-weight:700;color:var(--navy);background:var(--navy-soft);padding:3px 12px;border-radius:999px;}
+  .news-list{list-style:none;margin:0 auto;padding:0;display:grid;gap:18px;max-width:980px;}
+  .entry{display:grid;grid-template-columns:280px 1fr;gap:26px;align-items:start;background:#fff;border-radius:22px;box-shadow:var(--shadow);padding:22px;scroll-margin-top:96px;}
+  .entry:target{box-shadow:0 0 0 3px var(--teal),var(--shadow);}
+  .entry .pic img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:14px;background:var(--teal-soft);}
+  .meta{display:flex;align-items:center;gap:10px;}
+  .when{display:inline-block;background:var(--teal-soft);color:var(--navy);font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px;}
+  .anchor{margin-left:auto;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:var(--muted);border:1px solid var(--line);transition:color .15s,border-color .15s;}
+  .anchor:hover{color:var(--teal-ink);border-color:var(--teal);}
+  .anchor svg{width:16px;height:16px;}
+  .entry h3{font-weight:600;font-size:19px;line-height:1.3;margin:12px 0 8px;}
+  .entry h3 a:hover{color:var(--teal-ink);}
+  .entry h4{font-family:var(--head);font-weight:600;font-size:15px;color:var(--navy);margin:14px 0 2px;}
+  .entry p,.story p{margin:0 0 8px;font-size:15.5px;}
+  .entry ul,.story ul{margin:4px 0 10px;padding-left:20px;font-size:15.5px;}
+  .entry li,.story li{margin:3px 0;}
+  .read{display:inline-block;margin-top:4px;font-weight:700;font-size:14.5px;color:var(--teal-ink);}
+  .read:hover{text-decoration:underline;}
+  .more-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px !important;}
+  .more-links a{font-weight:700;font-size:14px;color:var(--teal-ink);border:2px solid var(--teal);border-radius:999px;padding:5px 14px;transition:background .15s,color .15s;}
+  .more-links a:hover{background:var(--teal);color:#fff;}
+
+  /* news detail page */
+  .story{max-width:820px;margin:0 auto;padding:44px 0 80px;}
+  .crumb a{font-weight:700;font-size:15px;color:var(--teal-ink);}
+  .crumb a:hover{text-decoration:underline;}
+  .story h1{font-weight:700;font-size:clamp(28px,3.6vw,38px);line-height:1.2;letter-spacing:-.01em;margin:14px 0 20px;}
+  .story .lead{display:block;max-width:100%;max-height:560px;width:auto;height:auto;margin:0 auto;border-radius:18px;box-shadow:var(--shadow);background:#fff;}
+  .story .body{margin-top:24px;}
+  .story .body p,.story .body ul{font-size:17px;}
+  .story h2{font-weight:600;font-size:20px;margin:34px 0 12px;}
+  .paper{background:#fff;border-radius:16px;padding:16px 18px;box-shadow:0 4px 16px rgba(27,49,93,.06);margin-bottom:12px;}
+  .paper .t{font-family:var(--head);font-weight:600;color:var(--navy);line-height:1.4;}
+  .paper .t a:hover{color:var(--teal-ink);}
+  .paper .au{font-size:15px;margin-top:5px;}
+  .paper .au strong{color:var(--navy);}
+  .paper .v{color:var(--muted);font-size:14.5px;margin-top:2px;}
+  .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
+  .gallery-grid a{display:block;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(27,49,93,.06);background:#fff;}
+  .gallery-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .2s;}
+  .gallery-grid a:hover img{transform:scale(1.03);}
+
+  /* filters */
+  section.list{background:#fff;padding:56px 0 80px;}
+  .filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;margin:0 0 14px;}
+  .chip{font-family:var(--body);font-weight:700;font-size:14.5px;line-height:1.3;color:var(--navy);background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;cursor:pointer;transition:background .15s,color .15s,border-color .15s;}
+  .chip:hover{border-color:var(--teal);}
+  .chip span{color:var(--muted);margin-left:4px;}
+  .chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff;}
+  .chip[aria-pressed="true"] span{color:#CFDAE8;}
+  .count{text-align:center;color:var(--muted);font-size:14.5px;margin:0 0 34px;}
+
+  /* list by year */
+  .year + .year{margin-top:44px;}
+  .year h2{font-weight:600;font-size:26px;line-height:1.2;margin:0 0 14px;display:flex;align-items:center;gap:12px;}
+  .year h2 span{font-family:var(--body);font-size:13.5px;font-weight:700;color:var(--navy);background:var(--navy-soft);padding:3px 12px;border-radius:999px;}
+  .pubs{list-style:none;margin:0;padding:8px 30px;background:#fff;border-radius:26px;box-shadow:var(--shadow);}
+  .pubs li{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:20px 0;border-top:1px solid var(--line);align-items:start;}
+  .pubs li:first-child{border-top:0;}
+  .pub-tag{background:var(--navy);color:#fff;font-family:var(--head);font-weight:600;font-size:12.5px;text-align:center;padding:5px 4px;border-radius:999px;margin-top:2px;}
+  .pubs li:nth-child(even) .pub-tag{background:var(--teal-ink);}
+  .pub-body .t{font-family:var(--head);font-weight:600;color:var(--navy);font-size:16.5px;line-height:1.4;}
+  .pub-body .t a:hover{color:var(--teal-ink);}
+  .pub-body .au{font-size:15px;line-height:1.5;margin-top:5px;}
+  .pub-body .au strong{color:var(--navy);font-weight:700;}
+  .pub-body .a{color:var(--muted);font-size:15px;margin-top:2px;}
+  .badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+  .badge{font-size:12.5px;font-weight:700;line-height:1.2;color:var(--navy);padding:4px 10px;border-radius:999px;background:#fff;border:1px solid var(--line);}
+  .badge.sjr{background:var(--navy-soft);border-color:var(--navy-soft);}
+  .badge.core{background:var(--teal-soft);border-color:var(--teal-soft);}
+  .empty{text-align:center;color:var(--muted);margin:20px 0;}
+  .back{text-align:center;margin-top:44px;}
+  .link{display:inline-block;font-weight:700;color:var(--teal-ink);background:#fff;border:2px solid var(--teal);padding:10px 22px;border-radius:999px;transition:background .15s,color .15s;}
+  .link:hover{background:var(--teal);color:#fff;}
+
+  /* footer */
+  footer{padding:54px 0 60px;text-align:center;color:var(--muted);font-size:15px;}
+  footer .brand{justify-content:center;margin-bottom:12px;}
+  footer a{color:var(--navy);font-weight:700;}
+  footer a:hover{color:var(--teal-ink);}
+  footer p{margin:4px 0;}
+
+  @media (max-width:960px){
+    .stats{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:860px){
+    nav.links{display:none;}
+    .menu-btn{display:block;}
+    nav.links.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;background:#fff;border-radius:22px;box-shadow:0 12px 30px rgba(27,49,93,.15);padding:12px;}
+    nav.links.open a{padding:12px 16px;}
+    nav.links.open a.pill{text-align:center;margin:6px 0 0;}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 16px;}
+    header.nav{padding:0 10px;}
+    .page-head{padding:44px 0 44px;}
+    .stats{gap:12px;}
+    .stat{padding:18px 16px 20px;border-radius:18px;}
+    .stat::before{margin-bottom:12px;}
+    .stat b{font-size:34px;}
+    .stat .l{font-size:14.5px;}
+    .filters{justify-content:flex-start;}
+    .count{text-align:left;}
+    .pubs{padding:4px 18px;}
+    .pubs li{grid-template-columns:1fr;gap:8px;}
+    .pub-tag{justify-self:start;padding:5px 14px;}
+    .entry{grid-template-columns:1fr;gap:14px;padding:16px;}
+    .story{padding-top:28px;}
+
+  }
+</style>
 </head>
 <body>
-<p>This page has moved to <a href="./#news">the News section of the SERU home page</a>.</p>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="./" aria-label="SERU home">
+      <img src="images/seru-mark.png" alt="" width="32" height="31">
+      <span class="name">SERU</span>
+    </a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="links" id="menu">
+      <a class="active" href="News.html" aria-current="page">News</a>
+      <a href="./#research">Research</a>
+      <a href="./#people">People</a>
+      <a href="Publications.html">Publications</a>
+      <a href="Seminars.html">Seminars</a>
+      <a href="./#partners">Partners</a>
+      <a class="pill" href="./#join">Join us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="page-head">
+    <div class="wrap">
+      <div class="head"><span class="orn"></span><h1>News</h1><p>News from SERU, newest first. Each entry has its own link for sharing.</p></div>
+      <nav class="years" aria-label="Jump to a year"><a href="#y2026">2026</a><a href="#y2025">2025</a><a href="#y2024">2024</a><a href="#y2023">2023</a></nav>
+    </div>
+  </section>
+
+  <section class="news-sec" aria-label="News entries">
+    <div class="wrap">
+      <h2 class="year-h" id="y2026">2026<span>10 entries</span></h2>
+      <ul class="news-list">
+        <li class="entry" id="2026-09-apsec">
+          <div class="pic"><img src="images/news/2026-09-apsec.jpg" alt="Two papers accepted at APSEC 2026" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Sep 2026</span><a class="anchor" href="#2026-09-apsec" title="Link to this news" aria-label="Link to this news, Two papers accepted at APSEC 2026"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2026-09-apsec.html">Two papers accepted at APSEC 2026</a></h3>
+            <p>Two papers by our undergraduate students have been accepted at the 33rd Asia-Pacific Software Engineering Conference (APSEC 2026), held from 7 to 10 December 2026 in Bali, Indonesia. In the Technical Track, Panya Trakoolgerntong, Arus Thienmee, and Patsathorn Chadbanterng rank the links in code reviews, so that a reviewer knows which one to read first. In the ERA Track, Napasorn Lapprakobkit looks at how open-source projects adopt and maintain the Agent Package Manager. Prof. Yasutaka Kamei&#x27;s POSL team at Kyushu University hosted Panya and Napasorn as interns and guided both papers.</p><a class="read" href="news/2026-09-apsec.html">Read more →</a><p class="more-links"><a href="Publications.html">All publications</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2026-09-exhibition">
+          <div class="pic"><img src="images/news/2026-09-exhibition.jpg" alt="ICT Internship Poster Exhibition" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Sep 2026</span><a class="anchor" href="#2026-09-exhibition" title="Link to this news" aria-label="Link to this news, ICT Internship Poster Exhibition"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>ICT Internship Poster Exhibition</h3>
+            <p>Our summer interns presented their work at the ICT Internship Poster Exhibition 2026, “Quest for the Future!”, on 23 September in the Grand Auditorium of the ICT Building. Their posters covered a summer of research at our partner labs in Japan, POSL at Kyushu University, the Software Design and Analysis Laboratory at NAIST, and The University of Osaka. The summer also produced papers. One is already accepted at APSEC 2026, and two more have been submitted. We thank our hosts for welcoming our students and guiding them all summer.</p><p class="more-links"><a href="News.html#2026-08-internships">About the internships</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2026-09-quasoq-2026">
+          <div class="pic"><img src="images/news/2026-09-quasoq-2026.jpg" alt="QuASoQ 2026 call for papers" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Sep 2026</span><a class="anchor" href="#2026-09-quasoq-2026" title="Link to this news" aria-label="Link to this news, QuASoQ 2026 call for papers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2026-09-quasoq-2026.html">QuASoQ 2026 call for papers</a></h3>
+            <p>Thanwadee Sunetnanta is a co-chair of QuASoQ 2026, the 13th International Workshop on Quantitative Approaches to Software Quality. The workshop takes place on 7 December 2026 in Bali, Indonesia, together with APSEC 2026. It welcomes work that measures, assesses, and evaluates the quality of software systems and of the processes that build them, and it encourages experience reports from industry. Papers are due on 9 October 2026, and accepted papers appear in CEUR-WS, which Scopus indexes.</p><a class="read" href="news/2026-09-quasoq-2026.html">Read more →</a><p class="more-links"><a href="https://quasoq2026.swc-rwth.de/">Workshop website</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2026-08-nsc">
+          <div class="pic"><img src="images/news/2026-08-nsc.jpg" alt="Honorable Mention at NSC 2026" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Aug 2026</span><a class="anchor" href="#2026-08-nsc" title="Link to this news" aria-label="Link to this news, Honorable Mention at NSC 2026"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2026-08-nsc.html">Honorable Mention at NSC 2026</a></h3>
+            <p>DepSecLens, a web tool that checks the security of a Python project&#x27;s dependencies, received an Honorable Mention at the 28th National Software Contest (NSC 2026). Chayanid Termphaiboon, Thitapha Singtho, and Papopporn Thongnarintr presented it on 24 July at the Faculty of Science, Silpakorn University, and went on to the final round. The tool grew out of research. Chayanid first studied how PyPI packages declare security policies during an internship at NAIST, and that study became a paper at the ASE 2025 workshops. DepSecLens draws on OSV.dev and the OpenSSF Scorecard and adds an LLM assistant for questions about a project&#x27;s dependencies.</p><a class="read" href="news/2026-08-nsc.html">Read more →</a><p class="more-links"><a href="News.html#2025-09-ise-security-md">About the study</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2026-08-internships">
+          <div class="pic"><img src="images/news/2026-08-internships.jpg" alt="Summer internships in Japan" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Aug 2026</span><a class="anchor" href="#2026-08-internships" title="Link to this news" aria-label="Link to this news, Summer internships in Japan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2026-08-internships.html">Summer internships in Japan</a></h3>
+            <p>Eight of our undergraduates spent the summer at partner universities in Japan and presented their results to their hosts in late July and early August.</p><ul><li>Krittanon Chongklahan and Pundharee Puckdinukul joined the Software Design and Analysis Laboratory at NAIST.</li><li>Mana Sudthamma and Napasorn Lapprakobkit joined POSL at Kyushu University.</li><li>Thanadon Yindeesuk and Kuntapat Asawaworarit joined Prof. Raula Gaikovina Kula&#x27;s team at The University of Osaka.</li><li>Yu-Han Huang and Natkrittar Maswongwiwat joined Tokyo City University.</li></ul><p>Napasorn&#x27;s internship study is now a paper at APSEC 2026.</p><a class="read" href="news/2026-08-internships.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2026-07-dan-proposal">
+          <div class="pic"><img src="images/news/2026-07-dan-proposal.jpg" alt="PhD thesis proposal defense" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jul 2026</span><a class="anchor" href="#2026-07-dan-proposal" title="Link to this news" aria-label="Link to this news, PhD thesis proposal defense"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>PhD thesis proposal defense</h3>
+            <p>Our doctoral student Dan M. Kazimoto defended a PhD thesis proposal titled “An AI-Agentic Model for Predicting and Explaining Software Release Outcomes in the Era of AI Coding Agents” on 23 July 2026. AI coding agents such as GitHub Copilot, Claude Code, and OpenAI Codex now write code for software projects as teammates. The proposed model forecasts the productivity and quality of a software release, explains each forecast in terms a team can check, and stays valid when AI agents contribute. It also introduces the AI-inclusive bus factor, an ownership measure that counts AI agents alongside people. Asst. Prof. Dr. Morakot Choetkiertikul advises the thesis, with Suppawong Tuarob and Thanwadee Sunetnanta as co-advisors, and Mahidol University&#x27;s Faculty of Graduate Studies approved the thesis title on 11 August.</p>
+          </div>
+        </li>
+        <li class="entry" id="2026-02-jss">
+          <div class="pic"><img src="images/news/2026-02-jss.jpg" alt="Knowledge transfer study accepted in JSS" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Feb 2026</span><a class="anchor" href="#2026-02-jss" title="Link to this news" aria-label="Link to this news, Knowledge transfer study accepted in JSS"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2026-02-jss.html">Knowledge transfer study accepted in JSS</a></h3>
+            <p>Our study “Automated Software Engineering Knowledge Transfer: A Case Study on Small and Medium-Sized Software Enterprises in Thailand” has been accepted in the Journal of Systems and Software (JSS), a Q1 journal, in a special issue on Evaluation and Assessment in Industrial Software Engineering. We worked with four small and medium-sized software companies in Thailand and compared their practice before and after they adopted automated software engineering tools and techniques. The data came from an online survey, retrospective meetings, and interviews. The study completes our Newton Fund project, funded by the Royal Academy of Engineering, UK, and Thailand Science Research and Innovation (TSRI).</p><a class="read" href="news/2026-02-jss.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2026-01-naist-double-degree">
+          <div class="pic"><img src="images/news/2026-01-naist-double-degree.jpg" alt="Doctoral double degree with NAIST" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jan 2026</span><a class="anchor" href="#2026-01-naist-double-degree" title="Link to this news" aria-label="Link to this news, Doctoral double degree with NAIST"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>Doctoral double degree with NAIST</h3>
+            <p>The Faculty of ICT and the Nara Institute of Science and Technology (NAIST) in Japan signed an agreement for a doctoral double degree program. The signing ceremony took place at Mahidol University on 28 January 2026, and NAIST confirmed receipt of the signed agreement on 10 February. Under the program, a doctoral student can earn degrees from both universities. It builds on years of work between SERU and NAIST, including summer internships and joint papers.</p>
+          </div>
+        </li>
+        <li class="entry" id="2026-01-msr">
+          <div class="pic"><img src="images/news/2026-01-msr.jpg" alt="MSR 2026 Mining Challenge paper" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jan 2026</span><a class="anchor" href="#2026-01-msr" title="Link to this news" aria-label="Link to this news, MSR 2026 Mining Challenge paper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2026-01-msr.html">MSR 2026 Mining Challenge paper</a></h3>
+            <p>Our paper “When is Generated Code Difficult to Comprehend? Assessing AI Agent Python Code Proficiency in the Wild” was accepted in the Mining Challenge track of MSR 2026, held in Rio de Janeiro, Brazil, in April 2026. AI coding agents now write much of the code that developers review, so the team asked how advanced that code is. They mined 591 pull requests with 5,027 Python files written by three AI agents and rated each construct with pycefr, on six levels from A1 (Basic) to C2 (Mastery). Over 90% of the constructs fell into the two basic levels and under 1% reached Mastery, a profile close to that of human pull requests. Nanthit Temkulkiat, the first author, was a 2025 summer intern at The University of Osaka.</p><a class="read" href="news/2026-01-msr.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2026-01-msr-competition">
+          <div class="pic"><img src="images/news/2026-01-msr-competition.jpg" alt="Competition study accepted at MSR 2026" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jan 2026</span><a class="anchor" href="#2026-01-msr-competition" title="Link to this news" aria-label="Link to this news, Competition study accepted at MSR 2026"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2026-01-msr-competition.html">Competition study accepted at MSR 2026</a></h3>
+            <p>A paper by Yuki Takei and Prof. Toshiaki Aoki of JAIST and Chaiyong Ragkhitwetsagul of Mahidol University was accepted in the Technical Papers track of MSR 2026, the 23rd International Conference on Mining Software Repositories, which CORE ranks A. Titled “Quantifying Competitive Relationships Among Open-Source Software Projects”, it introduces MIAO (Mutual Impact Analysis of OSS). MIAO applies structural vector autoregressive models, a method common in macroeconomics, to measure how open-source projects compete with each other. Across 187 groups of related projects, it identified projects at risk of ceasing development under competitive pressure with up to 81% accuracy. The conference took place in Rio de Janeiro, Brazil, on 13 and 14 April 2026.</p><a class="read" href="news/2026-01-msr-competition.html">Read more →</a>
+          </div>
+        </li>
+      </ul>
+      <h2 class="year-h" id="y2025">2025<span>18 entries</span></h2>
+      <ul class="news-list">
+        <li class="entry" id="2025-12-npc-icaart">
+          <div class="pic"><img src="images/news/2025-12-npc-icaart.jpg" alt="NPC tool accepted at ICAART 2026" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Dec 2025</span><a class="anchor" href="#2025-12-npc-icaart" title="Link to this news" aria-label="Link to this news, NPC tool accepted at ICAART 2026"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-12-npc-icaart.html">NPC tool accepted at ICAART 2026</a></h3>
+            <p>NPC, a tool built by our students Pachanitha Saeheng, Napat Boongaree, and Chutweeraya Sriwilailak, was accepted for publication at ICAART 2026, the 18th International Conference on Agents and Artificial Intelligence. NPC detects code snippets generated by ChatGPT and explains each decision, using machine learning with a local neighborhood sampling strategy that the team proposed for post-hoc explanations. It runs as a web application and gives educators an easy-to-understand explanation for each classification. Professors who evaluated the tool found the explanations clear and helpful, which suggests it can support academic integrity in programming education. Dr. Chaiyong Ragkhitwetsagul, Dr. Teeradaj Racharak of Tohoku University, and Dr. Ekapol Chuangsuwanich of Chulalongkorn University co-supervised the project, which began during a 2024 research internship at JAIST.</p><a class="read" href="news/2025-12-npc-icaart.html">Read more →</a><p class="more-links"><a href="https://bit.ly/ase25-npc-demo">Demo video</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2025-12-emse-security-md">
+          <div class="pic"><img src="images/news/2025-12-emse-security-md.jpg" alt="SECURITY.md study accepted in EMSE" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Dec 2025</span><a class="anchor" href="#2025-12-emse-security-md" title="Link to this news" aria-label="Link to this news, SECURITY.md study accepted in EMSE"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-12-emse-security-md.html">SECURITY.md study accepted in EMSE</a></h3>
+            <p>Our paper “Security by Documentation? Characterizing GitHub SECURITY.md Policy and Their Adoption in Python Libraries” has been accepted in Empirical Software Engineering (EMSE), a Q1 journal. Many open-source projects publish a SECURITY.md file that tells users how to report vulnerabilities. Earlier studies counted how many projects adopt such a policy, but they did not examine what the policies say. The study analyzed the security policies of 679 Python libraries from PyPI hosted on GitHub and found that projects with a SECURITY.md file follow recommended security practices more closely. The work grew from internship research by our bachelor&#x27;s students, with partners at NAIST and The University of Osaka.</p><a class="read" href="news/2025-12-emse-security-md.html">Read more →</a><p class="more-links"><a href="News.html#2024-12-saner-2025-era">The SANER 2025 paper</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2025-12-apsec-2025">
+          <div class="pic"><img src="images/news/2025-12-apsec-2025.jpg" alt="SERU at APSEC 2025 in Macao" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Dec 2025</span><a class="anchor" href="#2025-12-apsec-2025" title="Link to this news" aria-label="Link to this news, SERU at APSEC 2025 in Macao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-12-apsec-2025.html">SERU at APSEC 2025 in Macao</a></h3>
+            <p>Four SERU students presented their research at the 32nd Asia-Pacific Software Engineering Conference (APSEC 2025) in Macao on 4 December 2025. Panya Trakoolgerntong presented AILinkPreviewer, a tool that previews the links in code reviews, which grew from an internship at POSL, Kyushu University. Chommakorn Sontesadisai and Lapatrada Dangsungnoen presented PromptOps, a tool that tests how far large language models can be trusted. Chayanee Junplong presented work on explaining code clone detection with an LLM-based explainer. Both tools appeared in the Tool Demo track.</p><a class="read" href="news/2025-12-apsec-2025.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2025-11-ase-2025">
+          <div class="pic"><img src="images/news/2025-11-ase-2025.jpg" alt="SERU at ASE 2025 in Seoul" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Nov 2025</span><a class="anchor" href="#2025-11-ase-2025" title="Link to this news" aria-label="Link to this news, SERU at ASE 2025 in Seoul"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-11-ase-2025.html">SERU at ASE 2025 in Seoul</a></h3>
+            <p>SERU members presented three papers at the 40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025) and its workshops in Seoul, South Korea, in November 2025. Chayanid Termphaiboon presented “Exploring the SECURITY.md in the Dependency Chain: Preliminary Analysis of the PyPI Ecosystem” at the International Workshop on Intelligent Software Engineering (ISE 2025), work that grew from a summer internship at NAIST. Morakot Choetkiertikul presented Sprint2Vec, our IEEE TSE paper, in the Journal-First track. Rujiphart Charatvaraphan, Bunradar Chatchaiyadech, and Thitirat Sukijprasert presented their PyGress tool in the Tools, Code and Models session.</p><a class="read" href="news/2025-11-ase-2025.html">Read more →</a><p class="more-links"><a href="News.html#2025-09-pygress">About PyGress</a><a href="News.html#2025-10-sprint2vec-ase">About Sprint2Vec</a><a href="News.html#2025-09-ise-security-md">About the ISE 2025 paper</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2025-10-apsec-2025-tools">
+          <div class="pic"><img src="images/news/2025-10-apsec-2025-tools.jpg" alt="Two tool demos accepted at APSEC 2025" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Oct 2025</span><a class="anchor" href="#2025-10-apsec-2025-tools" title="Link to this news" aria-label="Link to this news, Two tool demos accepted at APSEC 2025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-10-apsec-2025-tools.html">Two tool demos accepted at APSEC 2025</a></h3>
+            <p>Two tools built by our students were accepted in the Tool Demo track of APSEC 2025, the 32nd Asia-Pacific Software Engineering Conference. PromptOps uses metamorphic testing to check how trustworthy and robust large language models are, with a visual canvas to set up tests and visual reports to compare results. Chommakorn Sontesadisai, Chalisa Sae-Ngow, Jirateep Rudeerudchanawong, and Lapatrada Dangsungnoen built it as their graduation project, which began with Chommakorn&#x27;s research internship at JAIST. AILinkPreviewer, by Panya Trakoolgerntong, summarizes the links in pull requests so that reviewers grasp the context faster, and it grew from Panya&#x27;s research internship at POSL, Kyushu University.</p><a class="read" href="news/2025-10-apsec-2025-tools.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2025-10-icse-2026">
+          <div class="pic"><img src="images/news/2025-10-icse-2026.jpg" alt="Two papers accepted at ICSE 2026" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Oct 2025</span><a class="anchor" href="#2025-10-icse-2026" title="Link to this news" aria-label="Link to this news, Two papers accepted at ICSE 2026"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-10-icse-2026.html">Two papers accepted at ICSE 2026</a></h3>
+            <p>Two papers with SERU member Morakot Choetkiertikul as a co-author were accepted at ICSE 2026, the 48th International Conference on Software Engineering, which CORE ranks A*. Both are led by Miikka Kuutila and Prof. Paul Ralph of Dalhousie University. The first introduces and validates the Software Infrastructure Attitude Scale (SIAS), a questionnaire that measures how professionals view the technical and sociotechnical infrastructure they work with. The second surveyed 224 software professionals, and those with higher job satisfaction and job embeddedness reported weaker plans to leave. They appeared at the conference in Rio de Janeiro, Brazil, in April 2026.</p><a class="read" href="news/2025-10-icse-2026.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2025-10-sprint2vec-ase">
+          <div class="pic"><img src="images/news/2025-10-sprint2vec-ase.jpg" alt="Sprint2Vec in the ASE 2025 Journal-First track" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Oct 2025</span><a class="anchor" href="#2025-10-sprint2vec-ase" title="Link to this news" aria-label="Link to this news, Sprint2Vec in the ASE 2025 Journal-First track"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-10-sprint2vec-ase.html">Sprint2Vec in the ASE 2025 Journal-First track</a></h3>
+            <p>Our IEEE TSE paper “Sprint2Vec: A Deep Characterization of Sprints in Iterative Software Development” was accepted in the Journal-First track of ASE 2025. Sprint2Vec builds vector representations of Agile sprints from structured data, such as sprint reports, issue attributes, and developer profiles, and from text, such as issue descriptions and sequences of developer activity. Unlike earlier methods that predict only how much a sprint delivers, it predicts both productivity and quality, where quality means the risk of reopened issues. The evaluation covered nearly 8,000 sprints, 118,000 issues, and 3.7 million developer activities across five large open-source projects, where Sprint2Vec beat baseline and state-of-the-art approaches.</p><a class="read" href="news/2025-10-sprint2vec-ase.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2025-09-ise-security-md">
+          <div class="pic"><img src="images/news/2025-09-ise-security-md.jpg" alt="Internship study accepted at ISE 2025" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Sep 2025</span><a class="anchor" href="#2025-09-ise-security-md" title="Link to this news" aria-label="Link to this news, Internship study accepted at ISE 2025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-09-ise-security-md.html">Internship study accepted at ISE 2025</a></h3>
+            <p>A study by Chayanid Termphaiboon from a research internship at NAIST was accepted at the International Workshop on Intelligent Software Engineering (ISE 2025), co-located with ASE 2025. It compared Python projects on PyPI with and without a SECURITY.md file to see how security policies relate to dependency management. Projects with a security policy tend to rely on a broader set of direct dependencies, while the depth of their dependency chains is similar. Projects created after SECURITY.md was introduced, especially later adopters, update their dependencies more often. The results suggest that security policies go with more modular projects and more proactive dependency management.</p><a class="read" href="news/2025-09-ise-security-md.html">Read more →</a><p class="more-links"><a href="News.html#2026-08-nsc">DepSecLens at NSC 2026</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2025-09-tracecraft">
+          <div class="pic"><img src="images/news/2025-09-tracecraft.jpg" alt="TraceCraft accepted at InCIT 2025" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Sep 2025</span><a class="anchor" href="#2025-09-tracecraft" title="Link to this news" aria-label="Link to this news, TraceCraft accepted at InCIT 2025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-09-tracecraft.html">TraceCraft accepted at InCIT 2025</a></h3>
+            <p>TraceCraft, a project by our DST undergraduate students Nattawut Khumto, Phumipat Tomyim, and Pasin Thonguran, was accepted for presentation at InCIT 2025, the 9th International Conference on Information Technology, in Phuket, Thailand. The web-based platform supports traceability and change tracking in line with ISO/IEC 29110, a standard widely adopted in Thailand to improve software quality in very small entities. It links project artifacts, supports verification and validation, and tracks the impact of changes across development stages. Visual indicators and reports point out missing links, outdated items, and dependencies. In a usability study with nine Thai practitioners, TraceCraft scored an average of 73.17 on the System Usability Scale.</p><a class="read" href="news/2025-09-tracecraft.html">Read more →</a><p class="more-links"><a href="https://bit.ly/tracecraft">Demo video</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2025-09-incit-remote-work">
+          <div class="pic"><img src="images/news/2025-09-incit-remote-work.jpg" alt="COVID-19 and remote work study at InCIT 2025" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Sep 2025</span><a class="anchor" href="#2025-09-incit-remote-work" title="Link to this news" aria-label="Link to this news, COVID-19 and remote work study at InCIT 2025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-09-incit-remote-work.html">COVID-19 and remote work study at InCIT 2025</a></h3>
+            <p>Our study “The Impact of COVID-19 and Remote Work on Software Development in Thailand” was accepted for publication at InCIT 2025. We surveyed 194 Thai software developers about the challenges and benefits of remote work during the COVID-19 pandemic. The results show no statistically significant differences in productivity or well-being before and after the shift to remote work. As in many global studies, Thai developers met both advantages and challenges, and the survey also found some perspectives specific to Thailand. The findings may also inform other Asian countries and other low- and middle-income economies. We donated to the Siriraj Foundation for every survey response.</p><a class="read" href="news/2025-09-incit-remote-work.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2025-09-clone-explanation">
+          <div class="pic"><img src="images/news/2025-09-clone-explanation.jpg" alt="Code clone explanation paper accepted at APSEC 2025" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Sep 2025</span><a class="anchor" href="#2025-09-clone-explanation" title="Link to this news" aria-label="Link to this news, Code clone explanation paper accepted at APSEC 2025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-09-clone-explanation.html">Code clone explanation paper accepted at APSEC 2025</a></h3>
+            <p>Our paper on explaining code clone detection with large language models was accepted in the Early Research Achievements (ERA) track of APSEC 2025, the 32nd Asia-Pacific Software Engineering Conference, held from 2 to 5 December 2025 in Macao. Code clone detection models such as CodeBERT and GraphCodeBERT work as black boxes, and the paper proposes using a large language model to explain their decisions after the fact. Its Knowledge-based Local Neighbourhood (KLN) approach selects meaningful examples around a clone pair and lets the model write an explanation that people can read. The work grew from Chayanee Junplong&#x27;s master&#x27;s thematic paper, and Chayanee presented it at the conference in December.</p><a class="read" href="news/2025-09-clone-explanation.html">Read more →</a><p class="more-links"><a href="News.html#2024-10-chayanee-defense">The thematic paper defense</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2025-09-pygress">
+          <div class="pic"><img src="images/news/2025-09-pygress.jpg" alt="PyGress accepted at ASE 2025" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Sep 2025</span><a class="anchor" href="#2025-09-pygress" title="Link to this news" aria-label="Link to this news, PyGress accepted at ASE 2025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-09-pygress.html">PyGress accepted at ASE 2025</a></h3>
+            <p>PyGress, the senior project of Rujiphart Charatvaraphan, Bunradar Chatchaiyadech, and Thitirat Sukijprasert, was accepted in the Tool Demo track of ASE 2025, the 40th IEEE/ACM International Conference on Automated Software Engineering, which CORE ranks A*. PyGress is a web-based tool that evaluates and visualizes the proficiency of Python code using pycefr. It analyzes GitHub commit histories, maps code proficiency across the CEFR levels from A1 to C2, tracks how a project progresses over time, and shows each contributor&#x27;s coding profile. Its interactive summaries let users explore how Python open-source projects and their contributors grow in proficiency. The team presented the tool at ASE 2025 in Seoul in November.</p><a class="read" href="news/2025-09-pygress.html">Read more →</a><p class="more-links"><a href="https://bit.ly/pygress-demo">Demo video</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2025-08-mmt4nl-grant">
+          <div class="pic"><img src="images/news/2025-08-mmt4nl-grant.jpg" alt="Mahidol Strategic Research Fund for M-MMT4NL" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Aug 2025</span><a class="anchor" href="#2025-08-mmt4nl-grant" title="Link to this news" aria-label="Link to this news, Mahidol Strategic Research Fund for M-MMT4NL"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>Mahidol Strategic Research Fund for M-MMT4NL</h3>
+            <p>Our joint research proposal “M-MMT4NL: Multilingual Testing Framework for Large-Language Models” received the Mahidol Strategic Research Fund 2025 in the Rising category. The team brings together Dr. Chaiyong Ragkhitwetsagul, who leads the project, and Dr. Thanwadee Sunetnanta of Mahidol University, Dr. Teeradaj Racharak of Tohoku University, and Dr. Thanapong Intharah of Khon Kaen University. Building on our NLDB 2025 paper, the project uses metamorphic testing to generate test inputs for large language models. The goal is a framework that strengthens the trustworthiness of these models across several languages, including Thai, Japanese, and Chinese, over 18 months. Lapatrada Dangsungnoen&#x27;s master&#x27;s thesis carries the same title.</p><p class="more-links"><a href="News.html#2025-04-nldb-2025">The NLDB 2025 paper</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2025-07-icsme-journal-first">
+          <div class="pic"><img src="images/news/2025-07-icsme-journal-first.jpg" alt="Thai tool adoption study in the ICSME 2025 Journal-First track" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jul 2025</span><a class="anchor" href="#2025-07-icsme-journal-first" title="Link to this news" aria-label="Link to this news, Thai tool adoption study in the ICSME 2025 Journal-First track"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-07-icsme-journal-first.html">Thai tool adoption study in the ICSME 2025 Journal-First track</a></h3>
+            <p>Our EMSE study on how software companies in Thailand adopt automated software engineering tools was accepted in the Journal-First track of ICSME 2025, the International Conference on Software Maintenance and Evolution. The study asked how small and medium-sized software enterprises adopt tools for software measurement, static code analysis, continuous integration, and software testing. Based on a survey of 103 Thai developers, it found that developers are generally familiar with these tools and see their benefits. A lack of knowledge or experience holds back measurement and static analysis tools, continuous integration is used with some difficulty, and manual testing remains common. We call for easier tools that lower the barrier for such companies in developing countries.</p><a class="read" href="news/2025-07-icsme-journal-first.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2025-07-csur">
+          <div class="pic"><img src="images/news/2025-07-csur.jpg" alt="Privacy study accepted in ACM Computing Surveys" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jul 2025</span><a class="anchor" href="#2025-07-csur" title="Link to this news" aria-label="Link to this news, Privacy study accepted in ACM Computing Surveys"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-07-csur.html">Privacy study accepted in ACM Computing Surveys</a></h3>
+            <p>A systematic literature review by Dr. Pattaraporn Sangaroonsilp, “A Study on the Prevalence of Privacy in Software Engineering”, was accepted for publication in ACM Computing Surveys. Pattaraporn wrote it with Prof. Hoa Khanh Dam of the University of Wollongong. The review analyzed 187 primary studies and found privacy considerations in 12.14% of the software engineering research it examined. It also maps the common problem types, contributions, validation methods, and research focus areas, and it points to opportunities for researchers, academics, and practitioners. The paper is open access.</p><a class="read" href="news/2025-07-csur.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2025-06-icsme-2025">
+          <div class="pic"><img src="images/news/2025-06-icsme-2025.jpg" alt="Undergraduate paper accepted at ICSME 2025" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jun 2025</span><a class="anchor" href="#2025-06-icsme-2025" title="Link to this news" aria-label="Link to this news, Undergraduate paper accepted at ICSME 2025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-06-icsme-2025.html">Undergraduate paper accepted at ICSME 2025</a></h3>
+            <p>A paper by our undergraduate students Prachnachai Meakpaiboonwattana, Warittha Tarntong, and Thai Mekratanavorakul was accepted in the research track of ICSME 2025, the 41st International Conference on Software Maintenance and Evolution, which CORE ranks A. Titled “Social Media Reactions to Open Source Promotions: AI-Powered GitHub Projects on Hacker News”, it looks at what happens on GitHub after an open-source AI project is shared on Hacker News. The team analyzed over 2,000 posts and their linked repositories. After a project was shared on Hacker News, its forks, stars, and contributors increased, which suggests the site helps developers gain visibility and build a community. Their work began during a summer internship at NAIST.</p><a class="read" href="news/2025-06-icsme-2025.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2025-04-internships-2025">
+          <div class="pic"><img src="images/news/2025-04-internships-2025.jpg" alt="Summer internships 2025" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Apr 2025</span><a class="anchor" href="#2025-04-internships-2025" title="Link to this news" aria-label="Link to this news, Summer internships 2025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-04-internships-2025.html">Summer internships 2025</a></h3>
+            <p>In 2025 we sent 13 undergraduate students from the Faculty of ICT to five research labs in Japan and Australia for summer research internships. Three went to the Software Engineering Lab at The University of Osaka, and two went to the Software Engineering Lab at NAIST. Two went to POSL at Kyushu University, four to the ReaLearn Lab at Tohoku University, and two to Macquarie University in Australia. Work from that summer became papers at ISE 2025, APSEC 2025, and MSR 2026.</p><a class="read" href="news/2025-04-internships-2025.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2025-04-nldb-2025">
+          <div class="pic"><img src="images/news/2025-04-nldb-2025.jpg" alt="LLM testing paper accepted at NLDB 2025" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Apr 2025</span><a class="anchor" href="#2025-04-nldb-2025" title="Link to this news" aria-label="Link to this news, LLM testing paper accepted at NLDB 2025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2025-04-nldb-2025.html">LLM testing paper accepted at NLDB 2025</a></h3>
+            <p>Our paper “Test It Before You Trust It: Applying Software Testing for Trustworthy In-context Learning” was accepted at NLDB 2025, the 30th International Conference on Natural Language &amp; Information Systems. The work is a collaboration with the ReaLearn lab of Dr. Teeradaj Racharak, at JAIST and now at Tohoku University. It applies metamorphic testing to large language models on two tasks, sentiment analysis and question answering. It changes the input in ways that keep its meaning, for example by swapping characters, replacing words with synonyms, and switching between active and passive sentences. Tests on OpenAI&#x27;s GPT-4o and Google&#x27;s Gemini-2.0-Flash found several cases where the models changed their answers on such inputs.</p><a class="read" href="news/2025-04-nldb-2025.html">Read more →</a>
+          </div>
+        </li>
+      </ul>
+      <h2 class="year-h" id="y2024">2024<span>19 entries</span></h2>
+      <ul class="news-list">
+        <li class="entry" id="2024-12-year-in-review">
+          <div class="pic"><img src="images/news/2024-12-year-in-review.jpg" alt="2024 in review" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Dec 2024</span><a class="anchor" href="#2024-12-year-in-review" title="Link to this news" aria-label="Link to this news, 2024 in review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>2024 in review</h3>
+            <p>2024 was a productive year for SERU. We published two papers in Q1 journals, one in a tier 1 journal of the Thai-Journal Citation Index (TCI), six conference papers, and one workshop paper. Three undergraduate students and three master&#x27;s students graduated. Seven of our students did research internships in Japan, at NAIST, Osaka University, and JAIST.</p>
+          </div>
+        </li>
+        <li class="entry" id="2024-12-msc-defenses">
+          <div class="pic"><img src="images/news/2024-12-msc-defenses.jpg" alt="Master&#x27;s thematic paper defenses" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Dec 2024</span><a class="anchor" href="#2024-12-msc-defenses" title="Link to this news" aria-label="Link to this news, Master&#x27;s thematic paper defenses"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>Master&#x27;s thematic paper defenses</h3>
+            <p>Our master&#x27;s students Dan M. Kazimoto and Krittanan Jipimai (Mix) passed the final defenses of their thematic papers on 23 December 2024. Dan&#x27;s work, “DEV-EYE: A Tool for Monitoring Bus Factor Using Commit History”, had just appeared in the ERA track of APSEC 2024. Mix&#x27;s work, “Studying Computational Notebooks in Data Science Projects on GitHub”, is planned for publication as part of a journal paper. Asst. Prof. Dr. Morakot Choetkiertikul supervised both students. Dan has since continued to a PhD with SERU.</p>
+          </div>
+        </li>
+        <li class="entry" id="2024-12-saner-2025-era">
+          <div class="pic"><img src="images/news/2024-12-saner-2025-era.jpg" alt="Security reporting study accepted at SANER 2025" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Dec 2024</span><a class="anchor" href="#2024-12-saner-2025-era" title="Link to this news" aria-label="Link to this news, Security reporting study accepted at SANER 2025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2024-12-saner-2025-era.html">Security reporting study accepted at SANER 2025</a></h3>
+            <p>Sushawapak Kancharoendee, Thanat Phichitphanphong, and Chanikarn Jongyingyos had their paper “On Categorizing Open Source Software Security Vulnerability Reporting Mechanisms on GitHub” accepted in the ERA track of SANER 2025. The study grew from their summer internship at NAIST. It examined 679 open-source projects to see how they ask people to report security vulnerabilities. Email is still the main reporting channel, and projects without a SECURITY.md file tend to be less secure, with lower OpenSSF scores. Many maintainers ask for private reporting, but some contributors still disclose vulnerabilities in public.</p><a class="read" href="news/2024-12-saner-2025-era.html">Read more →</a><p class="more-links"><a href="News.html#2025-12-emse-security-md">The follow-up in EMSE</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2024-12-apsec-2024-chongqing">
+          <div class="pic"><img src="images/news/2024-12-apsec-2024-chongqing.jpg" alt="SERU at APSEC 2024 in Chongqing" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Dec 2024</span><a class="anchor" href="#2024-12-apsec-2024-chongqing" title="Link to this news" aria-label="Link to this news, SERU at APSEC 2024 in Chongqing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>SERU at APSEC 2024 in Chongqing</h3>
+            <p>Three of our students presented their work at the 31st Asia-Pacific Software Engineering Conference (APSEC 2024) in Chongqing, China. On 3 December, Ramita Deeprom presented “Challenges in Adopting LLaMA: An Empirical Study of Discussions on Stack Overflow” at the QuASoQ 2024 workshop, and Dan M. Kazimoto presented the DEV-EYE work at the EEE-OSS workshop. On 6 December, Chutweeraya Sriwilailak presented “Autorepairability of ChatGPT and Gemini: A Comparative Study”, and Dan presented “DEV-EYE: A Tool for Monitoring Bus Factor Using Commit History”, both in the ERA track. Shiyu Yang, a former research intern, joined the team at the conference.</p>
+          </div>
+        </li>
+        <li class="entry" id="2024-11-sprint2vec-tse">
+          <div class="pic"><img src="images/news/2024-11-sprint2vec-tse.jpg" alt="Sprint2Vec accepted in IEEE TSE" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Nov 2024</span><a class="anchor" href="#2024-11-sprint2vec-tse" title="Link to this news" aria-label="Link to this news, Sprint2Vec accepted in IEEE TSE"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2024-11-sprint2vec-tse.html">Sprint2Vec accepted in IEEE TSE</a></h3>
+            <p>Our paper “Sprint2Vec: A Deep Characterization of Sprints in Iterative Software Development” was accepted in IEEE Transactions on Software Engineering (TSE), a Q1 journal. Sprint2Vec is a framework that characterizes the sprints of Agile projects from three kinds of information, namely sprint attributes, issue attributes, and the developers involved. Peerachai (Jay) Banyongrakkul contributed to the work for three years, starting as an undergraduate student and continuing as a PhD student. The paper appeared in the January 2025 issue of TSE, and we presented it in the Journal-First track of ASE 2025.</p><a class="read" href="news/2024-11-sprint2vec-tse.html">Read more →</a><p class="more-links"><a href="News.html#2025-10-sprint2vec-ase">Sprint2Vec at ASE 2025</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2024-11-quasoq-2024">
+          <div class="pic"><img src="images/news/2024-11-quasoq-2024.jpg" alt="Internship study published at QuASoQ 2024" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Nov 2024</span><a class="anchor" href="#2024-11-quasoq-2024" title="Link to this news" aria-label="Link to this news, Internship study published at QuASoQ 2024"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2024-11-quasoq-2024.html">Internship study published at QuASoQ 2024</a></h3>
+            <p>Ramita Deeprom&#x27;s research internship study at the Software Engineering Lab of Osaka University was published at the 12th International Workshop on Quantitative Approaches to Software Quality (QuASoQ 2024), co-located with APSEC 2024. The paper, “Challenges in Adopting LLaMA: An Empirical Study of Discussions on Stack Overflow”, analyzes discussions about Meta&#x27;s LLaMA on Stack Overflow. Model configuration, error handling, and integration with other technologies are the most prominent topics. Frequent co-occurring tags show how LLaMA fits into the wider ecosystem of large language models and works with frameworks such as Python and Hugging Face Transformers. The findings call for better resources, documentation, and community support, especially for configuring and fine-tuning the model.</p><a class="read" href="news/2024-11-quasoq-2024.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2024-10-apsec-2024-era">
+          <div class="pic"><img src="images/news/2024-10-apsec-2024-era.jpg" alt="Two papers accepted at APSEC 2024" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Oct 2024</span><a class="anchor" href="#2024-10-apsec-2024-era" title="Link to this news" aria-label="Link to this news, Two papers accepted at APSEC 2024"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2024-10-apsec-2024-era.html">Two papers accepted at APSEC 2024</a></h3>
+            <p>Chutweeraya Sriwilailak and Dan M. Kazimoto had their research accepted in the Early Research Achievements (ERA) track of the 31st Asia-Pacific Software Engineering Conference (APSEC 2024). Chutweeraya&#x27;s work compares the autorepairability of two large language models, ChatGPT and Gemini, on a dataset of 1,200 functionally equivalent Java methods. Autorepairability is the degree to which automated program repair can be applied to software. Dan&#x27;s work introduces DEV-EYE, a tool that calculates the bus factor and potential bus factors of a Git-based software project and suggests how to plan its future. Both papers were presented in Chongqing, China, in December 2024.</p><a class="read" href="news/2024-10-apsec-2024-era.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2024-10-chayanee-defense">
+          <div class="pic"><img src="images/news/2024-10-chayanee-defense.jpg" alt="Master&#x27;s defense on explaining code clones" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Oct 2024</span><a class="anchor" href="#2024-10-chayanee-defense" title="Link to this news" aria-label="Link to this news, Master&#x27;s defense on explaining code clones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>Master&#x27;s defense on explaining code clones</h3>
+            <p>Chayanee Junplong passed the defense of her master&#x27;s thematic paper, “LLMs for Human-Interpretable Explanation in Code Clone Detection”, on 3 October 2024. Dr. Thanapong Intharah of Khon Kaen University chaired the examination committee, and Dr. Thanwadee Sunetnanta served on the committee. Dr. Chaiyong Ragkhitwetsagul, Dr. Teeradaj Racharak of JAIST, and Dr. Akara Supratak supervised the work. It later became a paper in the ERA track of APSEC 2025, which Chayanee presented in Macao in December 2025.</p><p class="more-links"><a href="News.html#2025-09-clone-explanation">The APSEC 2025 paper</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2024-08-cafe-seru-12">
+          <div class="pic"><img src="images/news/2024-08-cafe-seru-12.jpg" alt="Café SERU No. 12 on privacy weaknesses" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Aug 2024</span><a class="anchor" href="#2024-08-cafe-seru-12" title="Link to this news" aria-label="Link to this news, Café SERU No. 12 on privacy weaknesses"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>Café SERU No. 12 on privacy weaknesses</h3>
+            <p>Dr. Pattaraporn Sangaroonsilp, our newest member, gave Café SERU No. 12, “On Privacy Weaknesses and Vulnerabilities in Software Systems”, on 14 August 2024 in room MUAI2. The talk drew on a study of all 922 weaknesses in the Common Weakness Enumeration (CWE) and 156,537 vulnerabilities in the Common Vulnerabilities and Exposures (CVE) system. Only 4.45% of the CWE weaknesses and 0.1% of the CVE vulnerabilities relate to privacy. The study proposed 11 new common privacy weaknesses for the CWE, so that it can serve as a source for both security and privacy vulnerabilities. Our seminars page has the abstract and speaker bio.</p><p class="more-links"><a href="Seminars.html#no-12">Seminar details</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2024-08-jscefr">
+          <div class="pic"><img src="images/news/2024-08-jscefr.jpg" alt="jscefr accepted at ICSME 2024" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Aug 2024</span><a class="anchor" href="#2024-08-jscefr" title="Link to this news" aria-label="Link to this news, jscefr accepted at ICSME 2024"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2024-08-jscefr.html">jscefr accepted at ICSME 2024</a></h3>
+            <p>Our paper on jscefr was accepted in the Tool Demo track of ICSME 2024. jscefr, pronounced jes-cee-fer, is the work of our undergraduate students Komsan Kongwongsupak, Thanakrit Maneesawas, and Natpichsinee Puttiwarodom, with support from Ruksit Rojpaisarnkit, Morakot Choetkiertikul, Raula Gaikovina Kula, and Thanwadee Sunetnanta. The tool detects the elements of JavaScript used in a piece of code and estimates the proficiency needed to understand and maintain it. Based on the pycefr tool and the Common European Framework of Reference for Languages (CEFR), it classifies 138 JavaScript code constructs into six levels. The team applied it to three JavaScript projects from the npm ecosystem.</p><a class="read" href="news/2024-08-jscefr.html">Read more →</a><p class="more-links"><a href="https://youtu.be/Ehh-Prq59Pc">Demo video</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2024-07-mendix">
+          <div class="pic"><img src="images/news/2024-07-mendix.jpg" alt="Mendix Rapid Developer certificates" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jul 2024</span><a class="anchor" href="#2024-07-mendix" title="Link to this news" aria-label="Link to this news, Mendix Rapid Developer certificates"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>Mendix Rapid Developer certificates</h3>
+            <p>Morakot Choetkiertikul, Chaiyong Ragkhitwetsagul, and Pipatpong Niyommungmee earned the Mendix Rapid Developer certification in July 2024. Mendix is a low-code platform on which developers build web and mobile applications mostly through visual models rather than hand-written code. The Rapid Developer certificate is the first of Mendix&#x27;s four certification levels, followed by the Intermediate, Advanced, and Expert levels. It shows that the holder can design, build, and deploy applications on the platform.</p>
+          </div>
+        </li>
+        <li class="entry" id="2024-06-cafe-seru-11">
+          <div class="pic"><img src="images/news/2024-06-cafe-seru-11.jpg" alt="Café SERU No. 11 and a visit from Melbourne" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jun 2024</span><a class="anchor" href="#2024-06-cafe-seru-11" title="Link to this news" aria-label="Link to this news, Café SERU No. 11 and a visit from Melbourne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2024-06-cafe-seru-11.html">Café SERU No. 11 and a visit from Melbourne</a></h3>
+            <p>Dr. Patanamon Thongtanunam of the University of Melbourne gave Café SERU No. 11, “Uncovering Hidden Challenges: Designing Data-Driven Solutions for Real-World Software Engineering”, on 25 June 2024 in room IT210. The talk covered studies of real software practice in three areas, agile planning, code reviews, and continuous integration. Dr. Thongtanunam and Dr. Chakkrit Tantithamthavorn visited the Faculty of ICT that day, and we discussed possible collaborations in both education and research. Our seminars page has the abstract and speaker bio.</p><a class="read" href="news/2024-06-cafe-seru-11.html">Read more →</a><p class="more-links"><a href="Seminars.html#no-11">Seminar details</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2024-05-pattaraporn-joins">
+          <div class="pic"><img src="images/news/2024-05-pattaraporn-joins.jpg" alt="Pattaraporn Sangaroonsilp joins SERU" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">May 2024</span><a class="anchor" href="#2024-05-pattaraporn-joins" title="Link to this news" aria-label="Link to this news, Pattaraporn Sangaroonsilp joins SERU"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>Pattaraporn Sangaroonsilp joins SERU</h3>
+            <p>Pattaraporn Sangaroonsilp joined SERU in May 2024 after finishing her PhD at the University of Wollongong, Australia, with Prof. Hoa Khanh Dam, where she worked on privacy issues in software. Her research covers privacy and data protection in software systems, privacy requirements engineering, and privacy weaknesses and vulnerabilities. She is a lecturer at the Faculty of ICT. She gave her first Café SERU talk, on privacy weaknesses and vulnerabilities in software systems, in August 2024.</p><p class="more-links"><a href="News.html#2024-08-cafe-seru-12">Café SERU No. 12</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2024-04-jay-melbourne">
+          <div class="pic"><img src="images/news/2024-04-jay-melbourne.jpg" alt="Melbourne Research Scholarship for Peerachai Banyongrakkul" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Apr 2024</span><a class="anchor" href="#2024-04-jay-melbourne" title="Link to this news" aria-label="Link to this news, Melbourne Research Scholarship for Peerachai Banyongrakkul"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>Melbourne Research Scholarship for Peerachai Banyongrakkul</h3>
+            <p>Peerachai Banyongrakkul (Jay), a SERU member and ICT alumnus, received the Melbourne Research Scholarship. The scholarship supports his PhD in Engineering and IT at the University of Melbourne, where he will study bug reports in AI-based software applications. Jay began research with SERU as an undergraduate student and contributed to Sprint2Vec over three years. That work was accepted in IEEE Transactions on Software Engineering in November 2024.</p><p class="more-links"><a href="News.html#2024-11-sprint2vec-tse">Sprint2Vec in IEEE TSE</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2024-03-internships-2024">
+          <div class="pic"><img src="images/news/2024-03-internships-2024.jpg" alt="Summer internships 2024" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Mar 2024</span><a class="anchor" href="#2024-03-internships-2024" title="Link to this news" aria-label="Link to this news, Summer internships 2024"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2024-03-internships-2024.html">Summer internships 2024</a></h3>
+            <p>SERU placed 11 undergraduate students in research summer internships in Japan for May to August 2024. Three were placed with the Software Engineering Lab at NAIST and two with the Software Engineering Lab at Osaka University. At JAIST, two joined the ReaLearn Lab, two the Ishii Lab, and two the Aoki Lab. Several of these internships became papers, at QuASoQ 2024, APSEC 2024, SANER 2025, ICSME 2025, and APSEC 2025.</p><a class="read" href="news/2024-03-internships-2024.html">Read more →</a>
+          </div>
+        </li>
+        <li class="entry" id="2024-03-msc-proposals">
+          <div class="pic"><img src="images/news/2024-03-msc-proposals.jpg" alt="Master&#x27;s thematic paper proposals" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Mar 2024</span><a class="anchor" href="#2024-03-msc-proposals" title="Link to this news" aria-label="Link to this news, Master&#x27;s thematic paper proposals"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2024-03-msc-proposals.html">Master&#x27;s thematic paper proposals</a></h3>
+            <p>Our MSc students Dan M. Kazimoto and Krittanan Jipimai (Mix) defended their thematic paper proposals on 22 March 2024. Dan is building a tool that helps software practitioners monitor the project risks that come from dependencies between team members. Mix is mining and characterizing data science projects to find the factors that contribute to their success. Both students passed their final defenses in December 2024, and Dan&#x27;s tool became DEV-EYE, published at APSEC 2024.</p><a class="read" href="news/2024-03-msc-proposals.html">Read more →</a><p class="more-links"><a href="News.html#2024-12-msc-defenses">The final defenses</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2024-03-saner-autorepairability">
+          <div class="pic"><img src="images/news/2024-03-saner-autorepairability.jpg" alt="Autorepairability at SANER 2024" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Mar 2024</span><a class="anchor" href="#2024-03-saner-autorepairability" title="Link to this news" aria-label="Link to this news, Autorepairability at SANER 2024"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2024-03-saner-autorepairability.html">Autorepairability at SANER 2024</a></h3>
+            <p>Pongpop Lapvikai presented “Autorepairability: A New Software Quality Characteristic” in the ERA track of SANER 2024 in Finland. It comes from Pongpop&#x27;s 2023 summer internship at the Software Engineering Lab of Osaka University, under the supervision of Prof. Yoshiki Higo. The paper proposes autorepairability as a new characteristic of software quality, meaning the degree to which automated program repair can be applied to a piece of software. Chutweeraya Sriwilailak&#x27;s APSEC 2024 paper took the idea further by comparing the autorepairability of ChatGPT and Gemini.</p><a class="read" href="news/2024-03-saner-autorepairability.html">Read more →</a><p class="more-links"><a href="News.html#2024-10-apsec-2024-era">The APSEC 2024 follow-up</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2024-03-naist-visit">
+          <div class="pic"><img src="images/news/2024-03-naist-visit.jpg" alt="Visit from NAIST" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Mar 2024</span><a class="anchor" href="#2024-03-naist-visit" title="Link to this news" aria-label="Link to this news, Visit from NAIST"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2024-03-naist-visit.html">Visit from NAIST</a></h3>
+            <p>Assoc. Prof. Raula Gaikovina Kula and Prof. Minoru Okada from NAIST visited SERU and our students at the Faculty of ICT. Prof. Kula met the students who interned at the Software Engineering Lab in 2023 and the new interns who would join in May 2024. The NAIST team also met the Dean of ICT. We discussed our ongoing research, extending the internships to Prof. Okada&#x27;s lab, a PhD double degree program, and future grant applications. The double degree agreement was signed in January 2026.</p><a class="read" href="news/2024-03-naist-visit.html">Read more →</a><p class="more-links"><a href="News.html#2026-01-naist-double-degree">The double degree</a></p>
+          </div>
+        </li>
+        <li class="entry" id="2024-03-emse-ase-adoption">
+          <div class="pic"><img src="images/news/2024-03-emse-ase-adoption.jpg" alt="Thai tool adoption study accepted in EMSE" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Mar 2024</span><a class="anchor" href="#2024-03-emse-ase-adoption" title="Link to this news" aria-label="Link to this news, Thai tool adoption study accepted in EMSE"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2024-03-emse-ase-adoption.html">Thai tool adoption study accepted in EMSE</a></h3>
+            <p>Our paper “Adoption of Automated Software Engineering Tools and Techniques in Thailand” was accepted in Empirical Software Engineering (EMSE), a Q1 journal. It looks at how aware Thai small and medium-sized software companies are of automated software engineering tools, how far they adopt them, and what challenges they meet, for software measurement, static code analysis, continuous integration, and software testing. We surveyed 103 Thai developers across four groups. The main challenges were a lack of knowledge and experience, long build times in continuous integration, and an emphasis on development over testing. The paper is the second publication of the Newton Fund project “Automated Software Engineering for Thailand Software Industry”, a collaboration between CREST at UCL and SERU since 2018.</p><a class="read" href="news/2024-03-emse-ase-adoption.html">Read more →</a><p class="more-links"><a href="https://doi.org/10.1007/s10664-024-10472-6">Read the paper</a></p>
+          </div>
+        </li>
+      </ul>
+      <h2 class="year-h" id="y2023">2023<span>6 entries</span></h2>
+      <ul class="news-list">
+        <li class="entry" id="2023-08-jaist-internship">
+          <div class="pic"><img src="images/news/2023-08-jaist-internship.jpg" alt="SERU interns at the JAIST entrance sign" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Aug 2023</span><a class="anchor" href="#2023-08-jaist-internship" title="Link to this news" aria-label="Link to this news, JAIST internship Students finished their internships"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>JAIST internship Students finished their internships</h3>
+            <p>The 3 internship students at the ReLearn lab at JAIST, Runchana Seesung, Siranut Akarawuthi, and Nitit Ngamphotchanamongkol, under the supervision of Junior Assoc. Prof. Dr. Teeradaj Racharak finished their internship on the 10th of August 2023.</p><ul><li>Runchana&#x27;s topic: Why are They Similar? Let&#x27;s Explain via Description Logics</li><li>Siranut&#x27;s topic: Virtual Knowledge Graph with Explainable Similarity Reasoning</li><li>Nitit&#x27;s topic: Large language model for Argumentation Mining from Text</li></ul><p>They are returning for their last year of study at the Faculty of ICT.</p>
+          </div>
+        </li>
+        <li class="entry" id="2023-08-naist-internship">
+          <div class="pic"><img src="images/news/2023-08-naist-internship.jpg" alt="SERU interns with members of the NAIST Software Engineering lab" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Aug 2023</span><a class="anchor" href="#2023-08-naist-internship" title="Link to this news" aria-label="Link to this news, NAIST internship Students finished their internships"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>NAIST internship Students finished their internships</h3>
+            <p>The 2 on-site internship students at the Software Engineering lab at NAIST, Sushawapak Kancharoendee (2nd-year student), and Rujiphart Charatvaraphan (3rd-year student), under the supervision of Assoc. Prof. Dr. Raula Kula finished their internship on the 4th of August 2023. They are returning for their 3rd year and the last year of study at the Faculty of ICT.</p><ul><li>Sushawapak&#x27;s topic: Do the vulnerable Pypi libraries also have vulnerable dependencies?</li><li>Rujiphart&#x27;s topic: Analyze the competency level of Python code in PyPI projects</li></ul><p>The two online internship students, Narita Chadha and Petchpearploy Subhadrabandhu, also finished their internship at the same time. Well done!</p>
+          </div>
+        </li>
+        <li class="entry" id="2023-08-osaka-internship">
+          <div class="pic"><img src="images/news/2023-08-osaka-internship.jpg" alt="Two SERU interns with their host at Osaka University" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Aug 2023</span><a class="anchor" href="#2023-08-osaka-internship" title="Link to this news" aria-label="Link to this news, Osaka University internship Students finished their internships"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>Osaka University internship Students finished their internships</h3>
+            <p>Doungnapat Thiansukont and Pongpop Lapvikai finished their summer internship at Software Engineering Lab at Osaka University under the supervision of Prof. Yoshiki Higo on the 4th of August 2023.</p><ul><li>Doungnapat&#x27;s topic: Python Validity in SO answer comments</li><li>Pongpop&#x27;s topic: Automatic repairability</li></ul><p>They have returned for their last year of study at the Faculty of ICT.</p>
+          </div>
+        </li>
+        <li class="entry" id="2023-07-bremen-internship">
+          <div class="pic"><img src="images/news/2023-07-bremen-internship.jpg" alt="A SERU intern with her SEE poster at the University of Bremen" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jul 2023</span><a class="anchor" href="#2023-07-bremen-internship" title="Link to this news" aria-label="Link to this news, University of Bremen internship Student finished her internship"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>University of Bremen internship Student finished her internship</h3>
+            <p>Bunradar Chatchaiyadech finished her internship at the University of Bremen under the supervision of Prof. Rainer Koschke at the end of July 2023. Her internship topic is visualizing code clones using VR (the Software Engineering Experience (SEE) platform).</p><p>Bunradar is now back at the Faculty of ICT for her last year of study.</p>
+          </div>
+        </li>
+        <li class="entry" id="2023-06-new-logo">
+          <div class="pic"><img src="images/news/2023-06-new-logo.jpg" alt="The SERU logo" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jun 2023</span><a class="anchor" href="#2023-06-new-logo" title="Link to this news" aria-label="Link to this news, New SERU Logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>New SERU Logo</h3>
+            <p>We redesigned a new logo for our SERU research group to celebrate the coming 5th year anniversary (the first commit on the SERU website was on 19 October 2018!). Compared to the previous logo, this one has only the &quot;S&quot; to represent the research group. This is to strive for a more modern and minimal design.</p><p>We still keep the oceanic green and cream colors to represent the Faculty of ICT and the dark blue color represents Mahidol University. The composition of the S consists of two components lightly connected to each other, like software, its fast-changing nature, and its dependencies 😉.</p><p>We would like to thank Miss Sirirat Wittayakunsatid, Audio Visual and Digital Learning Media Development Division at the Faculty of ICT, for her great design work!</p>
+          </div>
+        </li>
+        <li class="entry" id="2023-06-summer-internship">
+          <div class="pic"><img src="images/news/2023-06-summer-internship.jpg" alt="Summer Internship 2023" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Jun 2023</span><a class="anchor" href="#2023-06-summer-internship" title="Link to this news" aria-label="Link to this news, Summer Internship 2023"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3>Summer Internship 2023</h3>
+            <p>We have 10 students doing international internships with our collaborators in 2023!</p><h4>NAIST</h4><p>2 students are doing on-site internships and 2 students doing online internships at the Software Engineering lab at NAIST. They&#x27;re supervised by Asst. Prof. Dr. Raula Gaikovina Kula.</p><ul><li>Onsite: Sushawapak Kancharoendee and Rujiphart Charatvaraphan</li><li>Online: Narita Chadha and Petchpearploy Subhadrabandhu</li></ul><h4>JAIST</h4><p>3 students are going to on-site internships at JAIST under the supervision of Junior Assoc. Prof. Dr. Teeradaj Racharak: Runchana Seesung, Siranut Akarawuthi, Nitit Ngamphotchanamongkol</p><h4>Osaka University</h4><p>2 students are going to on-site internships at Osaka University under the supervision of Prof. Yoshiki Higo.</p><ul><li>Doungnapat Thiansukont</li><li>Pongpop Lapvikai</li></ul><h4>University of Bremen</h4><p>Bunradar Chatchaiyadech is going to on-site internships at U of Bremen under the supervision of Prof. Rainer Koschke.</p><p>The SERU team wishes them the best of luck and success for their internship!</p>
+          </div>
+        </li>
+      </ul>
+      <p class="back"><a class="link" href="./">← Back to the SERU home page</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><img src="images/seru-mark.png" alt="" width="30" height="29"><span class="name">SERU</span></div>
+    <p>Software Engineering Research Unit · Established 19 October 2018</p>
+    <p>Faculty of Information and Communication Technology, Mahidol University</p>
+    <p>999 Phuttamonthon 4 Road, Salaya, Nakhon Pathom 73170, Thailand</p>
+    <p style="margin-top:12px;"><a href="mailto:morakot.cho@mahidol.ac.th">morakot.cho@mahidol.ac.th</a> · <a href="https://www.facebook.com/muict.seru">Facebook</a> · <a href="https://github.com/MUICT-SERU">GitHub</a></p>
+  </div>
+</footer>
+
+<script>
+  var btn=document.querySelector('.menu-btn'), menu=document.getElementById('menu');
+  btn.addEventListener('click',function(){ var open=menu.classList.toggle('open'); btn.setAttribute('aria-expanded',open); });
+  menu.addEventListener('click',function(e){ if(e.target.tagName==='A'){ menu.classList.remove('open'); btn.setAttribute('aria-expanded',false); } });
+</script>
 </body>
 </html>
