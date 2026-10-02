@@ -146,7 +146,8 @@
   .link:hover{background:var(--teal);color:#fff;}
 
   /* student spotlight */
-  .spotlight{position:relative;overflow:hidden;display:grid;grid-template-columns:1fr 230px;gap:36px;align-items:center;margin-top:30px;background:#fff;border-radius:26px;padding:34px 40px;box-shadow:var(--shadow);border-left:8px solid var(--teal);}
+  .spotlight{position:relative;overflow:hidden;display:grid;grid-template-columns:1fr 230px;gap:36px;align-items:center;margin-top:30px;background:#fff;border-radius:26px;padding:34px 40px;box-shadow:var(--shadow);}
+  .spotlight .orn::after{box-shadow:0 0 0 4px #fff;}
   .spotlight h3{font-weight:700;font-size:clamp(22px,2.6vw,28px);line-height:1.2;margin:0 0 12px;}
   .spotlight p{margin:0;color:var(--text);}
   .spot-stat{justify-self:center;width:200px;height:200px;border-radius:50%;border:12px solid var(--teal);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;background:var(--teal-soft);}
@@ -401,6 +402,7 @@
       </div>
       <div class="spotlight">
         <div>
+          <span class="orn"></span>
           <h3>Where students do real research</h3>
           <p>Since 2023, more than 30 of our undergraduates have spent a summer at partner labs abroad, and their projects have become papers at ICSME, APSEC, SANER, and ASE. Our students build tools that developers use, and their work has won awards at ICSME and Thailand's National Software Contest.</p>
         </div>

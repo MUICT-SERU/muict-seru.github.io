@@ -75,7 +75,9 @@
 
   /* Café SERU */
   .cafe-logo{display:block;width:150px;height:auto;margin:0 auto 10px;}
-  .comeback{position:relative;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;max-width:900px;margin:44px auto 0;background:#fff;border-radius:26px;padding:30px 36px;box-shadow:var(--shadow);border-left:8px solid var(--teal);}
+  .comeback{position:relative;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;max-width:900px;margin:44px auto 0;background:#fff;border-radius:26px;padding:30px 36px;box-shadow:var(--shadow);}
+  .comeback .orn{margin-bottom:10px;}
+  .comeback .orn::after{box-shadow:0 0 0 4px #fff;}
   .comeback h2{font-weight:700;font-size:clamp(22px,2.6vw,28px);line-height:1.2;margin:0 0 10px;}
   .comeback p{margin:0;}
   .comeback .cta-col{display:flex;flex-direction:column;gap:10px;}
@@ -224,6 +226,7 @@
       <div class="head"><img class="cafe-logo" src="images/cafe-seru-logo.png" alt="Café SERU, SE seminar series" width="320" height="298"><h1>Café SERU</h1><p>Café SERU is our seminar series. We invite researchers in software engineering and related fields to share their work with students and colleagues at the Faculty of ICT, Mahidol University.</p></div>
       <div class="comeback">
         <div>
+          <span class="orn"></span>
           <h2>Café SERU is coming back</h2>
           <p>The series has been quiet since August 2024 and is now restarting. New talks will appear at the top of this page and on our Facebook page. To give a talk or suggest a speaker, write to us at morakot.cho@mahidol.ac.th.</p>
         </div>
