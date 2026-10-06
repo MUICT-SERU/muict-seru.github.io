@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research · SERU, Mahidol University</title>
+<meta name="description" content="Research themes, collaborators, projects, and tools of SERU, the Software Engineering Research Unit at the Faculty of ICT, Mahidol University.">
+<meta name="theme-color" content="#1B315D">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F9F9;
+    --navy:#1B315D;      /* SERU navy, from the logo */
+    --teal:#15ADA5;      /* SERU teal, from the logo */
+    --teal-ink:#0B7F79;
+    --teal-soft:#E1F4F3;
+    --navy-soft:#E7ECF4;
+    --yellow:#FEE000;    /* SERU yellow, from the logo */
+    --grey:#D6D6D6;      /* SERU grey, from the logo */
+    --text:#2B3850;
+    --muted:#5A687D;
+    --line:#DDEAEA;
+    --maxw:1120px;
+    --head:'Poppins',system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
+    --body:'Nunito Sans',system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
+    --shadow:0 10px 30px rgba(27,49,93,.08);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{transition:none !important;}}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;}
+  h1,h2,h3{font-family:var(--head);color:var(--navy);}
+  :focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:10px;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+
+  /* floating pill nav */
+  header.nav{position:sticky;top:14px;z-index:50;padding:0 20px;}
+  .nav-inner{position:relative;max-width:var(--maxw);margin:0 auto;height:62px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-radius:999px;box-shadow:0 8px 30px rgba(27,49,93,.12);padding:0 10px 0 20px;}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand img{width:32px;height:auto;display:block;}
+  .brand .name{font-family:var(--head);font-weight:700;font-size:19px;letter-spacing:3px;color:var(--navy);}
+  nav.links{display:flex;align-items:center;gap:4px;}
+  nav.links a{font-weight:700;font-size:15px;color:var(--navy);padding:9px 14px;border-radius:999px;transition:background .15s,color .15s;}
+  nav.links a:hover,nav.links a.active{background:var(--teal-soft);color:var(--teal-ink);}
+  nav.links a.pill{background:var(--teal);color:#fff;padding:10px 20px;margin-left:6px;}
+  nav.links a.pill:hover{background:var(--teal-ink);color:#fff;}
+  .menu-btn{display:none;background:none;border:0;cursor:pointer;padding:10px 12px;}
+  .menu-btn span{display:block;width:22px;height:2px;background:var(--navy);margin:4px 0;border-radius:2px;}
+
+  /* page head */
+  .page-head{padding:64px 0 60px;}
+  .head{text-align:center;margin:0 auto 40px;max-width:64ch;}
+  .orn{display:inline-flex;align-items:center;margin-bottom:14px;}
+  .orn::before{content:"";width:56px;height:8px;border-radius:8px;background:var(--teal);}
+  .orn::after{content:"";width:18px;height:18px;border-radius:50%;background:var(--yellow);margin-left:-4px;box-shadow:0 0 0 4px var(--bg);}
+  .head h1{font-weight:700;font-size:clamp(32px,4.4vw,46px);letter-spacing:-.015em;line-height:1.12;margin:0;}
+  .head p{color:var(--muted);margin:14px 0 0;}
+
+  /* summary counts */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;list-style:none;margin:0;padding:0;}
+  .stat{background:#fff;border-radius:22px;padding:22px 24px 24px;box-shadow:0 4px 16px rgba(27,49,93,.06);}
+  .stat::before{content:"";display:block;width:30px;height:6px;border-radius:6px;background:var(--teal);margin-bottom:16px;}
+  .stat b{display:block;font-family:var(--head);font-weight:600;font-size:40px;line-height:1.05;color:var(--navy);font-variant-numeric:proportional-nums;}
+  .stat .l{display:block;font-weight:700;color:var(--text);font-size:15.5px;line-height:1.35;margin-top:8px;}
+  .stat .s{display:block;color:var(--muted);font-size:14px;margin-top:2px;}
+  .stat-note{max-width:80ch;margin:18px auto 0;text-align:center;color:var(--muted);font-size:14px;line-height:1.55;}
+
+  /* filters */
+  section.list{background:#fff;padding:56px 0 80px;}
+  .filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;margin:0 0 14px;}
+  .chip{font-family:var(--body);font-weight:700;font-size:14.5px;line-height:1.3;color:var(--navy);background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;cursor:pointer;transition:background .15s,color .15s,border-color .15s;}
+  .chip:hover{border-color:var(--teal);}
+  .chip span{color:var(--muted);margin-left:4px;}
+  .chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff;}
+  .chip[aria-pressed="true"] span{color:#CFDAE8;}
+  .count{text-align:center;color:var(--muted);font-size:14.5px;margin:0 0 34px;}
+
+  /* list by year */
+  .year + .year{margin-top:44px;}
+  .year h2{font-weight:600;font-size:26px;line-height:1.2;margin:0 0 14px;display:flex;align-items:center;gap:12px;}
+  .year h2 span{font-family:var(--body);font-size:13.5px;font-weight:700;color:var(--navy);background:var(--navy-soft);padding:3px 12px;border-radius:999px;}
+  .pubs{list-style:none;margin:0;padding:8px 30px;background:#fff;border-radius:26px;box-shadow:var(--shadow);}
+  .pubs li{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:20px 0;border-top:1px solid var(--line);align-items:start;}
+  .pubs li:first-child{border-top:0;}
+  .pub-tag{background:var(--navy);color:#fff;font-family:var(--head);font-weight:600;font-size:12.5px;text-align:center;padding:5px 4px;border-radius:999px;margin-top:2px;}
+  .pubs li:nth-child(even) .pub-tag{background:var(--teal-ink);}
+  .pub-body .t{font-family:var(--head);font-weight:600;color:var(--navy);font-size:16.5px;line-height:1.4;}
+  .pub-body .t a:hover{color:var(--teal-ink);}
+  .pub-body .au{font-size:15px;line-height:1.5;margin-top:5px;}
+  .pub-body .au strong{color:var(--navy);font-weight:700;}
+  .pub-body .a{color:var(--muted);font-size:15px;margin-top:2px;}
+  .badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+  .badge{font-size:12.5px;font-weight:700;line-height:1.2;color:var(--navy);padding:4px 10px;border-radius:999px;background:#fff;border:1px solid var(--line);}
+  .badge.sjr{background:var(--navy-soft);border-color:var(--navy-soft);}
+  .badge.core{background:var(--teal-soft);border-color:var(--teal-soft);}
+  .empty{text-align:center;color:var(--muted);margin:20px 0;}
+  .back{text-align:center;margin-top:44px;}
+  .link{display:inline-block;font-weight:700;color:var(--teal-ink);background:#fff;border:2px solid var(--teal);padding:10px 22px;border-radius:999px;transition:background .15s,color .15s;}
+  .link:hover{background:var(--teal);color:#fff;}
+
+  /* footer */
+  footer{padding:54px 0 60px;text-align:center;color:var(--muted);font-size:15px;}
+  footer .brand{justify-content:center;margin-bottom:12px;}
+  footer a{color:var(--navy);font-weight:700;}
+  footer a:hover{color:var(--teal-ink);}
+  footer p{margin:4px 0;}
+
+  @media (max-width:960px){
+    .stats{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:860px){
+    nav.links{display:none;}
+    .menu-btn{display:block;}
+    nav.links.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;background:#fff;border-radius:22px;box-shadow:0 12px 30px rgba(27,49,93,.15);padding:12px;}
+    nav.links.open a{padding:12px 16px;}
+    nav.links.open a.pill{text-align:center;margin:6px 0 0;}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 16px;}
+    header.nav{padding:0 10px;}
+    .page-head{padding:44px 0 44px;}
+    .stats{gap:12px;}
+    .stat{padding:18px 16px 20px;border-radius:18px;}
+    .stat::before{margin-bottom:12px;}
+    .stat b{font-size:34px;}
+    .stat .l{font-size:14.5px;}
+    .filters{justify-content:flex-start;}
+    .count{text-align:left;}
+    .pubs{padding:4px 18px;}
+    .pubs li{grid-template-columns:1fr;gap:8px;}
+    .pub-tag{justify-self:start;padding:5px 14px;}
+  }
+
+  /* research page */
+  :root{
+    --t-analytics:#2a78d6; --t-ai:#eb6834; --t-security:#1baf7a; --t-process:#eda100;
+    --t-privacy:#e87ba4; --t-health:#008300; --t-other:#898781;
+    --grid:#E6EDED; --land:#DCE7E6;
+  }
+  .jump{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:26px;}
+  .jump a{font-weight:700;font-size:14.5px;color:var(--navy);background:#fff;border:1px solid var(--line);padding:7px 16px;border-radius:999px;transition:border-color .15s,color .15s;}
+  .jump a:hover{border-color:var(--teal);color:var(--teal-ink);}
+  section.band{padding:64px 0 72px;}
+  section.band.white{background:#fff;}
+  .sec-head{max-width:70ch;margin:0 auto 30px;text-align:center;}
+  .sec-head h2{font-weight:700;font-size:clamp(26px,3.2vw,34px);line-height:1.15;margin:0;}
+  .sec-head p{color:var(--muted);margin:12px 0 0;}
+  .viz{background:#fff;border-radius:24px;box-shadow:var(--shadow);padding:24px 26px 22px;margin:0;}
+  .white .viz{box-shadow:0 4px 18px rgba(27,49,93,.07);border:1px solid var(--line);}
+  .viz-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:14px;}
+  .viz-top h3{font-weight:600;font-size:18px;line-height:1.35;margin:0;}
+  .viz-top p{color:var(--muted);font-size:14.5px;margin:3px 0 0;}
+  .toggle{flex:none;font-family:var(--body);font-weight:700;font-size:13.5px;color:var(--teal-ink);background:#fff;border:1.5px solid var(--teal);border-radius:999px;padding:6px 14px;cursor:pointer;}
+  .toggle:hover{background:var(--teal-soft);}
+  .legend{display:flex;flex-wrap:wrap;gap:6px 8px;margin:0 0 16px;}
+  .legend button{display:inline-flex;align-items:center;gap:7px;font-family:var(--body);font-size:13.5px;font-weight:700;color:var(--text);background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px 5px 9px;cursor:pointer;}
+  .legend button span.n{color:var(--muted);font-weight:600;}
+  .legend button[aria-pressed="true"]{border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy);}
+  .sw{display:inline-block;width:11px;height:11px;border-radius:3px;flex:none;}
+  .sw.dot{border-radius:50%;}
+
+  /* stacked columns */
+  .tchart{position:relative;display:grid;grid-template-columns:34px 1fr;gap:0 8px;}
+  .tchart .yax{position:relative;height:240px;}
+  .tchart .yax span{position:absolute;right:0;transform:translateY(50%);font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;}
+  .tchart .plot{position:relative;height:240px;border-bottom:1px solid #C9D6D6;}
+  .tchart .gl{position:absolute;left:0;right:0;height:1px;background:var(--grid);}
+  .tchart .cols{position:absolute;inset:0;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;align-items:end;}
+  .tchart .col{position:relative;height:100%;display:flex;flex-direction:column-reverse;align-items:center;}
+  .tchart .seg{width:24px;max-width:70%;border-top:2px solid #fff;cursor:default;transition:opacity .15s,filter .15s;}
+  .tchart .seg.top{border-top:0;border-radius:4px 4px 0 0;}
+  .tchart .seg:hover,.tchart .seg:focus-visible{filter:brightness(1.12);outline:none;}
+  .tchart .tot{font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:3px;font-variant-numeric:tabular-nums;}
+  .tchart .xax{grid-column:2;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;margin-top:6px;}
+  .tchart .xax span{text-align:center;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;}
+  .tchart .xax b{font-weight:400;}
+  .tchart .xax b.short{display:none;}
+  .dimmed .seg:not(.on){opacity:.14;}
+  .tip{position:absolute;z-index:5;pointer-events:none;background:#fff;border-radius:12px;box-shadow:0 10px 30px rgba(27,49,93,.18);padding:9px 12px;font-size:13.5px;line-height:1.4;max-width:300px;opacity:0;transition:opacity .1s;}
+  .tip.show{opacity:1;}
+  .tip b{display:block;font-size:15px;color:var(--navy);}
+  .tip .k{display:flex;align-items:center;gap:7px;color:var(--text);}
+  .tip .k i{display:inline-block;width:14px;height:3px;border-radius:2px;flex:none;}
+  .tip ul{margin:4px 0 0;padding-left:16px;color:var(--text);}
+  .tview{overflow-x:auto;}
+  .tview table{border-collapse:collapse;width:100%;font-size:14px;}
+  .tview th,.tview td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;}
+  .tview th{font-family:var(--head);font-weight:600;color:var(--navy);font-size:13.5px;}
+  .tview td.n,.tview th.n{text-align:right;font-variant-numeric:tabular-nums;}
+
+  /* theme cards */
+  .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px;}
+  .tcard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px 22px 20px;display:flex;flex-direction:column;}
+  .tcard h3{display:flex;align-items:center;gap:9px;font-weight:600;font-size:17px;line-height:1.3;margin:0;}
+  .tcard h3 .sw{width:12px;height:12px;}
+  .tcard .meta{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:12px 0 10px;}
+  .tcard .meta b{font-family:var(--head);font-weight:600;font-size:30px;line-height:1;color:var(--navy);}
+  .tcard .meta small{display:block;color:var(--muted);font-size:13px;margin-top:4px;}
+  .mini{display:flex;align-items:flex-end;gap:3px;height:34px;}
+  .mini i{display:block;width:7px;border-radius:2px 2px 0 0;}
+  .mini i.z{height:2px !important;background:var(--grid) !important;}
+  .tcard p.d{font-size:14.5px;line-height:1.55;margin:0 0 12px;color:var(--text);}
+  .tcard h4{font-family:var(--head);font-weight:600;font-size:13px;letter-spacing:.02em;color:var(--muted);margin:10px 0 6px;}
+  .tcard ul.pp{list-style:none;margin:0;padding:0;}
+  .tcard ul.pp li{font-size:14px;line-height:1.45;margin:0 0 8px;}
+  .tcard ul.pp a,.tcard ul.pp strong{color:var(--navy);font-weight:600;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+  .tcard ul.pp a:hover{color:var(--teal-ink);}
+  .tcard ul.pp span{display:block;color:var(--muted);font-size:13px;}
+  .pills{display:flex;flex-wrap:wrap;gap:6px;}
+  .pills a,.pills span{font-size:12.5px;font-weight:700;color:var(--navy);background:var(--navy-soft);border-radius:999px;padding:3px 10px;}
+  .pills a:hover{background:var(--teal-soft);color:var(--teal-ink);}
+  .tcard .more{margin-top:auto;padding-top:12px;font-weight:700;font-size:14px;color:var(--teal-ink);}
+
+  /* map */
+  .mapwrap{position:relative;}
+  .mapwrap svg{display:block;width:100%;height:auto;}
+  .mapwrap .land{fill:var(--land);}
+  .mapwrap .arc{fill:none;stroke:var(--navy);stroke-opacity:.28;stroke-width:1.2;}
+  .mapwrap .arc.hi{stroke:var(--teal);stroke-opacity:.9;stroke-width:2;}
+  .mapwrap .ctry{fill:var(--navy);stroke:#fff;stroke-width:2;cursor:pointer;}
+  .mapwrap .ctry.hi,.mapwrap .ctry:focus-visible{fill:var(--teal);outline:none;}
+  .mapwrap .home{fill:var(--yellow);stroke:var(--navy);stroke-width:2.5;}
+  .mapwrap text{font-family:var(--body);font-size:13px;font-weight:700;fill:var(--navy);paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round;pointer-events:none;}
+  .mapnote{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;color:var(--muted);font-size:13.5px;margin-top:10px;}
+  .mapnote .k{display:inline-flex;align-items:center;gap:7px;}
+  .mapnote .k i{display:inline-block;border-radius:50%;}
+  .two{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;margin-top:18px;align-items:start;}
+  .ibars{list-style:none;margin:0;padding:0;}
+  .ibars li{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:12px;align-items:center;padding:6px 0;}
+  .ibars .nm{font-size:14px;line-height:1.3;color:var(--text);}
+  .ibars .nm small{display:block;color:var(--muted);font-size:12.5px;}
+  .ibars .bar{display:flex;align-items:center;gap:8px;}
+  .ibars .bar i{display:block;height:12px;border-radius:0 4px 4px 0;background:var(--navy);}
+  .ibars .bar b{font-size:13.5px;color:var(--navy);font-variant-numeric:tabular-nums;}
+  .thai{font-size:14.5px;line-height:1.6;color:var(--text);margin:0;}
+  .thai strong{color:var(--navy);}
+
+  /* project timeline */
+  .gantt{position:relative;}
+  .g-row{display:grid;grid-template-columns:minmax(0,34%) 1fr;gap:16px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line);}
+  .g-lab{font-size:14px;line-height:1.35;color:var(--navy);font-weight:600;}
+  .g-lab small{display:block;color:var(--muted);font-weight:400;font-size:12.5px;}
+  .g-track{position:relative;height:22px;}
+  .g-track::before{content:"";position:absolute;left:0;right:0;top:-8px;bottom:-8px;pointer-events:none;background-image:repeating-linear-gradient(to right,var(--grid) 0,var(--grid) 1px,transparent 1px,transparent 18.1818%);}
+  .g-tick{position:absolute;top:-8px;bottom:-8px;width:0;border-left:1.5px solid var(--navy);pointer-events:none;}
+  .g-nowlab{position:absolute;top:-26px;transform:translateX(-50%);font-size:12px;font-weight:700;color:var(--navy);}
+  .gantt{padding-top:20px;}
+  .g-bar{position:absolute;top:4px;height:14px;border-radius:4px;cursor:default;}
+  .g-bar:hover,.g-bar:focus-visible{filter:brightness(1.12);outline:none;}
+  .g-axis{display:grid;grid-template-columns:minmax(0,34%) 1fr;gap:16px;margin-top:4px;}
+  .g-years{position:relative;height:18px;}
+  .g-years span{position:absolute;transform:translateX(-50%);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;}
+  .thesis-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .thesis{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;}
+  .thesis .deg{display:inline-block;font-family:var(--head);font-weight:600;font-size:12px;color:#fff;background:var(--navy);border-radius:999px;padding:3px 10px;}
+  .thesis .deg.msc{background:var(--teal-ink);}
+  .thesis b{display:block;color:var(--navy);margin-top:8px;}
+  .thesis p{margin:4px 0 8px;font-size:14px;line-height:1.45;}
+  .thesis .th{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);font-weight:700;}
+  h3.sub{font-weight:600;font-size:20px;text-align:center;margin:40px 0 16px;}
+
+  /* tools */
+  .tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .tool{background:#fff;border-radius:20px;box-shadow:0 4px 16px rgba(27,49,93,.06);padding:20px 20px 18px;display:flex;flex-direction:column;scroll-margin-top:96px;}
+  .tool h3{font-weight:600;font-size:18px;margin:0;}
+  .tool .tm{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin-top:6px;font-size:13px;color:var(--muted);font-weight:700;}
+  .tool .tm .th{display:inline-flex;align-items:center;gap:6px;}
+  .tool p{font-size:14.5px;line-height:1.5;margin:10px 0 14px;}
+  .tool .tl{margin-top:auto;display:flex;flex-wrap:wrap;gap:6px;}
+  .tool .tl a{font-weight:700;font-size:13px;color:var(--teal-ink);border:1.5px solid var(--teal);border-radius:999px;padding:4px 12px;}
+  .tool .tl a:hover{background:var(--teal);color:#fff;}
+  @media (max-width:960px){
+    .tgrid,.tool-grid,.thesis-grid{grid-template-columns:repeat(2,1fr);}
+    .two{grid-template-columns:1fr;}
+  }
+  @media (max-width:560px){
+    section.band{padding:44px 0 52px;}
+    .viz{padding:18px 16px 16px;border-radius:18px;}
+    .viz-top{flex-direction:column;gap:10px;}
+    .tgrid,.tool-grid,.thesis-grid{grid-template-columns:1fr;}
+    .tchart .seg{width:16px;}
+    .mapwrap text{display:none;}
+    .g-row,.g-axis{grid-template-columns:1fr;gap:4px;}
+    .g-axis > div:first-child{display:none;}
+    .g-nowlab{display:none;}
+    .gantt{padding-top:0;}
+    .tchart .xax b.full{display:none;}
+    .tchart .xax b.short{display:inline;}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="./" aria-label="SERU home">
+      <img src="images/seru-mark.png" alt="" width="32" height="31">
+      <span class="name">SERU</span>
+    </a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="links" id="menu">
+      <a href="News.html">News</a>
+      <a class="active" href="Research.html" aria-current="page">Research</a>
+      <a href="./#people">People</a>
+      <a href="Publications.html">Publications</a>
+      <a href="Seminars.html">Seminars</a>
+      <a href="./#partners">Partners</a>
+      <a class="pill" href="./#join">Join us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="page-head">
+    <div class="wrap">
+      <div class="head"><span class="orn"></span><h1>Research</h1><p>We study real software projects and the people who build them. This page shows what we work on, who we work with, and the tools that came out of our research.</p></div>
+      <ul class="stats" id="stats"></ul>
+      <nav class="jump" aria-label="Sections of this page"><a href="#themes">Themes</a><a href="#collaborators">Collaborators</a><a href="#projects">Projects</a><a href="#tools">Tools</a></nav>
+    </div>
+  </section>
+
+  <section class="band white" id="themes">
+    <div class="wrap">
+      <div class="sec-head"><span class="orn"></span><h2>Research themes</h2><p id="themes-intro"></p></div>
+      <figure class="viz" id="tchart-card">
+        <div class="viz-top"><div><h3>Papers per year, by theme</h3><p>Point at a bar for its count, or pick a theme to see it alone.</p></div><button class="toggle" type="button" aria-controls="tchart-table" aria-expanded="false">Show table</button></div>
+        <div class="legend" id="tlegend" role="group" aria-label="Themes"></div>
+        <div class="tchart" id="tchart"></div>
+        <div class="tview" id="tchart-table" hidden></div>
+      </figure>
+      <div class="tgrid" id="tcards"></div>
+    </div>
+  </section>
+
+  <section class="band" id="collaborators">
+    <div class="wrap">
+      <div class="sec-head"><span class="orn"></span><h2>Who we work with</h2><p id="collab-intro"></p></div>
+      <figure class="viz" id="map-card">
+        <div class="viz-top"><div><h3>Joint papers by country since 2018</h3><p>Each circle is a country, sized by the number of papers we wrote with co-authors there. Point at a circle for its institutions.</p></div><button class="toggle" type="button" aria-controls="map-table" aria-expanded="false">Show table</button></div>
+        <div class="mapwrap" id="map"></div>
+        <div class="mapnote"><span class="k"><i style="width:12px;height:12px;background:var(--yellow);box-shadow:0 0 0 2px var(--navy)"></i>Mahidol University</span><span class="k"><i style="width:10px;height:10px;background:var(--navy)"></i>Partner country</span><span>Institutions as printed in each paper, collected by OpenAlex.</span></div>
+        <div class="tview" id="map-table" hidden></div>
+      </figure>
+      <div class="two">
+        <figure class="viz"><div class="viz-top"><div><h3>Institutions with three or more joint papers</h3></div></div><ul class="ibars" id="ibars"></ul></figure>
+        <figure class="viz"><div class="viz-top"><div><h3>Partners in Thailand and in industry</h3></div></div><p class="thai" id="thai"></p></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band white" id="projects">
+    <div class="wrap">
+      <div class="sec-head"><span class="orn"></span><h2>Projects</h2><p>Funded projects since 2018, and the theses our students are writing now.</p></div>
+      <figure class="viz" id="gantt-card">
+        <div class="viz-top"><div><h3>Funded projects, 2018 to 2028</h3><p>Each bar runs from the first to the last year of funding, coloured by theme. The line marks October 2026.</p></div><button class="toggle" type="button" aria-controls="gantt-table" aria-expanded="false">Show table</button></div>
+        <div class="legend" id="glegend" aria-label="Themes"></div>
+        <div class="gantt" id="gantt"></div>
+        <div class="tview" id="gantt-table" hidden></div>
+      </figure>
+      <h3 class="sub">Theses in progress</h3>
+      <div class="thesis-grid" id="theses"></div>
+    </div>
+  </section>
+
+  <section class="band" id="tools">
+    <div class="wrap">
+      <div class="sec-head"><span class="orn"></span><h2>Tools</h2><p>Software that came out of our research, most of it built by our students. Each tool links to its code, a demo, or its paper.</p></div>
+      <div class="tool-grid" id="toolgrid"></div>
+      <p class="back"><a class="link" href="Publications.html">All publications →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><img src="images/seru-mark.png" alt="" width="30" height="29"><span class="name">SERU</span></div>
+    <p>Software Engineering Research Unit · Established 19 October 2018</p>
+    <p>Faculty of Information and Communication Technology, Mahidol University</p>
+    <p>999 Phuttamonthon 4 Road, Salaya, Nakhon Pathom 73170, Thailand</p>
+    <p style="margin-top:12px;"><a href="mailto:morakot.cho@mahidol.ac.th">morakot.cho@mahidol.ac.th</a> · <a href="https://www.facebook.com/muict.seru">Facebook</a> · <a href="https://github.com/MUICT-SERU">GitHub</a></p>
+  </div>
+</footer>
+
+<script src="data/research.js"></script>
+<script>
+  var btn=document.querySelector('.menu-btn'), menu=document.getElementById('menu');
+  btn.addEventListener('click',function(){ var open=menu.classList.toggle('open'); btn.setAttribute('aria-expanded',open); });
+  menu.addEventListener('click',function(e){ if(e.target.tagName==='A'){ menu.classList.remove('open'); btn.setAttribute('aria-expanded',false); } });
+</script>
+<script>
+(function () {
+  var D = window.SERU_RESEARCH;
+  var COLOR = {analytics: 'var(--t-analytics)', ai: 'var(--t-ai)', security: 'var(--t-security)', process: 'var(--t-process)',
+               privacy: 'var(--t-privacy)', health: 'var(--t-health)', other: 'var(--t-other)'};
+  var TH = {}; D.themes.forEach(function (t) { TH[t.id] = t; });
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function sw(id, dot) { var s = el('span', 'sw' + (dot ? ' dot' : '')); s.style.background = COLOR[id]; return s; }
+  function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
+  function plural(n, w) { return n + ' ' + w + (n === 1 ? '' : 's'); }
+  var WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+  function word(n) { return n < WORDS.length ? WORDS[n] : String(n); }
+
+  // one tooltip per figure, filled with textContent only
+  function tooltip(host) {
+    var t = el('div', 'tip'); t.setAttribute('role', 'status'); host.style.position = 'relative'; host.appendChild(t);
+    return {
+      show: function (lines, x, y) {
+        t.textContent = '';
+        lines.forEach(function (ln) { t.appendChild(ln); });
+        t.classList.add('show');
+        var hw = host.clientWidth, tw = t.offsetWidth, th = t.offsetHeight;
+        var left = Math.min(Math.max(x - tw / 2, 4), hw - tw - 4), top = y - th - 12;
+        if (top < 0) top = y + 16;
+        t.style.left = left + 'px'; t.style.top = top + 'px';
+      },
+      hide: function () { t.classList.remove('show'); }
+    };
+  }
+  function posIn(host, node) {
+    var a = host.getBoundingClientRect(), b = node.getBoundingClientRect();
+    return [b.left - a.left + b.width / 2, b.top - a.top];
+  }
+  function toggleTable(card, table) {
+    var btn = card.querySelector('.toggle');
+    btn.addEventListener('click', function () {
+      var open = table.hidden; table.hidden = !open;
+      btn.textContent = open ? 'Hide table' : 'Show table'; btn.setAttribute('aria-expanded', open);
+    });
+  }
+  function table(head, rows, numeric) {
+    var tb = el('table'), tr = el('tr');
+    head.forEach(function (h, i) { var c = el('th', numeric[i] ? 'n' : '', h); c.scope = 'col'; tr.appendChild(c); });
+    var thead = el('thead'); thead.appendChild(tr); tb.appendChild(thead);
+    var body = el('tbody');
+    rows.forEach(function (r) { var row = el('tr'); r.forEach(function (v, i) { row.appendChild(el('td', numeric[i] ? 'n' : '', v)); }); body.appendChild(row); });
+    tb.appendChild(body); return tb;
+  }
+
+  // stat tiles
+  var nThemes = D.themes.filter(function (t) { return t.id !== 'other'; }).length;
+  [[D.stats.papers, 'Papers since 2018', 'in ' + word(nThemes) + ' research themes'],
+   [D.stats.institutions, 'Partner institutions abroad', 'in ' + D.stats.countries + ' countries'],
+   [D.stats.projects, 'Funded projects', 'since 2018'],
+   [D.stats.tools, 'Research tools', 'with code, demos, or papers']].forEach(function (s) {
+    var li = el('li', 'stat'); li.appendChild(el('b', '', String(s[0]))); li.appendChild(el('span', 'l', s[1])); li.appendChild(el('span', 's', s[2]));
+    document.getElementById('stats').appendChild(li);
+  });
+
+  // themes intro, from the data
+  var ranked = D.themes.filter(function (t) { return t.id !== 'other'; }).slice().sort(function (a, b) { return b.total - a.total; });
+  var ai = TH.ai, firstAi = D.years[ai.per_year.findIndex(function (n) { return n > 0; })];
+  document.getElementById('themes-intro').textContent = 'Our ' + D.stats.papers + ' papers since 2018 fall into ' + word(nThemes) +
+    ' research themes. ' + ranked[0].name + ' has the most, ' + ranked[0].total + ' papers, and AI-assisted software development has ' +
+    ai.total + ' papers since its first in ' + firstAi + '.';
+
+  // stacked columns
+  var chart = document.getElementById('tchart'), card = document.getElementById('tchart-card'), tip = tooltip(card);
+  var totals = D.years.map(function (_, i) { return D.themes.reduce(function (s, t) { return s + t.per_year[i]; }, 0); });
+  var top = Math.ceil(Math.max.apply(null, totals) / 5) * 5, isolated = null;
+  var yax = el('div', 'yax'), plot = el('div', 'plot'), cols = el('div', 'cols'), xax = el('div', 'xax');
+  for (var v = 0; v <= top; v += 5) {
+    var lab = el('span', '', String(v)); lab.style.bottom = (v / top * 100) + '%'; yax.appendChild(lab);
+    var gl = el('div', 'gl'); gl.style.bottom = (v / top * 100) + '%'; if (v > 0) plot.appendChild(gl);
+  }
+  D.years.forEach(function (y, i) {
+    var col = el('div', 'col'), segs = [];
+    D.themes.forEach(function (t) {
+      var n = t.per_year[i]; if (!n) return;
+      var s = el('div', 'seg'); s.style.height = (n / top * 100) + '%'; s.style.background = COLOR[t.id];
+      s.dataset.theme = t.id; s.tabIndex = 0; s.setAttribute('aria-label', y + ', ' + t.name + ', ' + plural(n, 'paper'));
+      function show() {
+        var p = posIn(card, s), k = el('div', 'k'), key = el('i'); key.style.background = COLOR[t.id]; k.appendChild(key); k.appendChild(document.createTextNode(t.name + ', ' + y));
+        tip.show([el('b', '', plural(n, 'paper')), k], p[0], p[1]);
+      }
+      s.addEventListener('pointerenter', show); s.addEventListener('focus', show);
+      s.addEventListener('pointerleave', tip.hide); s.addEventListener('blur', tip.hide);
+      col.appendChild(s); segs.push(s);
+    });
+    if (segs.length) segs[segs.length - 1].classList.add('top');
+    var tot = el('div', 'tot', String(totals[i])); col.appendChild(tot);
+    var yl = el('span'); yl.appendChild(el('b', 'full', String(y))); yl.appendChild(el('b', 'short', '\u2019' + String(y).slice(2)));
+    cols.appendChild(col); xax.appendChild(yl);
+  });
+  plot.appendChild(cols); chart.appendChild(yax); chart.appendChild(plot); chart.appendChild(xax);
+  var legend = document.getElementById('tlegend');
+  D.themes.forEach(function (t) {
+    var b = el('button'); b.type = 'button'; b.setAttribute('aria-pressed', 'false');
+    b.appendChild(sw(t.id)); b.appendChild(document.createTextNode(t.name)); b.appendChild(el('span', 'n', String(t.total)));
+    b.addEventListener('click', function () {
+      isolated = (isolated === t.id) ? null : t.id;
+      legend.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      if (isolated) b.setAttribute('aria-pressed', 'true');
+      chart.classList.toggle('dimmed', !!isolated);
+      chart.querySelectorAll('.seg').forEach(function (s) { s.classList.toggle('on', s.dataset.theme === isolated); });
+    });
+    legend.appendChild(b);
+  });
+  var tt = document.getElementById('tchart-table');
+  tt.appendChild(table(['Theme'].concat(D.years.map(String), ['All']),
+    D.themes.map(function (t) { return [t.name].concat(t.per_year.map(String), [String(t.total)]); })
+      .concat([['All themes'].concat(totals.map(String), [String(D.stats.papers)])]),
+    [false].concat(D.years.map(function () { return true; }), [true])));
+  toggleTable(card, tt);
+
+  // theme cards
+  var cards = document.getElementById('tcards'), maxYear = Math.max.apply(null, [].concat.apply([], D.themes.map(function (t) { return t.per_year; })));
+  D.themes.filter(function (t) { return t.id !== 'other'; }).forEach(function (t) {
+    var c = el('article', 'tcard'), h = el('h3'); h.appendChild(sw(t.id)); h.appendChild(document.createTextNode(t.name)); c.appendChild(h);
+    var meta = el('div', 'meta'), left = el('div'), first = D.years[t.per_year.findIndex(function (n) { return n > 0; })];
+    left.appendChild(el('b', '', String(t.total))); left.appendChild(el('small', '', (t.total === 1 ? 'paper' : 'papers') + ' since ' + first));
+    var mini = el('div', 'mini'); mini.setAttribute('role', 'img');
+    mini.setAttribute('aria-label', t.name + ', papers per year: ' + D.years.map(function (y, i) { return y + ' ' + t.per_year[i]; }).join(', '));
+    t.per_year.forEach(function (n, i) {
+      var b = el('i', n ? '' : 'z'); b.title = D.years[i] + ': ' + plural(n, 'paper');
+      if (n) { b.style.height = Math.max(3, n / maxYear * 34) + 'px'; b.style.background = COLOR[t.id]; }
+      mini.appendChild(b);
+    });
+    meta.appendChild(left); meta.appendChild(mini); c.appendChild(meta);
+    c.appendChild(el('p', 'd', t.desc));
+    var pick = t.papers.filter(function (p) { return p.top; }).slice(0, 3);
+    if (pick.length < 3) pick = pick.concat(t.papers.filter(function (p) { return pick.indexOf(p) < 0; }).slice(0, 3 - pick.length));
+    c.appendChild(el('h4', '', 'Selected papers'));
+    var ul = el('ul', 'pp');
+    pick.forEach(function (p) {
+      var li = el('li'), a = el(p.link ? 'a' : 'strong', '', p.title); if (p.link) a.href = p.link; a.title = p.title;
+      li.appendChild(a); li.appendChild(el('span', '', p.venue + ', ' + p.year)); ul.appendChild(li);
+    });
+    c.appendChild(ul);
+    if (t.tools.length) {
+      c.appendChild(el('h4', '', 'Tools'));
+      var pl = el('div', 'pills'); t.tools.forEach(function (n) { var a = el('a', '', n); a.href = '#tool-' + slug(n); pl.appendChild(a); }); c.appendChild(pl);
+    }
+    var th = D.theses.filter(function (x) { return x.theme === t.id; });
+    if (th.length) {
+      c.appendChild(el('h4', '', 'Theses in progress'));
+      var pt = el('div', 'pills'); th.forEach(function (x) { pt.appendChild(el('span', '', x.student + ', ' + x.degree)); }); c.appendChild(pt);
+    }
+    var more = el('a', 'more', 'All publications →'); more.href = 'Publications.html'; c.appendChild(more);
+    cards.appendChild(c);
+  });
+
+  // collaborator map
+  var M = D.map, NS = 'http://www.w3.org/2000/svg', host = document.getElementById('map'), mcard = document.getElementById('map-card'), mtip = tooltip(mcard);
+  function sv(tag, attrs) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
+  var svg = sv('svg', {viewBox: '0 0 ' + M.width + ' ' + M.height, role: 'img', 'aria-label': 'World map of the countries of our co-authors, linked to Mahidol University'});
+  svg.appendChild(sv('path', {d: M.land, 'class': 'land'}));
+  var gArc = sv('g', {}), gDot = sv('g', {}), gLab = sv('g', {});
+  var hx = M.home.x, hy = M.home.y, dots = [];
+  M.countries.forEach(function (c) {
+    var dx = c.x - hx, dy = c.y - hy, d = Math.sqrt(dx * dx + dy * dy) || 1, nx = -dy / d, ny = dx / d;
+    if (ny > 0) { nx = -nx; ny = -ny; }
+    var cx = (hx + c.x) / 2 + nx * d * 0.22, cy = (hy + c.y) / 2 + ny * d * 0.22;
+    var arc = sv('path', {d: 'M' + hx + ',' + hy + 'Q' + cx.toFixed(1) + ',' + cy.toFixed(1) + ' ' + c.x + ',' + c.y, 'class': 'arc'}); gArc.appendChild(arc);
+    var r = 3.5 + 2.1 * Math.sqrt(c.papers);
+    var dot = sv('circle', {cx: c.x, cy: c.y, r: r.toFixed(1), 'class': 'ctry', tabindex: 0, role: 'button', 'aria-label': c.name + ', ' + plural(c.papers, 'joint paper')});
+    gDot.appendChild(dot); dots.push({c: c, dot: dot, arc: arc, r: r});
+  });
+  dots.sort(function (a, b) { return b.r - a.r; }).forEach(function (o) { gDot.appendChild(o.dot); });
+  ['Japan', 'Australia'].forEach(function (name) {
+    var c = M.countries.filter(function (x) { return x.name === name; })[0]; if (!c) return;
+    var t = sv('text', {x: c.x + 3.5 + 2.1 * Math.sqrt(c.papers) + 6, y: c.y + 4.5}); t.textContent = name + ' ' + c.papers; gLab.appendChild(t);
+  });
+  var home = sv('circle', {cx: hx, cy: hy, r: 7, 'class': 'home'});
+  var ht = sv('text', {x: hx - 12, y: hy + 22, 'text-anchor': 'end'}); ht.textContent = 'Mahidol University';
+  gLab.appendChild(ht);
+  svg.appendChild(gArc); svg.appendChild(gDot); svg.appendChild(home); svg.appendChild(gLab); host.appendChild(svg);
+  var current = null;
+  function showCountry(o) {
+    if (current && current !== o) { current.dot.classList.remove('hi'); current.arc.classList.remove('hi'); }
+    current = o; o.dot.classList.add('hi'); o.arc.classList.add('hi');
+    var lines = [el('b', '', plural(o.c.papers, 'joint paper')), el('div', 'k', o.c.name)], ul = el('ul');
+    o.c.institutions.forEach(function (i) { ul.appendChild(el('li', '', i.name + ' (' + i.papers + ')')); });
+    lines.push(ul);
+    var p = posIn(mcard, o.dot); mtip.show(lines, p[0], p[1]);
+  }
+  function hideCountry() { if (current) { current.dot.classList.remove('hi'); current.arc.classList.remove('hi'); current = null; } mtip.hide(); }
+  svg.addEventListener('pointermove', function (e) {
+    var pt = svg.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY;
+    var m = svg.getScreenCTM(); if (!m) return; var q = pt.matrixTransform(m.inverse()), best = null, bd = 1e9;
+    dots.forEach(function (o) { var dx = o.c.x - q.x, dy = o.c.y - q.y, d = Math.sqrt(dx * dx + dy * dy) - o.r; if (d < bd) { bd = d; best = o; } });
+    var scale = M.width / svg.getBoundingClientRect().width;
+    if (best && bd < 14 * scale) showCountry(best); else hideCountry();
+  });
+  svg.addEventListener('pointerleave', hideCountry);
+  dots.forEach(function (o) { o.dot.addEventListener('focus', function () { showCountry(o); }); o.dot.addEventListener('blur', hideCountry); });
+  var mt = document.getElementById('map-table');
+  mt.appendChild(table(['Country', 'Joint papers', 'Institutions (joint papers)'],
+    M.countries.map(function (c) { return [c.name, String(c.papers), c.institutions.map(function (i) { return i.name + ' (' + i.papers + ')'; }).join(', ')]; }),
+    [false, true, false]));
+  toggleTable(mcard, mt);
+  var nIns = D.stats.institutions;
+  var c0 = M.countries[0], c1 = M.countries[1];
+  document.getElementById('collab-intro').textContent = 'Since 2018, co-authors from ' + nIns + ' institutions in ' + D.stats.countries +
+    ' countries have written papers with us. ' + c0.name + ' and ' + c1.name + ' lead, with ' + c0.papers + ' and ' + c1.papers +
+    ' joint papers, and many of our students spend their summer internships with partner labs in Japan.';
+
+  // institutions bar list
+  var all = []; M.countries.forEach(function (c) { c.institutions.forEach(function (i) { all.push({name: i.name, country: c.name, papers: i.papers}); }); });
+  all.sort(function (a, b) { return b.papers - a.papers || a.name.localeCompare(b.name); });
+  var maxI = all[0].papers, ib = document.getElementById('ibars');
+  all.filter(function (i) { return i.papers >= 3; }).forEach(function (i) {
+    var li = el('li'), nm = el('div', 'nm', i.name); nm.appendChild(el('small', '', i.country)); li.appendChild(nm);
+    var bar = el('div', 'bar'), b = el('i'); b.style.width = (i.papers / maxI * 82) + '%'; bar.appendChild(b); bar.appendChild(el('b', '', String(i.papers)));
+    li.appendChild(bar); ib.appendChild(li);
+  });
+  var thai = document.getElementById('thai'), names = M.thai.map(function (t) { return t.name; });
+  thai.appendChild(document.createTextNode('In Thailand, we have written papers with ' + names.slice(0, -1).join(', ') + ', and ' + names[names.length - 1] + '. '));
+  var ind = el('strong', '', 'ProGaming, CourseSquare, Zwiz.AI, and Roots');
+  thai.appendChild(document.createTextNode('Four Thai software companies, ')); thai.appendChild(ind);
+  thai.appendChild(document.createTextNode(', worked with us on the Newton Fund project on automated software engineering from 2018 to 2022.'));
+
+  // project timeline
+  var gantt = document.getElementById('gantt'), gcard = document.getElementById('gantt-card'), gtip = tooltip(gcard);
+  var Y0 = 2018, Y1 = 2029, span = Y1 - Y0;
+  function pct(y) { return ((y - Y0) / span * 100) + '%'; }
+  var used = [];
+  D.projects.slice().sort(function (a, b) { return a.start - b.start || a.end - b.end; }).forEach(function (p) {
+    if (used.indexOf(p.theme) < 0) used.push(p.theme);
+    var row = el('div', 'g-row'), lab = el('div', 'g-lab', p.short); lab.appendChild(el('small', '', p.funder_short)); row.appendChild(lab);
+    var tr = el('div', 'g-track'), bar = el('div', 'g-bar'); bar.style.left = pct(p.start); bar.style.width = ((p.end + 1 - p.start) / span * 100) + '%';
+    bar.style.background = COLOR[p.theme]; bar.tabIndex = 0;
+    var years = p.start === p.end ? String(p.start) : p.start + ' to ' + p.end;
+    bar.setAttribute('aria-label', p.title + ', ' + years);
+    function show() {
+      var k = el('div', 'k'), key = el('i'); key.style.background = COLOR[p.theme]; k.appendChild(key); k.appendChild(document.createTextNode(TH[p.theme].name));
+      var lines = [el('b', '', years), el('div', '', p.title), el('div', 'k', p.funder)];
+      if (p.lead) lines.push(el('div', 'k', 'Lead: ' + p.lead));
+      lines.push(k);
+      var q = posIn(gcard, bar); gtip.show(lines, q[0], q[1]);
+    }
+    bar.addEventListener('pointerenter', show); bar.addEventListener('focus', show);
+    bar.addEventListener('pointerleave', gtip.hide); bar.addEventListener('blur', gtip.hide);
+    var tick = el('div', 'g-tick'); tick.style.left = pct(D.now); tr.appendChild(tick);
+    if (!gantt.querySelector('.g-nowlab')) { var nl = el('span', 'g-nowlab', 'Now'); nl.style.left = pct(D.now); tr.appendChild(nl); }
+    tr.appendChild(bar); row.appendChild(tr); gantt.appendChild(row);
+  });
+  var axis = el('div', 'g-axis'), ys = el('div', 'g-years'); axis.appendChild(el('div'));
+  for (var y = Y0; y <= Y1; y += 2) { var s = el('span', '', String(y)); s.style.left = pct(y); ys.appendChild(s); }
+  axis.appendChild(ys); gantt.appendChild(axis);
+  var gl = document.getElementById('glegend');
+  D.themes.filter(function (t) { return used.indexOf(t.id) >= 0; }).forEach(function (t) {
+    var b = el('span'); b.style.cssText = 'display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:700;color:var(--text);margin-right:10px;';
+    b.appendChild(sw(t.id)); b.appendChild(document.createTextNode(t.name)); gl.appendChild(b);
+  });
+  var gt = document.getElementById('gantt-table');
+  gt.appendChild(table(['Project', 'Funder', 'Years', 'Lead', 'Theme'],
+    D.projects.map(function (p) { return [p.title, p.funder, p.start === p.end ? String(p.start) : p.start + ' to ' + p.end, p.lead || '', TH[p.theme].name]; }),
+    [false, false, false, false, false]));
+  toggleTable(gcard, gt);
+
+  // theses
+  var tg = document.getElementById('theses');
+  D.theses.forEach(function (x) {
+    var c = el('div', 'thesis'); c.appendChild(el('span', 'deg' + (x.degree === 'MSc' ? ' msc' : ''), x.degree));
+    c.appendChild(el('b', '', x.student)); c.appendChild(el('p', '', x.title));
+    var th = el('div', 'th'); th.appendChild(sw(x.theme, true)); th.appendChild(document.createTextNode(TH[x.theme].name)); c.appendChild(th);
+    tg.appendChild(c);
+  });
+
+  // tools
+  var grid = document.getElementById('toolgrid');
+  D.tools.slice().sort(function (a, b) { return b.year - a.year || a.name.localeCompare(b.name); }).forEach(function (x) {
+    var c = el('article', 'tool'); c.id = 'tool-' + slug(x.name); c.appendChild(el('h3', '', x.name));
+    var tm = el('div', 'tm'); tm.appendChild(el('span', '', x.venue));
+    var th = el('span', 'th'); th.appendChild(sw(x.theme, true)); th.appendChild(document.createTextNode(TH[x.theme].name)); tm.appendChild(th);
+    c.appendChild(tm); c.appendChild(el('p', '', x.what));
+    var tl = el('div', 'tl'); x.links.forEach(function (l) { var a = el('a', '', l.label); a.href = l.url; tl.appendChild(a); }); c.appendChild(tl);
+    grid.appendChild(c);
+  });
+})();
+</script>
+</body>
+</html>
