@@ -343,7 +343,7 @@
       <figure class="viz" id="map-card">
         <div class="viz-top"><div><h3>Joint papers by country since 2018</h3><p>Each circle is a country, sized by the number of papers we wrote with co-authors there. Point at a circle for its institutions.</p></div><button class="toggle" type="button" aria-controls="map-table" aria-expanded="false">Show table</button></div>
         <div class="mapwrap" id="map"></div>
-        <div class="mapnote"><span class="k"><i style="width:12px;height:12px;background:var(--yellow);box-shadow:0 0 0 2px var(--navy)"></i>Mahidol University</span><span class="k"><i style="width:10px;height:10px;background:var(--navy)"></i>Partner country</span><span>Institutions as printed in each paper, collected by OpenAlex.</span></div>
+        <div class="mapnote"><span class="k"><i style="width:12px;height:12px;background:var(--yellow);box-shadow:0 0 0 2px var(--navy)"></i>Mahidol University</span><span class="k"><i style="width:10px;height:10px;background:var(--navy)"></i>Partner country</span><span>Institutions as printed in each paper, collected by OpenAlex, with two papers without a DOI added by hand. Papers still to appear are left out.</span></div>
         <div class="tview" id="map-table" hidden></div>
       </figure>
       <div class="two">
@@ -357,7 +357,7 @@
     <div class="wrap">
       <div class="sec-head"><span class="orn"></span><h2>Projects</h2><p>Funded projects since 2018, and the theses our students are writing now.</p></div>
       <figure class="viz" id="gantt-card">
-        <div class="viz-top"><div><h3>Funded projects, 2018 to 2028</h3><p>Each bar runs from the first to the last year of funding, coloured by theme. The line marks October 2026.</p></div><button class="toggle" type="button" aria-controls="gantt-table" aria-expanded="false">Show table</button></div>
+        <div class="viz-top"><div><h3>Funded projects, 2018 to 2028</h3><p>Each bar runs from the first to the last year of funding, colored by theme. The line marks October 2026.</p></div><button class="toggle" type="button" aria-controls="gantt-table" aria-expanded="false">Show table</button></div>
         <div class="legend" id="glegend" aria-label="Themes"></div>
         <div class="gantt" id="gantt"></div>
         <div class="tview" id="gantt-table" hidden></div>
@@ -369,7 +369,7 @@
 
   <section class="band" id="tools">
     <div class="wrap">
-      <div class="sec-head"><span class="orn"></span><h2>Tools</h2><p>Software that came out of our research, most of it built by our students. Each tool links to its code, a demo, or its paper.</p></div>
+      <div class="sec-head"><span class="orn"></span><h2>Tools</h2><p>Software that came out of our research, most of it built by our students. Each tool links to its code, a demo, its paper, or its news story.</p></div>
       <div class="tool-grid" id="toolgrid"></div>
       <p class="back"><a class="link" href="Publications.html">All publications →</a></p>
     </div>
@@ -443,10 +443,11 @@
 
   // stat tiles
   var nThemes = D.themes.filter(function (t) { return t.id !== 'other'; }).length;
-  [[D.stats.papers, 'Papers since 2018', 'in ' + word(nThemes) + ' research themes'],
+  var themed = D.themes.filter(function (t) { return t.id !== 'other'; }).reduce(function (s, t) { return s + t.total; }, 0);
+  [[D.stats.papers, 'Papers since 2018', themed + ' in ' + word(nThemes) + ' research themes'],
    [D.stats.institutions, 'Partner institutions abroad', 'in ' + D.stats.countries + ' countries'],
    [D.stats.projects, 'Funded projects', 'since 2018'],
-   [D.stats.tools, 'Research tools', 'with code, demos, or papers']].forEach(function (s) {
+   [D.stats.tools, 'Research tools', 'with code, demos, papers, or news']].forEach(function (s) {
     var li = el('li', 'stat'); li.appendChild(el('b', '', String(s[0]))); li.appendChild(el('span', 'l', s[1])); li.appendChild(el('span', 's', s[2]));
     document.getElementById('stats').appendChild(li);
   });
@@ -454,8 +455,8 @@
   // themes intro, from the data
   var ranked = D.themes.filter(function (t) { return t.id !== 'other'; }).slice().sort(function (a, b) { return b.total - a.total; });
   var ai = TH.ai, firstAi = D.years[ai.per_year.findIndex(function (n) { return n > 0; })];
-  document.getElementById('themes-intro').textContent = 'Our ' + D.stats.papers + ' papers since 2018 fall into ' + word(nThemes) +
-    ' research themes. ' + ranked[0].name + ' has the most, ' + ranked[0].total + ' papers, and AI-assisted software development has ' +
+  document.getElementById('themes-intro').textContent = 'Of our ' + D.stats.papers + ' papers since 2018, ' + themed + ' fall into ' + word(nThemes) +
+    ' research themes and ' + (D.stats.papers - themed) + ' into teaching and other work. ' + ranked[0].name + ' has the most, ' + ranked[0].total + ' papers, and AI-assisted software development has ' +
     ai.total + ' papers since its first in ' + firstAi + '.';
 
   // stacked columns
