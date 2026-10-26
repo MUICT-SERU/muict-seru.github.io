@@ -139,7 +139,7 @@
   /* research page */
   :root{
     --t-analytics:#2a78d6; --t-ai:#eb6834; --t-security:#1baf7a; --t-process:#eda100;
-    --t-privacy:#e87ba4; --t-health:#008300; --t-other:#898781;
+    --t-privacy:#e87ba4; --t-health:#008300; --t-datasci:#6250d6; --t-other:#898781;
     --grid:#E6EDED; --land:#DCE7E6;
   }
   .jump{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:26px;}
@@ -396,7 +396,7 @@
 (function () {
   var D = window.SERU_RESEARCH;
   var COLOR = {analytics: 'var(--t-analytics)', ai: 'var(--t-ai)', security: 'var(--t-security)', process: 'var(--t-process)',
-               privacy: 'var(--t-privacy)', health: 'var(--t-health)', other: 'var(--t-other)'};
+               privacy: 'var(--t-privacy)', health: 'var(--t-health)', datasci: 'var(--t-datasci)', other: 'var(--t-other)'};
   var TH = {}; D.themes.forEach(function (t) { TH[t.id] = t; });
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   function sw(id, dot) { var s = el('span', 'sw' + (dot ? ' dot' : '')); s.style.background = COLOR[id]; return s; }
