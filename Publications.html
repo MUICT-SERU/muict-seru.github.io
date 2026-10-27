@@ -102,6 +102,15 @@
   .back{text-align:center;margin-top:44px;}
   .link{display:inline-block;font-weight:700;color:var(--teal-ink);background:#fff;border:2px solid var(--teal);padding:10px 22px;border-radius:999px;transition:background .15s,color .15s;}
   .link:hover{background:var(--teal);color:#fff;}
+  .jump{text-align:center;margin:24px 0 0;}
+
+  /* awards */
+  section.awards{padding:64px 0 80px;}
+  .head h2{font-weight:700;font-size:clamp(28px,3.6vw,38px);letter-spacing:-.01em;line-height:1.15;margin:0;}
+  .awards h3{font-weight:600;font-size:21px;line-height:1.3;margin:0 0 14px;}
+  .awards .pubs + h3{margin-top:44px;}
+  .award-link{display:inline-block;margin-top:6px;font-weight:700;font-size:14.5px;color:var(--teal-ink);}
+  .award-link:hover{color:var(--navy);}
 
   /* footer */
   footer{padding:54px 0 60px;text-align:center;color:var(--muted);font-size:15px;}
@@ -170,6 +179,7 @@
         <li class="stat"><b data-stat="journals">19</b><span class="l">Journal articles</span></li>
       </ul>
       <p class="stat-note">Counts cover all papers by current members from 2018 on, in every track. A top venue is a journal in the first quartile of the SCImago Journal Rank, a conference ranked A* or A by CORE (ICORE2026), or a venue in the top 20 of its Google Scholar Metrics field (2025 edition).</p>
+      <p class="jump"><a class="link" href="#awards">Awards and honors ↓</a></p>
     </div>
   </section>
 
@@ -185,6 +195,31 @@
       <p class="count" id="count" aria-live="polite"></p>
       <div id="list"></div>
       <noscript><p class="empty">The list needs JavaScript. Please turn it on to see the papers.</p></noscript>
+    </div>
+  </section>
+
+  <section class="awards" id="awards" aria-labelledby="awards-h">
+    <div class="wrap">
+      <div class="head"><span class="orn"></span><h2 id="awards-h">Awards</h2><p>The first list covers awards for SERU papers, tools, student projects, and teaching since 2018. The second lists honors that our members received for their own research and service.</p></div>
+      <h3>Papers, tools, and student projects</h3>
+      <ul class="pubs">
+        <li><div class="pub-tag">2026</div><div class="pub-body"><div class="t">Honorable Mention, National Software Contest (NSC 2026)</div><div class="au">DepSecLens, a web tool by a student team that checks the security of a Python project's dependencies.</div><a class="award-link" href="News.html#2026-08-nsc">Read the news →</a></div></li>
+        <li><div class="pub-tag">2023</div><div class="pub-body"><div class="t">Poster round, National Software Contest (NSC 2023)</div><div class="au">Typhon, a Visual Studio Code extension by a student team that recommends relevant code cells in Jupyter notebooks.</div><a class="award-link" href="News.html#2023-04-typhon-nsc">Read the news →</a></div></li>
+        <li><div class="pub-tag">2022</div><div class="pub-body"><div class="t">Best EDU Paper Award, APSEC 2022</div><div class="au">“Virtual Reality for Software Engineering Presentations”, in the Software Engineering Education track of the 29th Asia-Pacific Software Engineering Conference.</div><a class="award-link" href="News.html#2022-12-apsec-2022-edu-award">Read the news →</a></div></li>
+        <li><div class="pub-tag">2022</div><div class="pub-body"><div class="t">Poster round, National Software Contest (NSC 2022)</div><div class="au">Microusity, a tool by a student team that tests the security of Backends for Frontends microservice systems.</div><a class="award-link" href="News.html#2023-02-microusity-icpc">Read about Microusity →</a></div></li>
+        <li><div class="pub-tag">2021</div><div class="pub-body"><div class="t">Honorable Mention, Mahidol University awards for learning innovation in online courses</div><div class="au">The course ITCS431 Software Design and Development, which moved students' project presentations into virtual reality.</div><a class="award-link" href="News.html#2021-08-online-teaching-award">Read the news →</a></div></li>
+        <li><div class="pub-tag">2020</div><div class="pub-body"><div class="t">Best Tool Demo Award, ICSME 2020</div><div class="au">Teddy, a senior project that recommends Pythonic idioms during code review, at the 36th IEEE International Conference on Software Maintenance and Evolution.</div><a class="award-link" href="News.html#2020-10-teddy-award">Read the news →</a></div></li>
+        <li><div class="pub-tag">2020</div><div class="pub-body"><div class="t">Poster round, National Software Contest (NSC 2020)</div><div class="au">Teddy, the same senior project.</div><a class="award-link" href="News.html#2020-10-teddy-award">Read about Teddy →</a></div></li>
+        <li><div class="pub-tag">2018</div><div class="pub-body"><div class="t">Best Research Paper Award, IWESEP 2018</div><div class="au">“Identifying Design and Requirement Self-Admitted Technical Debt Using N-gram IDF”, at the 9th International Workshop on Empirical Software Engineering in Practice.</div><a class="award-link" href="https://doi.org/10.1109/iwesep.2018.00010">Read the paper →</a></div></li>
+      </ul>
+      <h3>Members' honors</h3>
+      <ul class="pubs">
+        <li><div class="pub-tag">2023</div><div class="pub-body"><div class="t">Distinguished Reviewer Award, ICPC 2023</div><div class="au">Morakot Choetkiertikul, for program committee service at the 31st IEEE/ACM International Conference on Program Comprehension.</div></div></li>
+        <li><div class="pub-tag">2021</div><div class="pub-body"><div class="t">National Research Award (Thesis Award), National Research Council of Thailand</div><div class="au">Morakot Choetkiertikul, for the doctoral thesis “Developing Analytics Models for Software Project Management”.</div></div></li>
+        <li><div class="pub-tag">2019</div><div class="pub-body"><div class="t">Best PhD Thesis Award, University of Wollongong</div><div class="au">Morakot Choetkiertikul, for the same doctoral thesis.</div></div></li>
+        <li><div class="pub-tag">2018</div><div class="pub-body"><div class="t">Examiners' Commendation for Outstanding Thesis, University of Wollongong</div><div class="au">Morakot Choetkiertikul, for the same doctoral thesis.</div></div></li>
+        <li><div class="pub-tag">2015</div><div class="pub-body"><div class="t">ACM SIGSOFT Distinguished Paper Award, MSR 2015</div><div class="au">Morakot Choetkiertikul and co-authors, for “Characterization and Prediction of Issue-Related Risks in Software Projects” at the 12th Working Conference on Mining Software Repositories.</div><a class="award-link" href="https://doi.org/10.1109/msr.2015.33">Read the paper →</a></div></li>
+      </ul>
       <p class="back"><a class="link" href="./">← Back to the SERU home page</a></p>
     </div>
   </section>
