@@ -167,6 +167,16 @@
   .stat-note{max-width:80ch;margin:18px auto 0;text-align:center;color:var(--muted);font-size:14px;line-height:1.55;}
   .sub-h{font-weight:600;font-size:17px;margin:48px 0 16px;display:flex;align-items:center;gap:10px;}
   .sub-h::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--teal);}
+  .award-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;list-style:none;margin:0;padding:0;}
+  .award-cards li{background:#fff;border-radius:22px;box-shadow:var(--shadow);overflow:hidden;transition:transform .18s,box-shadow .18s;}
+  .award-cards li:hover{transform:translateY(-3px);box-shadow:var(--shadow-up);}
+  .award-cards img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;background:var(--teal-soft);}
+  .award-cards .body{padding:16px 20px 22px;}
+  .award-cards .when{display:inline-block;background:var(--teal-soft);color:var(--teal-ink);font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px;margin-bottom:10px;}
+  .award-cards .what{display:block;font-size:15.5px;line-height:1.55;}
+  .award-cards .read{display:inline-block;margin-top:10px;font-weight:700;font-size:14px;color:var(--teal-ink);}
+  .award-cards .read:hover{text-decoration:underline;}
+  .more .link + .link{margin-left:10px;}
   .pubs{list-style:none;margin:0;padding:8px 30px;background:#fff;border-radius:26px;box-shadow:var(--shadow);}
   .pubs li{display:grid;grid-template-columns:84px 1fr;gap:20px;padding:20px 0;border-top:1px solid var(--line);align-items:start;}
   .pubs li:first-child{border-top:0;}
@@ -225,6 +235,10 @@
     .timeline li::before{top:24px;left:-38px;}
     .timeline .thumb{height:100%;aspect-ratio:auto;min-height:150px;border-radius:22px 0 0 22px;}
     .timeline .body{padding:18px 22px;}
+    .award-cards{grid-template-columns:1fr;}
+    .award-cards li{display:grid;grid-template-columns:240px 1fr;align-items:stretch;}
+    .award-cards img{height:100%;aspect-ratio:auto;min-height:150px;}
+    .award-cards .body{padding:18px 22px;}
     .topics .topic{flex-basis:calc((100% - 22px) / 2);}
     .stats{grid-template-columns:repeat(2,1fr);}
   }
@@ -252,6 +266,9 @@
     .timeline{padding-left:30px;}
     .timeline::before{left:6px;}
     .timeline li{display:block;}
+    .award-cards li{display:block;}
+    .award-cards img{height:auto;aspect-ratio:16/10;min-height:0;}
+    .more .link + .link{margin:10px 0 0;}
     .timeline li::before{top:20px;left:-30px;}
     .timeline .thumb{aspect-ratio:16/10;height:auto;min-height:0;border-radius:22px 22px 0 0;}
     .topics .topic{flex-basis:100%;}
@@ -447,7 +464,13 @@
         <li><div class="pub-tag">ICSME</div><div class="pub-body"><div class="t"><a href="https://doi.org/10.1109/ICSME64153.2025.00039">Social Media Reactions to Open Source Promotions: AI-Powered GitHub Projects on Hacker News</a></div><div class="a">IEEE International Conference on Software Maintenance and Evolution, 2025</div><div class="badges"><span class="badge core" title="CORE conference ranking, ICORE2026 edition">CORE A</span><span class="badge gs" title="Google Scholar Metrics 2025 edition">Google Scholar #19 in Software Systems</span></div></div></li>
         <li><div class="pub-tag">IST</div><div class="pub-body"><div class="t"><a href="https://doi.org/10.1016/j.infsof.2023.107162">A taxonomy for mining and classifying privacy requirements in issue reports</a></div><div class="a">Information and Software Technology, 2023</div><div class="badges"><span class="badge gs" title="Google Scholar Metrics 2025 edition">Google Scholar #5 in Software Systems</span></div></div></li>
       </ul>
-      <p class="more"><a class="link" href="Publications.html">See the full publication list →</a></p>
+      <h3 class="sub-h">Recent awards</h3>
+      <ul class="award-cards">
+        <li><img src="images/news/2026-08-nsc.jpg" alt="Three students of the DepSecLens team beside their poster" width="640" height="400" loading="lazy"><div class="body"><span class="when">2026</span><span class="what">Honorable Mention at the National Software Contest (NSC 2026) for DepSecLens, a tool built by a student team.</span><a class="read" href="News.html#2026-08-nsc">Read more →</a></div></li>
+        <li><img src="images/news/2022-12-apsec-2022-edu-award.jpg" alt="The Best EDU Paper Award certificate from APSEC 2022" width="640" height="400" loading="lazy"><div class="body"><span class="when">2022</span><span class="what">Best EDU Paper Award at APSEC 2022 for our study of virtual reality in software engineering presentations.</span><a class="read" href="News.html#2022-12-apsec-2022-edu-award">Read more →</a></div></li>
+        <li><img src="images/news/2020-10-teddy-award.jpg" alt="The Best Tool Demo Award certificate for Teddy from ICSME 2020" width="640" height="400" loading="lazy"><div class="body"><span class="when">2020</span><span class="what">Best Tool Demo Award at ICSME 2020 for Teddy, a senior project that recommends Pythonic idioms.</span><a class="read" href="News.html#2020-10-teddy-award">Read more →</a></div></li>
+      </ul>
+      <p class="more"><a class="link" href="Publications.html">See the full publication list →</a><a class="link" href="Publications.html#awards">See all awards →</a></p>
     </div>
   </section>
 
