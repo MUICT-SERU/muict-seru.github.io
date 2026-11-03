@@ -157,6 +157,17 @@
   .back{text-align:center;margin-top:44px;}
   .link{display:inline-block;font-weight:700;color:var(--teal-ink);background:#fff;border:2px solid var(--teal);padding:10px 22px;border-radius:999px;transition:background .15s,color .15s;}
   .link:hover{background:var(--teal);color:#fff;}
+  .jump{text-align:center;margin:24px 0 0;}
+
+  /* awards */
+  section.awards{padding:64px 0 80px;}
+  .head h2{font-weight:700;font-size:clamp(28px,3.6vw,38px);letter-spacing:-.01em;line-height:1.15;margin:0;}
+  .awards h3{font-weight:600;font-size:21px;line-height:1.3;margin:0 0 14px;}
+  .awards .pubs + h3{margin-top:44px;}
+  .award-link{display:inline-block;margin-top:6px;font-weight:700;font-size:14.5px;color:var(--teal-ink);}
+  .award-link:hover{color:var(--navy);}
+  .awards .pubs li.pic{grid-template-columns:96px 1fr 176px;}
+  .award-img{display:block;width:176px;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:14px;background:var(--teal-soft);}
 
   /* footer */
   footer{padding:54px 0 60px;text-align:center;color:var(--muted);font-size:15px;}
@@ -192,6 +203,8 @@
     .entry{grid-template-columns:1fr;gap:14px;padding:16px;}
     .story{padding-top:28px;}
 
+    .awards .pubs li.pic{grid-template-columns:1fr;}
+    .award-img{order:-1;width:100%;max-width:340px;}
   }
 </style>
 </head>
@@ -226,8 +239,16 @@
 
   <section class="news-sec" aria-label="News entries">
     <div class="wrap">
-      <h2 class="year-h" id="y2026">2026<span>15 entries</span></h2>
+      <h2 class="year-h" id="y2026">2026<span>16 entries</span></h2>
       <ul class="news-list">
+        <li class="entry" id="2026-11-quasoq-repair">
+          <div class="pic"><img src="images/news/2026-11-quasoq-repair.jpg" alt="Program repair study accepted at QuASoQ 2026" width="640" height="400" loading="lazy"></div>
+          <div class="entry-body">
+            <div class="meta"><span class="when">Nov 2026</span><a class="anchor" href="#2026-11-quasoq-repair" title="Link to this news" aria-label="Link to this news, Program repair study accepted at QuASoQ 2026"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></div>
+            <h3><a href="news/2026-11-quasoq-repair.html">Program repair study accepted at QuASoQ 2026</a></h3>
+            <p>Napasorn Lapprakobkit&#x27;s paper “Quantifying the Resolved Tasks and Cost That Test Feedback Adds to LLM-Based Program Repair” has been accepted at the 13th International Workshop on Quantitative Approaches to Software Quality (QuASoQ 2026). The workshop takes place with APSEC 2026 in Bali, Indonesia, on 7 December 2026. The study keeps the Agentless repair pipeline fixed and adds a second repair round, whose five variants differ only in the test information that the LLM receives. On SWE-bench Lite with DeepSeek-chat, feeding back the failed patch with the last 100 lines of its test log resolved 21.7% more tasks than Agentless, against 5.4% for a plain second try. With GPT-4o, no type of feedback resolved more tasks than a plain second try, which suggests that the benefit of test feedback depends on the LLM. Napasorn began this work during her 2025 research internship with Prof. Yasutaka Kamei&#x27;s POSL team at Kyushu University. It is her second paper, after the APSEC 2026 ERA Track paper from her 2026 internship there.</p><a class="read" href="news/2026-11-quasoq-repair.html">Read more →</a><p class="more-links"><a href="News.html#2026-09-apsec">Her APSEC 2026 paper</a><a href="News.html#2025-04-internships-2025">The 2025 internships</a><a href="News.html#2026-09-quasoq-2026">The QuASoQ 2026 call for papers</a></p>
+          </div>
+        </li>
         <li class="entry" id="2026-10-emse-jupyter">
           <div class="pic"><img src="images/news/2026-10-emse-jupyter.jpg" alt="Jupyter notebook study accepted in EMSE" width="640" height="400" loading="lazy"></div>
           <div class="entry-body">
